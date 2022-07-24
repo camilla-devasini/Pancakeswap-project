@@ -1,0 +1,28 @@
+:root {
+  --gradient-linear-purple: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  --gradient-orange-linear: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  --gradient-linear-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --gradient-radial-dark: radial-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --color-white-pure: rgb(255, 255, 255);
+  --color-white-shadow: rgb(244, 238, 255);
+  --color-grey: rgb(189, 194, 196);
+  --color-grey-purple: rgb(184, 173, 210);
+  --color-grey-dark: rgb(56, 50, 65);
+  --color-dark: rgb(39, 38, 44);
+  --color-dark-alpha: rgba(39, 38, 44, 0.4);
+  --color-orange: rgb(255, 178, 55);
+  --color-purple: rgb(154, 106, 255);
+  --color-indigo: rgb(40, 13, 95);
+  --color-indigo-dark: rgb(25, 19, 38);
+  --color-cyan: rgb(31, 199, 212);
+  --color-pink: rgb(237, 75, 158);
+  --size-note: 14px;
+  --size-normal: 16px;
+  --size-sub-title: 24px;
+  --size-title: 40px;
+  --size-paragrpah: 20px;
+  --size-macro: 64px;
+  --size-micro: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
