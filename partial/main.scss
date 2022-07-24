@@ -1,0 +1,9 @@
+@use "variables" as v;
+// printing the custom properties from the variables map
+:root {
+  @each $name, $map in v.$gradient-color-size {
+    @each $property, $value in $map {
+      --#{$name}-#{$property}: #{$value};
+    }
+  }
+}
