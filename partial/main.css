@@ -1,4 +1,31 @@
 @charset "UTF-8";
+:root {
+  --gradient-linear-purple: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  --gradient-orange-linear: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  --gradient-linear-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --gradient-radial-dark: radial-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --color-white-pure: rgb(255, 255, 255);
+  --color-white-shadow: rgb(244, 238, 255);
+  --color-grey: rgb(189, 194, 196);
+  --color-grey-purple: rgb(184, 173, 210);
+  --color-grey-dark: rgb(56, 50, 65);
+  --color-dark: rgb(39, 38, 44);
+  --color-dark-alpha: rgba(39, 38, 44, 0.4);
+  --color-orange: rgb(255, 178, 55);
+  --color-purple: rgb(154, 106, 255);
+  --color-indigo: rgb(40, 13, 95);
+  --color-indigo-dark: rgb(25, 19, 38);
+  --color-cyan: rgb(31, 199, 212);
+  --color-pink: rgb(237, 75, 158);
+  --size-note: 14px;
+  --size-normal: 16px;
+  --size-sub-title: 24px;
+  --size-title: 40px;
+  --size-paragrpah: 20px;
+  --size-macro: 64px;
+  --size-micro: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +41,7 @@
   align-items: center;
   border-bottom: 1px solid rgb(231, 227, 235);
   color: rgb(122, 110, 170);
-  font-size: var(--normal);
+  font-size: 16px;
 }
 .nav .navbar-icons {
   display: flex;
@@ -32,7 +59,7 @@
   color: rgb(122, 110, 170);
   font-weight: 600;
   line-height: 1.5;
-  font-size: var(--normal);
+  font-size: 16px;
   vertical-align: middle;
 }
 .nav .logo-desktop, .nav .navbarmenu, .nav .mkt-value, .nav .languages-container, .nav .connect-wallet {
@@ -70,7 +97,7 @@
   border-radius: 16px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   font-weight: 600;
-  font-size: var(--normal);
+  font-size: 16px;
   color: #fff;
   cursor: pointer;
   margin-left: 5px;
@@ -178,7 +205,7 @@
     justify-content: space-around;
     margin-right: auto;
     margin-left: 20px;
-    font-size: var(--normal);
+    font-size: 16px;
   }
   .nav .navbarmenu .drop-down-menu {
     position: relative;
@@ -243,4 +270,4 @@
     width: 160px;
     height: 24.85px;
   }
-}/*# sourceMappingURL=header-style.css.map */
+}/*# sourceMappingURL=main.css.map */

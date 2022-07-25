@@ -1,4 +1,4 @@
-
+@use "variables";
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
     align-items: center;
     border-bottom: 1px solid rgb(231, 227, 235);
     color: rgb(122, 110, 170);
-    font-size: 16px;
+    font-size: var(--normal);
 
     .navbar-icons {
         display: flex;
@@ -35,7 +35,7 @@
            color: rgb(122, 110, 170);
            font-weight: 600;
            line-height: 1.5;
-           font-size: 16px;
+           font-size: var(--normal);
            vertical-align: middle;
         }
     }
@@ -78,7 +78,7 @@
             border-radius: 16px;
             box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
             font-weight: 600;
-            font-size: 16px;
+            font-size: var(--normal);;
             color: #fff;
             cursor: pointer;
             margin-left: 5px;
@@ -215,7 +215,7 @@
             justify-content: space-around;
             margin-right: auto;
             margin-left: 20px;
-            font-size: 16px;
+            font-size: var(--normal);
 
         .drop-down-menu {
             position: relative;
