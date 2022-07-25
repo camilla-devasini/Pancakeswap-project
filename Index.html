@@ -6,16 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE.">
     <title>Home | PancakeSwap - $3.523</title>
+    <link rel="stylesheet" href="mainstyle.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    
-  
     <header>
     <!--phising warning-->
-        
 
-    <!--Header navbar-->
-        <nav></nav> 
+    <!--HEADER NAVBAR ON TOP OF THE PAGE-->
+    <nav class="nav">
+        <div class="logo">
+            <a href="#">
+                <picture>
+                    <source media="(min-width:968px)" srcset="assets/pancakeswap-logo-title.svg" class="logo-desktop" alt="pancackeswap logo image and title"/>
+                    <img src="assets/pancakeswap-logo.svg" class="logo-mobile" alt="pancackeswap logo image"/>
+                </picture>
+            </a>
+        </div>
+        <div class="navbarmenu">
+                <div class="drop-down-menu">
+                        <div class="drop-label" onclick="dropMenu(this)">Trade</div>
+                        <div id="drop-content-1" class="drop-down-content">
+                            <div><a href="/swap">Swap</a></div>
+                            <div><a href="/limit">Limit</a></div>
+                            <div><a href="/liquidity">Liquidity</a></div>
+                            <div class="external-link">
+                                <a href="/perpatual">Perpetual</a>
+                                <img src="assets/external-link-arrow.svg" alt="external link arrow"/>
+                            </div>
+                        </div>
+                </div>
+                <div class="drop-down-menu">
+                    <div class="drop-label" onclick="dropMenu(this)">Earn</div>
+                    <div id="drop-content-2" class="drop-down-content">
+                            <div><a href="/farms">Farms</a></div>
+                            <div><a href="/pools">Pools</a></div>
+                        </div>
+                </div>
+                <div class="drop-down-menu">
+                    <div class="drop-label" onclick="dropMenu(this)">Win</div>
+                    <div id="drop-content" class="drop-down-content">
+                            <div><a href="/competition">Trading Competition</a></div>
+                            <div><a href="/prediction">Prediction (BETA)</a></div>
+                            <div><a href="/lottery">Lottery</a></div>   
+                        </div> 
+                </div>
+                <div class="drop-down-menu">
+                    <img class="drop-label" onclick="dropMenu(this)"src="assets/menu-more.svg"/>
+                    <div id="drop-content" class="drop-down-content">
+                            <div><a href="/info">Info</a></div>
+                            <div><a href="/ifo">IFO</a></div>
+                            <div><a href="/voting">Voting</a></div>
+                            <div><a href="/leaderboard">Leaderboard</a></div>
+                            <div class="external-link">
+                                <a href="/blog">Blog</a>
+                                <img src="assets/external-docs-arrow.svg" alt="arrow icon"/>
+                            </div>
+                            <div class="external-link">
+                                <a href="/docs">Docs</a>
+                                <img src="assets/external-docs-arrow.svg" alt="arrow icon"/>
+                            </div> 
+                    </div>             
+                </div>       
+        
+    </div>
+            <div class="navbar-icons">
+                <div class="mkt-value">
+                    <a href="/trade" target="_blank">
+                        <img src="assets/light-blue-logo.svg" alt="pancackeswap logo image with turquoise background"/>
+                        <span>$3.434</span>
+                    </a>
+                </div>
+                <div class="icons-mobile">
+                    <button class="languages-btn"><img src="assets/language-button.svg"></button>
+                    <div class="languages-container">
+                        <button class="lang">বাংলা</button>
+                        <button class="lang">العربية</button>
+                        <button class="lang">English</button>
+                        <button class="lang">Deutsch</button>
+                        <button class="lang">Ελληνικά</button>
+                        <button class="lang">Español</button>
+                        <button class="lang">Suomalainen</button>
+                        <button class="lang">Filipino</button>
+                        <button class="lang">Français</button>
+                        <button class="lang">हिंदी</button>
+                        <button class="lang">Magyar</button>
+                        <button class="lang">Bahasa Indonesia</button>
+                        <button class="lang">Italiano</button>
+                        <button class="lang">日本語</button>
+                        <button class="lang">한국어</button>
+                        <button class="lang">Nederlands</button>
+                        <button class="lang">Polski</button>
+                        <button class="lang">Português (Brazil)</button>
+                        <button class="lang">Português</button>
+                        <button class="lang">Română</button>
+                        <button class="lang">Русский</button>
+                        <button class="lang">Svenska</button>
+                        <button class="lang">தமிழ்</button>
+                        <button class="lang">Türkçe</button>
+                        <button class="lang">Українська</button>
+                        <button class="lang">Tiếng Việt</button>
+                        <button class="lang">简体中文</button>
+                        <button class="lang">繁體中文</button>
+                    </div>
+                <div class="settings-container">
+                    <button><img src="assets/settings-button.svg"></button>
+                </div>
+                <div>
+                    <button type="button" class="connect-wallet">Connect Wallet</button>
+                    <button type="button" class="connect">Connect</button>
+                </div>
+            </div>
+            </div>
+    </nav>
 
     </header>
 
@@ -33,10 +136,81 @@
 
 
 
-
     <!--footer-->
     <footer></footer>
 
+    <!--NAV BAR (HEADER) THAT STAYS FIXED AT THE BOTTOM OF THE PAGE -->
+    <nav class="bottom-mobile-navbar">
+        <div class="menu-item-mobile drop-label">
+            <img src="assets/trade-menu-icon-mobile-active.svg"/>
+            <span>Trade</span>
+        </div>
+        
+        <div class="menu-item-mobile">
+            <img src="assets/earn-menu-icon-mobile.svg"/>
+            <span>Earn</span>  
+            <div id="drop-content" class="drop-down-content">
+                <div><a href="/farms">Farms</a></div>
+                <div><a href="/pools">Pools</a></div>
+            </div>
+        </div>
+       
+        <div class="menu-item-mobile">
+            <img src="assets/win-menu-icon-mobile.svg"/>
+            <span>Win</span>
+            <div class="drop-down-content">
+                <div><a href="/competition">Trading Competition</a></div>
+                <div><a href="/prediction">Prediction (BETA)</a></div>
+                <div><a href="/lottery">Lottery</a></div>   
+            </div> 
+        </div>
+        <div class="menu-item-mobile">
+            <img src="assets/nft-menu-icon-mobile.svg"/>
+            <span>NFT</span>
+            <div class="drop-down-content">
+                <div><a href="/overview">Overview</a></div>
+                <div><a href="/collections">Collections</a></div>
+                <div><a href="/activity">Activity</a></div> 
+            </div>
+        </div>
+        <div class="menu-item-mobile">
+            <img src="assets/menu-more.svg"/>
+            <div class="drop-down-content">
+                <div><a href="/info">Info</a></div>
+                <div><a href="/ifo">IFO</a></div>
+                <div><a href="/voting">Voting</a></div>
+                <div><a href="/leaderboard">Leaderboard</a></div>
+                <div class="external-link">
+                    <a href="/blog">Blog</a>
+                    <img src="assets/external-docs-arrow.svg" alt="arrow icon"/>
+                </div>
+                <div class="external-link">
+                    <a href="/docs">Docs</a>
+                    <img src="assets/external-docs-arrow.svg" alt="arrow icon"/>
+                </div> 
+        </div>
+
+
+    </nav>
+
+<script>
+    function dropMenu(a) {
+        a.parentNode.getElementsByClassName("drop-down-content")[0].classList.toggle("show");
     
+}
+// Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches(".drop-label")) {
+    let dropdowns = document.getElementsByClassName("drop-down-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>   
 </body>
 </html>
