@@ -1,0 +1,162 @@
+@use "variables" as v;
+// printing the custom properties from the variables map
+:root {
+  @each $name, $map in v.$gradient-color-size {
+    @each $property, $value in $map {
+      --#{$name}-#{$property}: #{$value};
+    }
+  }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.card-graph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0%;
+    position: fixed;
+    margin-top: 36px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border: 1px solid grey;
+
+
+
+   .close-btn-container {
+       display: flex;
+       margin-top: 10px;
+       margin-right: 10px;
+       justify-content: flex-end;
+        
+        
+    }
+
+    .expand-btn {
+        display: none;
+    }
+
+    .mkt-icons-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0px 24px;
+
+        & > button {
+            padding-left: 8px;
+        }
+
+        & > button:last-child  {
+            background-color: rgba(31, 199, 212, 0.06);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+        & * {
+        padding-right: 3px;
+        }
+
+
+        & > div > img {
+        width: 24px;
+        height: 24px;  
+        }
+
+        & .coin-comparison-title {
+            color: rgb(40, 13, 95);
+            font-weight: 600;
+            font-size: 16px;
+
+        }
+
+        & > span, button {
+            text-transform: uppercase;
+            font-size: var(--size-paragraph);
+        }
+    }
+
+    .values-content {
+        padding: 12px 24px 0px 24px;
+    
+
+
+    .mkt-value-updates {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 10px;
+        
+
+
+    & h2 {
+        color: rgb(40, 13, 95);
+        font-size: 32px;
+        font-weight: 600;
+       
+        
+    }
+
+    & h3 {
+        font-size: var(--size-paragrpah);
+        text-transform: uppercase;
+        font-weight: 600;
+        color: rgb(122, 110, 170);
+
+
+    }
+
+    & h3:last-child {
+        color:  rgb(49, 208, 170);
+    }
+    }
+
+    & .date {
+        color: rgb(118, 69, 217);
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: var(--size-note);
+
+    }
+
+    & .timeframes {
+        background-color: rgb(239, 244, 245);
+        border-radius: 16px;
+        display: flex;
+        border: 1px solid rgb(233, 234, 235);
+        width: 221px;
+        cursor: pointer;
+        height: 34px;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        justify-content: space-around;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        & button {
+            border-radius: 16px;
+            padding: 0 16px;
+
+        }
+    
+        & button:first-child {
+            padding: 0px 16px;
+            background-color: rgb(31, 199, 212);
+            color: white;
+
+        }
+    }
+}
+
+}
