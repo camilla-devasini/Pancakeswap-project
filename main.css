@@ -271,6 +271,10 @@
     height: 24.85px;
   }
 }
+* {
+  font-size: var(--normal);
+}
+
 footer {
   background-color: #27262c;
 }
@@ -321,7 +325,7 @@ footer {
 .cont_footer .dropdown {
   position: relative;
   display: inline-block;
-  background-color: var(--dark);
+  background-color: #27262c;
 }
 .cont_footer .dropdown_content {
   display: none;
@@ -374,4 +378,4 @@ footer {
   display: flex;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
