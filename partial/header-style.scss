@@ -1,0 +1,310 @@
+@use "variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER ON TOP */
+.nav {
+    display: flex;
+    height: 56px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(231, 227, 235);
+    color: rgb(122, 110, 170);
+    font-size: var(--normal);
+
+    .navbar-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .mkt-value {
+            margin-right: 15px;
+        }
+    
+        .mkt-value > a > img {
+            width: 24px;
+            height: 24px;
+
+        }
+
+        .mkt-value > a > span {
+           color: rgb(122, 110, 170);
+           font-weight: 600;
+           line-height: 1.5;
+           font-size: var(--normal);
+           vertical-align: middle;
+        }
+    }
+
+    .logo-desktop, .navbarmenu, .mkt-value, .languages-container, .connect-wallet {
+      display: none;
+    }
+    .logo-mobile {
+        display: block; 
+        width: 28.2px;
+        height: 29.39px;
+        margin-left: 16px;
+    }
+    .icons-mobile {
+        width: 184.26px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 16px;
+    
+        & button {
+            border: none;
+            background-color: transparent;
+        }
+
+        & .languages-btn > img {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+        }
+    
+
+        & button.connect {
+            display: block;
+            width: 96.26px;
+            height: 32px;
+            padding: 0 16px;
+            background-color: rgb(31, 199, 212);
+            border-radius: 16px;
+            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+            font-weight: 600;
+            font-size: var(--normal);;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+
+
+        &.settings-container > button > img {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+         
+        }
+    }
+}
+
+
+  .external-link img {
+                width: 20px;
+                height: 20px;
+               
+            }
+   
+
+/* NAVBAR ON BOTTOM */
+
+.bottom-mobile-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgb(231, 227, 235); 
+    padding: {
+        top: 5px;
+        left: 8px;
+        right: 8px;
+    }
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    .menu-item-mobile > span {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+
+}
+   
+/* DROP DOWN-CONTENT (ON BOTTOM - mobile first) */
+.bottom-mobile-navbar .menu-item-mobile .drop-down-content {
+    display: none;
+}
+
+
+/*posso usare solo :hover al momento, poi userò js*/
+.bottom-mobile-navbar .menu-item-mobile:hover .drop-down-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    height: 106px;
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    right: auto;
+    border: 1px solid rgb(231, 227, 235);
+    width: calc(100% - 32px);
+    border-radius: 16px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 48px;
+        padding: 4px 16px;
+        justify-content: center;  
+        
+        & > a {
+            color: rgb(122, 110, 170);
+        }
+    }
+
+ 
+}
+
+.bottom-mobile-navbar .menu-item-mobile:nth-child(3):hover .drop-down-content {
+    left: 3%;
+    height: 154px;
+}
+
+.bottom-mobile-navbar .menu-item-mobile:nth-child(4):hover .drop-down-content {
+    right: 0;
+    left: auto;
+    height: 154px;
+}
+
+.bottom-mobile-navbar .menu-item-mobile:last-child:hover .drop-down-content {
+    right: 0;
+    left: auto;
+    height: 316px;
+
+    & .external-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    & div:nth-child(4) {
+        border-top: 1px solid rgb(231, 227, 235);
+        border-bottom: 1px solid rgb(231, 227, 235);
+
+    }
+ 
+}
+
+@media screen and (min-width: 576px) {
+
+   
+
+    .bottom-mobile-navbar {
+        display: none;
+
+    }
+
+    .nav {
+        position: relative;
+    
+        .navbarmenu {
+            display: flex;
+            width: 300px;
+            justify-content: space-around;
+            margin-right: auto;
+            margin-left: 20px;
+            font-size: var(--normal);
+
+        .drop-down-menu {
+            position: relative;
+            display: inline-block;
+       
+        &:nth-child(2) > .drop-down-content {
+            height: 106px;
+
+        }
+        &:nth-child(3) > .drop-down-content {
+            height: 154px;
+
+        }
+        &:nth-child(4) > .drop-down-content { 
+            height: 316px;
+
+            & > div:nth-child(4) {
+                border: {
+                    top: 1px solid rgb(231, 227, 235);
+                    bottom: 1px solid rgb(231, 227, 235);
+                }
+            }
+        
+        }
+        &:nth-child(5) > .drop-down-content {
+            height: 316px;
+
+        }
+        
+
+
+        .drop-down-content {
+            display: none;  
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+            height: 202px;
+            width: 280px;
+            top: 156%;
+            left: 0%;
+            border: 1px solid rgb(231, 227, 235);
+            border-radius: 16px;
+    
+
+            & .external-link {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                height: 48px;
+                padding: 4px 16px;
+                justify-content: center;  
+
+                & > a {
+                    color: rgb(122, 110, 170);
+                }
+
+            }
+
+            
+        }
+
+        .show {
+        display: flex;
+        
+    }
+
+}
+}   
+}
+}
+
+@media screen and (min-width: 852px) {
+    .navbar-icons .mkt-value {
+        display: inline-flex;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .nav .logo-mobile {
+        width: 160px;
+        height: 24.85px;
+    }
+}
+
+
