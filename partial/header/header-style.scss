@@ -2,7 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
 }
+
+
+
+@mixin blue-button {
+    display: flex;
+    width: 96.26px;
+    height: 32px;
+    padding: 0 16px;
+    background-color: rgb(31, 199, 212);
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    font-weight: 600;
+    font-size: var(--normal);;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    line-height: 32px;
+       
+}
+
+%blue-button {
+    @include blue-button;
+}
+
 
 /* HEADER ON TOP */
 .nav {
@@ -14,19 +40,35 @@
     border-bottom: 1px solid rgb(231, 227, 235);
     color: rgb(122, 110, 170);
     font-size: var(--normal);
+    padding: 0 16px;
 
     .navbar-icons {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        gap: 15px;
+        position: relative;
 
         .mkt-value {
-            margin-right: 15px;
+            margin-right: 25px;
+            
+            & > a {
+                text-decoration: none;
+            }
+    
         }
     
         .mkt-value > a > img {
             width: 24px;
             height: 24px;
+            transition: transform 0.2s;
+
+            &:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2); 
+               
+            }
 
         }
 
@@ -36,10 +78,13 @@
            line-height: 1.5;
            font-size: var(--normal);
            vertical-align: middle;
+           margin-left: 8px;
+           margin-right: 8px;
+          
         }
     }
 
-    .logo-desktop, .navbarmenu, .mkt-value, .languages-container, .connect-wallet {
+    .logo-desktop, .navbarmenu, .mkt-value, .connect-wallet {
       display: none;
     }
     .logo-mobile {
@@ -54,6 +99,9 @@
         justify-content: space-around;
         align-items: center;
         margin-right: 16px;
+        transition: opacity 0.2s;
+        
+
     
         & button {
             border: none;
@@ -61,28 +109,59 @@
         }
 
         & .languages-btn > img {
-                display: inline-block;
+                display: inline-flex;
                 width: 24px;
                 height: 24px;
-                margin-right: 10px;
+                margin-right: 20px;
         }
-    
+        
+        .languages-container {
+            width: max-content;
+            max-height: 400px;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+            right: 44%;
+            top: 100%;
+            background-color: #ffff;
+            border-radius: 4px;
+            box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px, rgba(25, 19, 38, 0.05) 0px 1px 1px;
+            padding: 16px; 
+            overflow-y: scroll;
+
+            &:hover {
+                opacity: 1;
+            }
+        
+
+            & > button {
+                color: rgb(40, 13, 95);
+                font-weight: bold;
+                border-radius: 8px;
+                padding: 0px 8px;
+                min-height: 32px;
+                transition: 0.3s;
+
+                &:hover {
+                   color: transparentize(rgb(40, 13, 95), 0.35);
+                  
+                }
+                
+            }
+
+        }
+
+        .show-lang {
+            display: flex;
+        }
 
         & button.connect {
-            display: block;
-            width: 96.26px;
-            height: 32px;
-            padding: 0 16px;
-            background-color: rgb(31, 199, 212);
-            border-radius: 16px;
-            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-            font-weight: 600;
-            font-size: var(--normal);;
-            color: #fff;
-            cursor: pointer;
-            margin-left: 5px;
+            @extend %blue-button;
         }
 
+
+    
 
 
         &.settings-container > button > img {
@@ -91,6 +170,14 @@
             height: 24px;
          
         }
+
+        & *:hover {
+            opacity: 0.8;
+            
+           
+        }
+
+        
     }
 }
 
@@ -119,9 +206,19 @@
     bottom: 0px;
     width: 100%;
 
-    .menu-item-mobile > span {
+    .bottom-drop-label {
         display: flex;
         flex-direction: column;
+        font-size: 10px;
+    
+
+    & > img {
+        width: 20px;
+        height: 20px;
+        }
+    }   
+
+    .menu-item-mobile > span {
         font-size: 10px;
     }
 
@@ -129,13 +226,12 @@
 }
    
 /* DROP DOWN-CONTENT (ON BOTTOM - mobile first) */
-.bottom-mobile-navbar .menu-item-mobile .drop-down-content {
+.bottom-mobile-navbar .menu-item-mobile .bottom-drop-down-content {
     display: none;
 }
 
-
-/*posso usare solo :hover al momento, poi userò js*/
-.bottom-mobile-navbar .menu-item-mobile:hover .drop-down-content {
+/*hover effect*/
+.bottom-mobile-navbar .menu-item-mobile:hover .bottom-drop-down-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,6 +244,7 @@
     border: 1px solid rgb(231, 227, 235);
     width: calc(100% - 32px);
     border-radius: 16px;
+    background-color: #fff;
 
     & div {
         display: flex;
@@ -155,28 +252,30 @@
         width: 100%;
         height: 48px;
         padding: 4px 16px;
-        justify-content: center;  
+        justify-content: center; 
+         
         
         & > a {
             color: rgb(122, 110, 170);
+            text-decoration: none;
         }
     }
 
  
 }
 
-.bottom-mobile-navbar .menu-item-mobile:nth-child(3):hover .drop-down-content {
+.bottom-mobile-navbar .menu-item-mobile:nth-child(3):hover .bottom-drop-down-content {
     left: 3%;
     height: 154px;
 }
 
-.bottom-mobile-navbar .menu-item-mobile:nth-child(4):hover .drop-down-content {
+.bottom-mobile-navbar .menu-item-mobile:nth-child(4):hover .bottom-drop-down-content{
     right: 0;
     left: auto;
     height: 154px;
 }
 
-.bottom-mobile-navbar .menu-item-mobile:last-child:hover .drop-down-content {
+.bottom-mobile-navbar .menu-item-mobile:last-child:hover .bottom-drop-down-content {
     right: 0;
     left: auto;
     height: 316px;
@@ -198,8 +297,6 @@
 
 @media screen and (min-width: 576px) {
 
-   
-
     .bottom-mobile-navbar {
         display: none;
 
@@ -211,6 +308,7 @@
         .navbarmenu {
             display: flex;
             width: 300px;
+            align-items: center;
             justify-content: space-around;
             margin-right: auto;
             margin-left: 20px;
@@ -219,6 +317,18 @@
         .drop-down-menu {
             position: relative;
             display: inline-block;
+
+        .drop-label {
+            padding: 12px 16px;
+            box-sizing: border-box;
+        }
+
+        .drop-label:hover {
+            background-color: rgb(239, 244, 245);
+            border-radius: 16px;
+            cursor: pointer;
+       
+        }
        
         &:nth-child(2) > .drop-down-content {
             height: 106px;
@@ -243,9 +353,7 @@
             height: 316px;
 
         }
-        
-
-
+    
         .drop-down-content {
             display: none;  
             position: absolute;
@@ -254,10 +362,11 @@
             z-index: 1;
             height: 202px;
             width: 280px;
-            top: 156%;
+            top: 108%;
             left: 0%;
             border: 1px solid rgb(231, 227, 235);
             border-radius: 16px;
+            background-color: #fff;
     
 
             & .external-link {
@@ -276,6 +385,7 @@
 
                 & > a {
                     color: rgb(122, 110, 170);
+                    text-decoration: none;
                 }
 
             }
@@ -294,9 +404,27 @@
 }
 
 @media screen and (min-width: 852px) {
+
+    .nav .navbar-icons .icons-mobile .languages-container {
+        right: 33%;
+    }
     .navbar-icons .mkt-value {
         display: inline-flex;
     }
+
+   
+
+    .icons-mobile .connect-buttons .connect-wallet {
+        @include blue-button;
+        width: 149.16px;
+
+    }
+
+    .nav .icons-mobile button.connect {
+            display: none;
+    }
+    
+   
 }
 
 @media screen and (min-width: 968px) {
