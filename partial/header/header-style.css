@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-@charset "UTF-8";
-=======
->>>>>>> camilla/feat-header
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
-=======
   font-family: "Kanit", sans-serif;
   font-weight: 400;
 }
@@ -26,7 +20,6 @@
   cursor: pointer;
   margin-left: 20px;
   line-height: 32px;
->>>>>>> camilla/feat-header
 }
 
 /* HEADER ON TOP */
@@ -39,20 +32,12 @@
   border-bottom: 1px solid rgb(231, 227, 235);
   color: rgb(122, 110, 170);
   font-size: var(--normal);
-<<<<<<< HEAD
-=======
   padding: 0 16px;
->>>>>>> camilla/feat-header
 }
 .nav .navbar-icons {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-<<<<<<< HEAD
-}
-.nav .navbar-icons .mkt-value {
-  margin-right: 15px;
-=======
   gap: 15px;
   position: relative;
 }
@@ -61,18 +46,14 @@
 }
 .nav .navbar-icons .mkt-value > a {
   text-decoration: none;
->>>>>>> camilla/feat-header
 }
 .nav .navbar-icons .mkt-value > a > img {
   width: 24px;
   height: 24px;
-<<<<<<< HEAD
-=======
   transition: transform 0.2s;
 }
 .nav .navbar-icons .mkt-value > a > img:hover { /* IE 9 */ /* Safari 3-8 */
   transform: scale(1.2);
->>>>>>> camilla/feat-header
 }
 .nav .navbar-icons .mkt-value > a > span {
   color: rgb(122, 110, 170);
@@ -80,15 +61,10 @@
   line-height: 1.5;
   font-size: var(--normal);
   vertical-align: middle;
-<<<<<<< HEAD
-}
-.nav .logo-desktop, .nav .navbarmenu, .nav .mkt-value, .nav .languages-container, .nav .connect-wallet {
-=======
   margin-left: 8px;
   margin-right: 8px;
 }
 .nav .logo-desktop, .nav .navbarmenu, .nav .mkt-value, .nav .connect-wallet {
->>>>>>> camilla/feat-header
   display: none;
 }
 .nav .logo-mobile {
@@ -103,36 +79,13 @@
   justify-content: space-around;
   align-items: center;
   margin-right: 16px;
-<<<<<<< HEAD
-=======
   transition: opacity 0.2s;
->>>>>>> camilla/feat-header
 }
 .nav .icons-mobile button {
   border: none;
   background-color: transparent;
 }
 .nav .icons-mobile .languages-btn > img {
-<<<<<<< HEAD
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-.nav .icons-mobile button.connect {
-  display: block;
-  width: 96.26px;
-  height: 32px;
-  padding: 0 16px;
-  background-color: rgb(31, 199, 212);
-  border-radius: 16px;
-  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
-  font-weight: 600;
-  font-size: var(--normal);
-  color: #fff;
-  cursor: pointer;
-  margin-left: 5px;
-=======
   display: inline-flex;
   width: 24px;
   height: 24px;
@@ -171,19 +124,15 @@
 }
 .nav .icons-mobile .show-lang {
   display: flex;
->>>>>>> camilla/feat-header
 }
 .nav .icons-mobile.settings-container > button > img {
   display: inline-block;
   width: 24px;
   height: 24px;
 }
-<<<<<<< HEAD
-=======
 .nav .icons-mobile *:hover {
   opacity: 0.8;
 }
->>>>>>> camilla/feat-header
 
 .external-link img {
   width: 20px;
@@ -204,25 +153,11 @@
   bottom: 0px;
   width: 100%;
 }
-<<<<<<< HEAD
-.bottom-mobile-navbar .menu-item-mobile > span {
-=======
 .bottom-mobile-navbar .bottom-drop-label {
->>>>>>> camilla/feat-header
   display: flex;
   flex-direction: column;
   font-size: 10px;
 }
-<<<<<<< HEAD
-
-/* DROP DOWN-CONTENT (ON BOTTOM - mobile first) */
-.bottom-mobile-navbar .menu-item-mobile .drop-down-content {
-  display: none;
-}
-
-/*posso usare solo :hover al momento, poi userò js*/
-.bottom-mobile-navbar .menu-item-mobile:hover .drop-down-content {
-=======
 .bottom-mobile-navbar .bottom-drop-label > img {
   width: 20px;
   height: 20px;
@@ -238,7 +173,6 @@
 
 /*hover effect*/
 .bottom-mobile-navbar .menu-item-mobile:hover .bottom-drop-down-content {
->>>>>>> camilla/feat-header
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -251,14 +185,9 @@
   border: 1px solid rgb(231, 227, 235);
   width: calc(100% - 32px);
   border-radius: 16px;
-<<<<<<< HEAD
-}
-.bottom-mobile-navbar .menu-item-mobile:hover .drop-down-content div {
-=======
   background-color: #fff;
 }
 .bottom-mobile-navbar .menu-item-mobile:hover .bottom-drop-down-content div {
->>>>>>> camilla/feat-header
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -266,58 +195,34 @@
   padding: 4px 16px;
   justify-content: center;
 }
-<<<<<<< HEAD
-.bottom-mobile-navbar .menu-item-mobile:hover .drop-down-content div > a {
-  color: rgb(122, 110, 170);
-}
-
-.bottom-mobile-navbar .menu-item-mobile:nth-child(3):hover .drop-down-content {
-=======
 .bottom-mobile-navbar .menu-item-mobile:hover .bottom-drop-down-content div > a {
   color: rgb(122, 110, 170);
   text-decoration: none;
 }
 
 .bottom-mobile-navbar .menu-item-mobile:nth-child(3):hover .bottom-drop-down-content {
->>>>>>> camilla/feat-header
   left: 3%;
   height: 154px;
 }
 
-<<<<<<< HEAD
-.bottom-mobile-navbar .menu-item-mobile:nth-child(4):hover .drop-down-content {
-=======
 .bottom-mobile-navbar .menu-item-mobile:nth-child(4):hover .bottom-drop-down-content {
->>>>>>> camilla/feat-header
   right: 0;
   left: auto;
   height: 154px;
 }
 
-<<<<<<< HEAD
-.bottom-mobile-navbar .menu-item-mobile:last-child:hover .drop-down-content {
-=======
 .bottom-mobile-navbar .menu-item-mobile:last-child:hover .bottom-drop-down-content {
->>>>>>> camilla/feat-header
   right: 0;
   left: auto;
   height: 316px;
 }
-<<<<<<< HEAD
-.bottom-mobile-navbar .menu-item-mobile:last-child:hover .drop-down-content .external-link {
-=======
 .bottom-mobile-navbar .menu-item-mobile:last-child:hover .bottom-drop-down-content .external-link {
->>>>>>> camilla/feat-header
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-<<<<<<< HEAD
-.bottom-mobile-navbar .menu-item-mobile:last-child:hover .drop-down-content div:nth-child(4) {
-=======
 .bottom-mobile-navbar .menu-item-mobile:last-child:hover .bottom-drop-down-content div:nth-child(4) {
->>>>>>> camilla/feat-header
   border-top: 1px solid rgb(231, 227, 235);
   border-bottom: 1px solid rgb(231, 227, 235);
 }
@@ -332,10 +237,7 @@
   .nav .navbarmenu {
     display: flex;
     width: 300px;
-<<<<<<< HEAD
-=======
     align-items: center;
->>>>>>> camilla/feat-header
     justify-content: space-around;
     margin-right: auto;
     margin-left: 20px;
@@ -345,8 +247,6 @@
     position: relative;
     display: inline-block;
   }
-<<<<<<< HEAD
-=======
   .nav .navbarmenu .drop-down-menu .drop-label {
     padding: 12px 16px;
     box-sizing: border-box;
@@ -356,7 +256,6 @@
     border-radius: 16px;
     cursor: pointer;
   }
->>>>>>> camilla/feat-header
   .nav .navbarmenu .drop-down-menu:nth-child(2) > .drop-down-content {
     height: 106px;
   }
@@ -381,18 +280,11 @@
     z-index: 1;
     height: 202px;
     width: 280px;
-<<<<<<< HEAD
-    top: 156%;
-    left: 0%;
-    border: 1px solid rgb(231, 227, 235);
-    border-radius: 16px;
-=======
     top: 108%;
     left: 0%;
     border: 1px solid rgb(231, 227, 235);
     border-radius: 16px;
     background-color: #fff;
->>>>>>> camilla/feat-header
   }
   .nav .navbarmenu .drop-down-menu .drop-down-content .external-link {
     display: flex;
@@ -409,21 +301,13 @@
   }
   .nav .navbarmenu .drop-down-menu .drop-down-content div > a {
     color: rgb(122, 110, 170);
-<<<<<<< HEAD
-=======
     text-decoration: none;
->>>>>>> camilla/feat-header
   }
   .nav .navbarmenu .drop-down-menu .show {
     display: flex;
   }
 }
 @media screen and (min-width: 852px) {
-<<<<<<< HEAD
-  .navbar-icons .mkt-value {
-    display: inline-flex;
-  }
-=======
   .nav .navbar-icons .icons-mobile .languages-container {
     right: 33%;
   }
@@ -449,7 +333,6 @@
   .nav .icons-mobile button.connect {
     display: none;
   }
->>>>>>> camilla/feat-header
 }
 @media screen and (min-width: 968px) {
   .nav .logo-mobile {
