@@ -169,3 +169,30 @@ body {
         fill: white;
     }
 }
+
+@media screen and (min-width: 852px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-section1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .millions-in-prizes-cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+
+        .card-million.yellow {
+            transform: rotate(-2deg);
+        }
+
+        .card-million.purple {
+            transform: rotate(2deg);
+        }
+    }
+}
