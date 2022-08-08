@@ -14,33 +14,38 @@
 <div class="complete-trade-card-wrapper">
     <!--card with the graph inside-->
     <section class="card-graph-container">
-        <div class="close-btn-container"><button class="close-btn"><img src="../../svg/close-icon.svg" alt="close icon"/></button></div>
         <header>
+                <button class="close-btn hover-active-class"><img src="../../svg/close-icon.svg" alt="close icon"/></button>
             <div class="mkt-icons-container">
                 <div><img class="company-icons" src="../../svg/bnb-icon.svg" alt="yellow icon"/></div>
                 <div><img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancakeswap icon"/></div>
                 <span class="coin-comparison-title">bnb/cake</span>
-                <button><img class="arrow-img" src="../../svg/exchange-icon.svg" alt="exchange arrows"/></button>
-                <button><img src="../../svg/graph-icon.svg" alt="small graph icon"/></button>
+                <button class="hover-active-class"><img class="arrow-img company-icons" src="../../svg/exchange-icon.svg" alt="exchange arrows"/></button>
+                <button class="hover-active-class"><img src="../../svg/graph-icon.svg" alt="small graph icon"/></button>
             </div>
             <button class="expand-btn"><img src="../../svg/expand-icon.svg" alt="expand arrows"/></button>
         </header>
+
         <div class="values-content">
-        <div class="mkt-value-updates">
-            <h2 class="numeric-value">76.13</h2>
-            <h3 class="coin-comparison">bnb/cake</h3>
-            <h3 class="percentage">+0.218 (0.29%)</h3>
+            <div class="mkt-value-updates">
+                <h2 class="numeric-value">76.13</h2>
+                <h3 class="coin-comparison-title">bnb/cake</h3>
+                <h3 class="percentage">+0.218 (0.29%)</h3>
+            </div>
+            <div class="date">
+                <span>Jul 26, 2022, 11:05 AM</span>
+            </div>
+
+            <div class="timeframes">
+                <button>24H</button>
+                <button>1W</button>
+                <button>1M</button>
+                <button>1Y</button>
+            </div>
         </div>
-        <div class="date">
-            <span>Jul 26, 2022, 11:05 AM</span>
-        </div>
-        <div class="timeframes">
-            <button>24H</button>
-            <button>1W</button>
-            <button>1M</button>
-            <button>1Y</button>
-        </div>
-        </div>
+
+
+
         <div class="graphic">
             <div class="graph-data"></div>
         </div>
@@ -51,12 +56,16 @@
     <section class="trade-card-container">
         <header class="trade-header">
             <div class="trade-icons">
-                <img src="../../svg/hide-graph-icon.svg" alt="hidden graph icon"/>
+                <div class="trade-item">
+                    <button class="hover-active-class"><img src="../../svg/hide-graph-icon.svg" alt="hidden graph icon"/></button>
+                </div>
+                <div class="trade-item-2">
+                <h2>Swap</h2>
+                </div>
                 <div class="trade-icons-right">
-                    <h2>Swap</h2>
-                    <img class="company-icons" src="../../svg/settings-button.svg" alt="setting icon"/>
-                    <img class="company-icons" src="../../svg/clock.svg" alt="reload clock icon"/>
-                    <img class="company-icons" src="../../svg/loop.svg" alt="reload icon"/>
+                    <button><img class="company-icons hover-active-class" src="../../svg/settings-button.svg" alt="setting icon"/></button>
+                    <button><img class="company-icons hover-active-class" src="../../svg/clock.svg" alt="reload clock icon"/></button>
+                    <button><img class="company-icons hover-active-class" src="../../svg/loop.svg" alt="reload icon"/></button>
                 </div>
             </div>
             <h3>Trade Tokens in an instant</h3>
@@ -64,25 +73,28 @@
 
         <div class="trade-card-content">
         <div class="trade-info">
-            <button class="currency-select">
+        <div class="currency-select-container">
+            <button class="currency-select hover-active-class">
                 <img class="company-icons"src="../../svg/bnb-icon.svg" alt="bnb icon"/>
                 <span>bnb</span>
                 <img src="../../svg/down-arrow.svg" alt="select arrow"/>
             </button>
+        </div>
             <div class="currency-insert">
                 <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
                 placeholder="0.0" minlenght="1" maxlenght="79"/>
             </div>
 
-            <button class="value-conversion">
-                <img src="../../svg/down-arrow-blue.svg" alt="conversion-arrrow-icon"/>
+            <button class="value-conversion hover-active-class">
             </button>
-
-            <button class="currency-select">
+        <div class="currency-select-container">
+            <button class="currency-select hover-active-class">
                 <img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancake-swap icon"/>
                 <span>cake</span>
                 <img src="../../svg/down-arrow.svg" alt="select arrow"/>
             </button>
+            <img class="copy-btn" src="../../svg/copy.svg" alt="copy button"/>
+        </div>          
             <div class="currency-insert">
                 <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
                 placeholder="0.0" minlenght="1" maxlenght="79"/>
@@ -96,7 +108,7 @@
             </div>
 
            
-            <button class="connect-wallet">Connect Wallet</button>
+            <button class="connect-wallet hover-active-class">Connect Wallet</button>
             
         </div>
     </section>

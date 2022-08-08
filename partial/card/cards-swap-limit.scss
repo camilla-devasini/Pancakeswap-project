@@ -8,6 +8,7 @@
     font-weight: 400;
 }
 
+
 @mixin blue-button {
     width: 96.26px;
     height: 32px;
@@ -24,6 +25,13 @@
        
 }
 
+%button-active {
+    background-color: rgb(31, 199, 212);
+    color: white;
+    outline: none;
+
+}
+
 %blue-button {
     @include blue-button;
 }
@@ -32,19 +40,38 @@
     color: rgb(40, 13, 95);
     font-weight: 600;
     font-size: 16px;
+    text-transform: uppercase;
 }
 %dark-violet-span {
     @include dark-violet-span;
 }
 
+.hover-active-class {
 
-body .company-icons {
+    &:hover {
+        opacity: 0.65;
+        cursor: pointer;
+    }
+    &:active {
+        transform: translateY(1px);
+    
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+
+    & .company-icons {
         width: 24px;
         height: 24px;  
         }
 
-
-
+    }
 button {
     border: none;
     background-color: transparent;
@@ -57,32 +84,40 @@ button {
 .card-graph-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    height: 80vh;
     bottom: 0%;
     position: fixed;
-    margin-top: 36px;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #ffff;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     border: 1px solid rgb(231, 227, 235);
 
-.graph-data {
-    background-color: rgb(231, 227, 235);
-    max-width: 100%;
-    height: 350px;
-    padding: 16px;
-    margin: 15px;
-}
+    .graph-data {
+        background-color: rgb(231, 227, 235);
+        max-width: 100%;
+        height: 350px;
+        padding: 16px;
+        margin: 15px;    
+    }
 
 
-
-   .close-btn-container {
-       display: flex;
-       margin-top: 15px;
-       margin-right: 30px;
-       justify-content: flex-end;
-       
+    
+        .close-btn {
+            position: absolute;
+            top: 0%;
+            right: 5%;
+            width: 48px;
+            height: 48px;
+            outline: none;
+            
+        
+            & > img {
+                height: 20px;
+                width: 20px;
+            }
+        
     }
 
     .expand-btn {
@@ -94,32 +129,35 @@ button {
         justify-content: flex-start;
         padding: 0px 24px;
         align-items: center;
+        height: 48px;
+        margin-top: 36px;
+       
 
         & > button {
             padding-left: 8px;
+            outline: none;
+
+
         }
 
         & > button:first-of-type {
-            padding-left: 20px;
-            padding-right: 20px;
-
-         & > img {
-            width: 20px;
-            height: 21px;
-
-        }
-    }
+            padding-left: 14px;
+            padding-right: 14px;
         
-
+        }
+        
         & > button:last-of-type  {
             background-color: rgba(31, 199, 212, 0.06);
             padding: 4px 8px;
             border-radius: 6px;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            outline: none;
             
             & > img {
                 width: 20px;
                 height: 18px;
             }
+
         }
 
         & * {
@@ -129,8 +167,6 @@ button {
 
         & .coin-comparison-title {
             @extend %dark-violet-span;
-            
-          
 
         }
 
@@ -141,7 +177,7 @@ button {
     }
 
     .values-content {
-        padding: 20px 24px 0px 24px;
+        padding: 12px 24px 0px 24px;
     
 
 
@@ -175,12 +211,12 @@ button {
         font-size: 20px;
     }
     }
-
+// js: inserire funzione js per recupero data
     & .date {
         color: rgb(118, 69, 217);
         font-weight: 400;
         line-height: 1.5;
-        font-size: var(--size-note);
+        font-size: 14px;
 
     }
 
@@ -191,76 +227,87 @@ button {
         border: 1px solid rgb(233, 234, 235);
         width: 221px;
         cursor: pointer;
-        height: 34px;
-        letter-spacing: 0.03em;
-        line-height: 1;
+        height: 32px;
         justify-content: space-around;
-
-        font-size: 16px;
-        font-weight: 600;
+        
 
         & button {
             border-radius: 16px;
-            padding: 0 16px;
+            padding: 0px 16px;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(31, 199, 212);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            outline: none;
+
+            &:hover {
+                opacity: 0.65;
+                
+            }
+
+            &:focus {
+                background-color: rgb(31, 199, 212);
+                color: #ffff;
+            }
+        
+            &:active {
+                @extend %button-active;
+                transform: translateY(1px);
+        
+
+            }
 
         }
     
         & button:first-child {
             padding: 0px 16px;
-            background-color: rgb(31, 199, 212);
-            color: white;
+            @extend %button-active;
 
         }
     }
 }
 
 }
-
+/*****************************************************/
 @media screen and (min-width: 576px) {
 
     .complete-trade-card-wrapper {
         display: flex;
         justify-content: center;
-    
         position: relative;
     }
 
     .card-graph-container {
-        width: 55%;
+        width: 50%;
+        height: 516px;
         position: relative;
         margin: 10px;
+        flex-grow: 1.5;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.5); // white with transparency
+
+        .graph-data {
+            height: 279px;
+        }
         
     }
     .trade-card-container {
         margin: 10px;
-        width: 40%;
-        height: 100%;
+        width: 326px;
+        height: 516px;
         border: 1px solid rgb(231, 227, 235);
+        background-color: #fff;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
         
-    .trade-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .currency-insert > input {
-            font-size: 16px;
-            text-align: right;
-            border: none;
-            padding: 12px 16px;
-            width: 100%;
-            border-radius: 16px;
-            background-color: rgb(238, 234, 244);
-            box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
-        }
-       
-    }
-        
-
-    }
+     
 
     .trade-header {
         padding: 24px;
@@ -273,11 +320,29 @@ button {
 
         .trade-icons {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
 
-            & > img:first-of-type {
+            & .trade-item > button {
                 margin-right: auto;
+                outline: none;
+                
+            }
+
+            & .trade-item-2 {
+                width: 100%;
+                margin-left: 27%;
+                
+                & > h2 {
+                    @include dark-violet-span;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin-bottom: 0px;
+                    text-align: center;
+                
+           
+                }
+                
             }
 
         
@@ -286,18 +351,12 @@ button {
                 justify-content: space-around;
                 align-items: center;
                
-                & > img {
+                & > button {
                     margin: 3px;
+                    outline: none;
                 }
 
-            
-                & > h2 {
-                    @include dark-violet-span;
-                    font-size: 20px;
-                    text-transform: capitalize;
-                    padding-right: 40px;
-                    
-                }
+        
             }
 
 
@@ -308,23 +367,122 @@ button {
         color: rgb(122, 110, 170);
         font-size: 14px;
         text-align: center;
+        margin-top: 5px;
         }
 
     }
+}
 
 .trade-card-content {
         display: flex;
         flex-direction: column;
         padding: 16px;
         height: 412px;
+       
+        .trade-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 8px;
     
+            .currency-insert > input {
+                font-size: 16px;
+                text-align: right;
+                height: 60px;
+                border: none;
+                padding: 12px 16px;
+                width: 100%;
+                border-radius: 16px;
+                background-color: rgb(238, 234, 244);
+                box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+                outline: none;
+            }
+            
 
-    .currency-select {
+            .value-conversion {
+                border-radius: 50px;
+                background: rgb(238, 234, 244) url("../../svg/down-arrow-blue.svg") no-repeat center;
+                width: 32px;
+                height: 32px;
+                box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+                align-self: center;
+                outline: none;
+//js - check https://stackoverflow.com/questions/18032220/how-to-change-source-of-img-tag-on-hover
+                &:hover {
+                    background: rgb(31, 199, 212, 0.6) url("../../svg/switch-arrows.svg") no-repeat center;
+                    
+                }
+
+                
+
+            }
+          
+           
+        
+
+
+    .currency-select-container {
         display: flex;
         justify-content: flex-start;
         margin-bottom: 5px;
+        padding: 0 8px;
+        
+
+     
+        & .copy-btn {
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+            align-self: center;
+            cursor: pointer;
+        } 
     
+    & .currency-select {
+        outline: none;
+    
+
+
+
+    & > span {
+            @include dark-violet-span;
+            margin-left: 8px;
+        }
+
+    & > img {
+        width: 20px;
+        height: 20px;
+        
+        
     }
+    }
+
+
+  
+    }
+
+    .tolerance {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 16px 0px;;
+        
+
+
+        & > span:first-child {
+            color: rgb(118, 69, 217);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        & > span:nth-child(2) {
+            color: rgb(31, 199, 212);
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+}
+
 .connect-wallet {
     @include blue-button; 
     width: 100%;
@@ -332,8 +490,7 @@ button {
     text-align: center;
     height: 48px;
     padding: 0 24px;
-      
+    margin-top: 49px;
+  
 }
-}
-
 }
