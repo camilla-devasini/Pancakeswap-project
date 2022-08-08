@@ -29,6 +29,21 @@
     @include blue-button;
 }
 
+.hover-active-class {
+
+    &:hover {
+        opacity: 0.65;
+        cursor: pointer;
+    }
+    &:active {
+        transform: translateY(1px);
+    
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
 
 /* HEADER ON TOP */
 .nav {
@@ -130,9 +145,8 @@
             padding: 16px; 
             overflow-y: scroll;
 
-            &:hover {
-                opacity: 1;
-            }
+    
+        
         
 
             & > button {
@@ -143,10 +157,7 @@
                 min-height: 32px;
                 transition: 0.3s;
 
-                &:hover {
-                   color: transparentize(rgb(40, 13, 95), 0.35);
-                  
-                }
+        
                 
             }
 
@@ -171,11 +182,8 @@
          
         }
 
-        & *:hover {
-            opacity: 0.8;
-            
-           
-        }
+       
+        
 
         
     }

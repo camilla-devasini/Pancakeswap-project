@@ -50,6 +50,17 @@
   line-height: 32px;
 }
 
+.hover-active-class:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+.hover-active-class:active {
+  transform: translateY(1px);
+}
+.hover-active-class:focus {
+  outline: none;
+}
+
 /* HEADER ON TOP */
 .nav {
   display: flex;
@@ -136,9 +147,6 @@
   padding: 16px;
   overflow-y: scroll;
 }
-.nav .icons-mobile .languages-container:hover {
-  opacity: 1;
-}
 .nav .icons-mobile .languages-container > button {
   color: rgb(40, 13, 95);
   font-weight: bold;
@@ -147,9 +155,6 @@
   min-height: 32px;
   transition: 0.3s;
 }
-.nav .icons-mobile .languages-container > button:hover {
-  color: rgba(40, 13, 95, 0.65);
-}
 .nav .icons-mobile .show-lang {
   display: flex;
 }
@@ -157,9 +162,6 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-}
-.nav .icons-mobile *:hover {
-  opacity: 0.8;
 }
 
 .external-link img {
