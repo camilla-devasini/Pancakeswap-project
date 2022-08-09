@@ -12,18 +12,24 @@
 <body>
 <main>
 <div class="complete-trade-card-wrapper">
-    <!--card with the graph inside-->
+    <!--CARD WITH GRAPH INSIDE -->
     <section class="card-graph-container">
         <header>
-                <button class="close-btn hover-active-class"><img src="../../svg/close-icon.svg" alt="close icon"/></button>
+                <button class="close-btn hover-active-class">
+                    <picture>
+                        <source class="expand-btn" media="(min-width: 576px)" srcset="../../svg/expand-icon.svg" alt="edxpand arrows"/>
+                        <img src="../../svg/close-icon.svg" alt="close icon"/>
+                    </picture>
+                   </button>
             <div class="mkt-icons-container">
                 <div><img class="company-icons" src="../../svg/bnb-icon.svg" alt="yellow icon"/></div>
                 <div><img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancakeswap icon"/></div>
                 <span class="coin-comparison-title">bnb/cake</span>
                 <button class="hover-active-class"><img class="arrow-img company-icons" src="../../svg/exchange-icon.svg" alt="exchange arrows"/></button>
                 <button class="hover-active-class"><img src="../../svg/graph-icon.svg" alt="small graph icon"/></button>
+                
             </div>
-            <button class="expand-btn"><img src="../../svg/expand-icon.svg" alt="expand arrows"/></button>
+          
         </header>
 
         <div class="values-content">

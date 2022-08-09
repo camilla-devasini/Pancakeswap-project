@@ -464,12 +464,9 @@ button {
   height: 48px;
   outline: none;
 }
-.card-graph-container .close-btn > img {
+.card-graph-container .close-btn picture > img {
   height: 20px;
   width: 20px;
-}
-.card-graph-container .expand-btn {
-  display: none;
 }
 .card-graph-container .mkt-icons-container {
   display: flex;
