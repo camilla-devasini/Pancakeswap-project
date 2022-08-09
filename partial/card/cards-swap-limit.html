@@ -10,117 +10,130 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<main>
-<div class="complete-trade-card-wrapper">
-    <!--CARD WITH GRAPH INSIDE -->
-    <section class="card-graph-container">
-        <header>
-                <button class="close-btn hover-active-class">
-                    <picture>
-                        <source class="expand-btn" media="(min-width: 576px)" srcset="../../svg/expand-icon.svg" alt="edxpand arrows"/>
-                        <img src="../../svg/close-icon.svg" alt="close icon"/>
-                    </picture>
-                   </button>
-            <div class="mkt-icons-container">
-                <div><img class="company-icons" src="../../svg/bnb-icon.svg" alt="yellow icon"/></div>
-                <div><img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancakeswap icon"/></div>
-                <span class="coin-comparison-title">bnb/cake</span>
-                <button class="hover-active-class"><img class="arrow-img company-icons" src="../../svg/exchange-icon.svg" alt="exchange arrows"/></button>
-                <button class="hover-active-class"><img src="../../svg/graph-icon.svg" alt="small graph icon"/></button>
-                
-            </div>
-          
-        </header>
+    <main>
+        <div class="complete-trade-card-wrapper">
+            <!--CARD WITH GRAPH INSIDE -->
+            <section class="card-graph-container">
+                <header>
+                    <button class="close-btn hover-active-class">
+                        <picture>
+                            <source class="expand-btn" media="(min-width: 576px)" srcset="../../svg/expand-icon.svg" alt="edxpand arrows"/>
+                            <img src="../../svg/close-icon.svg" alt="close icon"/>
+                        </picture>
+                    </button>
 
-        <div class="values-content">
-            <div class="mkt-value-updates">
-                <h2 class="numeric-value">76.13</h2>
-                <h3 class="coin-comparison-title">bnb/cake</h3>
-                <h3 class="percentage">+0.218 (0.29%)</h3>
-            </div>
-            <div class="date">
-                <span>Jul 26, 2022, 11:05 AM</span>
-            </div>
+                    <div class="mkt-icons-container">
+                        <div>
+                            <img class="company-icons" src="../../svg/bnb-icon.svg" alt="yellow icon"/>
+                        </div>
+                        <div>
+                            <img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancakeswap icon"/>
+                        </div>
+                        <span class="coin-comparison-title">bnb/cake</span>
+                        <button class="hover-active-class">
+                            <img class="arrow-img company-icons" src="../../svg/exchange-icon.svg" alt="exchange arrows"/>
+                        </button>
+                        <button class="hover-active-class">
+                            <img src="../../svg/graph-icon.svg" alt="small graph icon"/>
+                        </button>
+                    </div>
+                </header>
 
-            <div class="timeframes">
-                <button>24H</button>
-                <button>1W</button>
-                <button>1M</button>
-                <button>1Y</button>
-            </div>
-        </div>
+                <div class="values-content">
+                    <div class="mkt-value-updates">
+                    <h2 class="numeric-value">76.13</h2>
+                    <h3 class="coin-comparison-title">bnb/cake</h3>
+                    <h3 class="percentage">+0.218 (0.29%)</h3>
+                </div>
+
+                <div class="date">
+                    <span>Jul 26, 2022, 11:05 AM</span> <!--da modificare con js-->
+                </div>
+
+                <div class="timeframes">
+                    <button>24H</button>
+                    <button>1W</button>
+                    <button>1M</button>
+                    <button>1Y</button>
+                </div>
+
+                <div class="graphic">
+                    <div class="graph-data"></div>
+                </div>
+            </section>
 
 
-
-        <div class="graphic">
-            <div class="graph-data"></div>
-        </div>
-    </section>
     
-    <!-- CARD SWAP/LIMIT-->
-   
-    <section class="trade-card-container">
-        <header class="trade-header">
-            <div class="trade-icons">
-                <div class="trade-item">
-                    <button class="hover-active-class"><img src="../../svg/hide-graph-icon.svg" alt="hidden graph icon"/></button>
-                </div>
-                <div class="trade-item-2">
-                <h2>Swap</h2>
-                </div>
-                <div class="trade-icons-right">
-                    <button><img class="company-icons hover-active-class" src="../../svg/settings-button.svg" alt="setting icon"/></button>
-                    <button><img class="company-icons hover-active-class" src="../../svg/clock.svg" alt="reload clock icon"/></button>
-                    <button><img class="company-icons hover-active-class" src="../../svg/loop.svg" alt="reload icon"/></button>
-                </div>
-            </div>
-            <h3>Trade Tokens in an instant</h3>
-        </header>
+            <!-- CARD SWAP/LIMIT-->
+            <section class="trade-card-container">
+                <header class="trade-header">
+                    <div class="trade-icons">
+                        <div class="trade-item">
+                            <button class="hover-active-class">
+                                <img src="../../svg/hide-graph-icon.svg" alt="hidden graph icon"/>
+                            </button>
+                        </div>
 
-        <div class="trade-card-content">
-        <div class="trade-info">
-        <div class="currency-select-container">
-            <button class="currency-select hover-active-class">
-                <img class="company-icons"src="../../svg/bnb-icon.svg" alt="bnb icon"/>
-                <span>bnb</span>
-                <img src="../../svg/down-arrow.svg" alt="select arrow"/>
-            </button>
-        </div>
-            <div class="currency-insert">
-                <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
-                placeholder="0.0" minlenght="1" maxlenght="79"/>
-            </div>
+                        <div class="trade-item-2">
+                            <h2>Swap</h2>
+                        </div>
+                        <div class="trade-icons-right">
+                            <button>
+                                <img class="company-icons hover-active-class" src="../../svg/settings-button.svg" alt="setting icon"/>
+                            </button>
+                            <button>
+                                <img class="company-icons hover-active-class" src="../../svg/clock.svg" alt="reload clock icon"/>
+                            </button>
+                            <button>
+                                <img class="company-icons hover-active-class" src="../../svg/loop.svg" alt="reload icon"/>
+                            </button>
+                        </div>
+                    </div>
+                    <h3>Trade Tokens in an instant</h3>
+                </header>
 
-            <button class="value-conversion hover-active-class">
-            </button>
-        <div class="currency-select-container">
-            <button class="currency-select hover-active-class">
-                <img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancake-swap icon"/>
-                <span>cake</span>
-                <img src="../../svg/down-arrow.svg" alt="select arrow"/>
-            </button>
-            <img class="copy-btn" src="../../svg/copy.svg" alt="copy button"/>
-        </div>          
-            <div class="currency-insert">
-                <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
-                placeholder="0.0" minlenght="1" maxlenght="79"/>
-            </div>
-            <div class="tolerance">
-                <span>Slipping tolerance</span>
-                <span>0.5%</span>
-            </div>
+                <div class="trade-card-content">
+                    <div class="trade-info">
+                        <div class="currency-select-container">
+                            <button class="currency-select hover-active-class">
+                                <img class="company-icons"src="../../svg/bnb-icon.svg" alt="bnb icon"/>
+                                <span>bnb</span>
+                                <img src="../../svg/down-arrow.svg" alt="select arrow"/>
+                            </button>
+                        </div>
+                    
+                        <div class="currency-insert">
+                            <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
+                            placeholder="0.0" minlenght="1" maxlenght="79"/>
+                        </div>
 
+                        <button class="value-conversion hover-active-class"></button>
 
-            </div>
-
-           
-            <button class="connect-wallet hover-active-class">Connect Wallet</button>
+                        <div class="currency-select-container">
+                            <button class="currency-select hover-active-class">
+                                <img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancake-swap icon"/>
+                                <span>cake</span>
+                                <img src="../../svg/down-arrow.svg" alt="select arrow"/>
+                            </button>
+                            <img class="copy-btn" src="../../svg/copy.svg" alt="copy button"/>
+                        </div>          
             
+                        <div class="currency-insert">
+                            <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
+                            placeholder="0.0" minlenght="1" maxlenght="79"/>
+                        </div>
+                        
+                        <div class="tolerance">
+                            <span>Slipping tolerance</span>
+                            <span>0.5%</span>
+                        </div>
+                    </div>
+                    <button class="connect-wallet hover-active-class">Connect Wallet</button>
+            
+                </div>
+            </section>
         </div>
-    </section>
-</div>
-</main>
-
-
+    </main>
 </body>
+
 </html>
