@@ -6,7 +6,7 @@
   font-weight: 400;
 }
 
-.card-graph-container .values-content .timeframes button:first-child, .card-graph-container .values-content .timeframes button:active {
+.card-graph-container .timeframes button:first-child, .card-graph-container .timeframes button:active {
   background-color: rgb(31, 199, 212);
   color: white;
   outline: none;
@@ -138,13 +138,13 @@ button {
   color: rgb(49, 208, 170);
   font-size: 20px;
 }
-.card-graph-container .values-content .date {
+.card-graph-container .date {
   color: rgb(118, 69, 217);
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
 }
-.card-graph-container .values-content .timeframes {
+.card-graph-container .timeframes {
   background-color: rgb(239, 244, 245);
   border-radius: 16px;
   display: flex;
@@ -154,7 +154,7 @@ button {
   height: 32px;
   justify-content: space-around;
 }
-.card-graph-container .values-content .timeframes button {
+.card-graph-container .timeframes button {
   border-radius: 16px;
   padding: 0px 16px;
   letter-spacing: 0.03em;
@@ -167,21 +167,20 @@ button {
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   outline: none;
 }
-.card-graph-container .values-content .timeframes button:hover {
+.card-graph-container .timeframes button:hover {
   opacity: 0.65;
 }
-.card-graph-container .values-content .timeframes button:focus {
+.card-graph-container .timeframes button:focus {
   background-color: rgb(31, 199, 212);
   color: white;
 }
-.card-graph-container .values-content .timeframes button:active {
+.card-graph-container .timeframes button:active {
   transform: translateY(1px);
 }
-.card-graph-container .values-content .timeframes button:first-child {
+.card-graph-container .timeframes button:first-child {
   padding: 0px 16px;
 }
 
-/*****************************************************/
 @media screen and (min-width: 576px) {
   .complete-trade-card-wrapper {
     display: flex;
@@ -257,19 +256,19 @@ button {
     text-align: center;
     margin-top: 5px;
   }
-  .trade-card-content {
+  .trade-card-container .trade-card-content {
     display: flex;
     flex-direction: column;
     padding: 16px;
     height: 412px;
   }
-  .trade-card-content .trade-info {
+  .trade-card-container .trade-card-content .trade-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 8px;
   }
-  .trade-card-content .trade-info .currency-insert > input {
+  .trade-card-container .trade-card-content .trade-info .currency-insert > input {
     font-size: 16px;
     text-align: right;
     height: 60px;
@@ -281,7 +280,7 @@ button {
     box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
     outline: none;
   }
-  .trade-card-content .trade-info .value-conversion {
+  .trade-card-container .trade-card-content .trade-info .value-conversion {
     border-radius: 50px;
     background: rgb(238, 234, 244) url("../../svg/down-arrow-blue.svg") no-repeat center;
     width: 32px;
@@ -290,52 +289,52 @@ button {
     align-self: center;
     outline: none;
   }
-  .trade-card-content .trade-info .value-conversion:hover {
+  .trade-card-container .trade-card-content .trade-info .value-conversion:hover {
     background: rgba(31, 199, 212, 0.6) url("../../svg/switch-arrows.svg") no-repeat center;
   }
-  .trade-card-content .trade-info .currency-select-container {
+  .trade-card-container .trade-card-content .trade-info .currency-select-container {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 5px;
     padding: 0 8px;
   }
-  .trade-card-content .trade-info .currency-select-container .copy-btn {
+  .trade-card-container .trade-card-content .trade-info .currency-select-container .copy-btn {
     width: 16px;
     height: 16px;
     margin-left: 10px;
     align-self: center;
     cursor: pointer;
   }
-  .trade-card-content .trade-info .currency-select-container .currency-select {
+  .trade-card-container .trade-card-content .trade-info .currency-select-container .currency-select {
     outline: none;
   }
-  .trade-card-content .trade-info .currency-select-container .currency-select > span {
+  .trade-card-container .trade-card-content .trade-info .currency-select-container .currency-select > span {
     color: rgb(40, 13, 95);
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
     margin-left: 8px;
   }
-  .trade-card-content .trade-info .currency-select-container .currency-select > img {
+  .trade-card-container .trade-card-content .trade-info .currency-select-container .currency-select > img {
     width: 20px;
     height: 20px;
   }
-  .trade-card-content .trade-info .tolerance {
+  .trade-card-container .trade-card-content .trade-info .tolerance {
     display: flex;
     justify-content: space-between;
     padding: 10px 16px 0px;
   }
-  .trade-card-content .trade-info .tolerance > span:first-child {
+  .trade-card-container .trade-card-content .trade-info .tolerance > span:first-child {
     color: rgb(118, 69, 217);
     font-size: 12px;
     font-weight: 600;
   }
-  .trade-card-content .trade-info .tolerance > span:nth-child(2) {
+  .trade-card-container .trade-card-content .trade-info .tolerance > span:nth-child(2) {
     color: rgb(31, 199, 212);
     font-size: 16px;
     font-weight: 600;
   }
-  .connect-wallet {
+  .trade-card-container .connect-wallet {
     width: 96.26px;
     height: 32px;
     padding: 0 16px;
