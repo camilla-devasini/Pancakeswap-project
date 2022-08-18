@@ -1,5 +1,5 @@
 // in trade.subpage.html è stato importato il foglio di stile relativo alle card: "card/cards-swap-limmit.css"
-
+@import "../common-submenu/submenu.scss";
 //stile del resto della pagina
 
 .complete-trade-card-wrapper {
@@ -9,61 +9,7 @@
 }
 
 //STILE SUBMENU COMUNE
-.trade-navbar-container {
-    width: 100%;
-}
 
-.trade-navbar {
-    display: flex;
-    justify-content: flex-start;
-    height: 42px;
-    min-width: 300px;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-
-
-    .trade-item {
-        margin-right: 20px;
-//CLASSE DA AGGIUNGERE CON JS ONCLICK SUI PULSANTI DEL SUBMENU
-        .link-highlighted {
-            font-weight: 600;
-            color: rgb(118, 69, 217);
-            position: relative;
-
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                height: 4px;
-                width: 100%;
-                background-color: rgb(31, 199, 212);
-                border-radius: 2px 2px 0px 0px;
-            
-            }
-        }
-    } 
-
-    .trade-item:hover {
-        background-color: rgb(239, 244, 245);
-    }
-
-    & div > a {
-        display: flex;
-        color: rgb(122, 110, 170);
-        font-weight: 400;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        opacity: 1;
-        padding: 10px 10px;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
 
 .trade-page-footer {
     display: flex;

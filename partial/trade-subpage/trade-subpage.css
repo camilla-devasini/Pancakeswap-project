@@ -1,9 +1,3 @@
-.complete-trade-card-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .trade-navbar-container {
   width: 100%;
 }
@@ -49,6 +43,12 @@
 }
 .trade-navbar div > a:hover {
   text-decoration: none;
+}
+
+.complete-trade-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .trade-page-footer {
