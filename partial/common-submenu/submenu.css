@@ -6,7 +6,9 @@
   display: flex;
   justify-content: flex-start;
   height: 42px;
-  min-width: 300px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   align-items: center;
   background-color: rgb(255, 255, 255);
 }
