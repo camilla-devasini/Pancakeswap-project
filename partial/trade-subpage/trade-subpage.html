@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cards-swap-limit.css"/>
+    <title>Limit Orders | PancakeSwap - $4.061</title>
+    <link rel="shortcut icon" href="../../svg/light-blue-logo.svg" type="imag/x-icon"/>
+    <link rel="stylesheet" href="../card/cards-swap-limit.css"/>
+    <link rel="stylesheet" href="trade-subpage.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
 </head>
-<body body-trade-page>
-    <main>
+<body class="body-trade-page">
+   
+        <!--SUBMENU COMUNE-->
+        <div class="trade-navbar-container">
+            <nav class="trade-navbar">
+                <div class="trade-item">
+                    <div class="trade-link"><a class="link-highlighted" href="/swap">Swap</a></div>
+                </div>
+                <div class="trade-item">
+                    <div class="trade-link"><a href="/limit">Limit</a></div>
+                </div>
+                <div class="trade-item">
+                    <div class="trade-link"><a href="/liquidity">Liquidity</a></div>
+                </div>
+                <div class="trade-item">
+                    <div class="trade-link"><a href="/perpetual">Perpetual</a></div>
+                </div>
+            </nav>
+        </div>
+
         <div class="complete-trade-card-wrapper">
             <!--CARD WITH GRAPH INSIDE -->
             <section class="card-graph-container">
@@ -64,7 +84,7 @@
 
 
     
-            <!-- CARD SWAP/LIMIT-->
+            <!-- CARD SWAP-->
             <section class="trade-card-container">
                 <header class="trade-header">
                     <div class="trade-icons">
@@ -74,7 +94,7 @@
                             </button>
                         </div>
 
-                        <div class="trade-item-2">
+                        <div class="trade-item-2 trade-item-2-swap">
                             <h2>Swap</h2>
                         </div>
                         <div class="trade-icons-right">
@@ -132,8 +152,101 @@
             
                 </div>
             </section>
+
+            <!-- CARD LIMIT-->
+            <section class="trade-card-container show-card">
+                <header class="trade-header">
+                    <div class="trade-icons">
+                        <div class="trade-item">
+                            <button class="hover-active-class">
+                                <img src="../../svg/hide-graph-icon.svg" alt="hidden graph icon"/>
+                            </button>
+                        </div>
+
+                        <div class="trade-item-2">
+                            <h2>Limit</h2>
+                        </div>
+
+                        <div class="trade-icons-right">
+                            
+                            <button>
+                                <img class="company-icons hover-active-class" src="../../svg/clock.svg" alt="reload clock icon"/>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <h3>Place a limit order to trade at a set price</h3>
+                </header>
+
+                <div class="trade-card-content">
+                    <div class="trade-info">
+                        <div class="currency-select-container">
+                            <button class="currency-select hover-active-class">
+                                <img class="company-icons"src="../../svg/bnb-icon.svg" alt="bnb icon"/>
+                                <span>bnb</span>
+                                <img src="../../svg/down-arrow.svg" alt="select arrow"/>
+                            </button>
+                        </div>
+                    
+                        <div class="currency-insert">
+                            <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
+                            placeholder="0.0" minlenght="1" maxlenght="79"/>
+                        </div>
+
+                        <button class="value-conversion hover-active-class"></button>
+
+                        <div class="currency-select-container">
+                            <button class="currency-select hover-active-class">
+                                <img class="company-icons" src="../../svg/light-blue-logo.svg" alt="pancake-swap icon"/>
+                                <span>cake</span>
+                                <img src="../../svg/down-arrow.svg" alt="select arrow"/>
+                            </button>
+                            <img class="copy-btn" src="../../svg/copy.svg" alt="copy button"/>
+                        </div>          
+            
+                        <div class="currency-insert">
+                            <input type="text" pattern="^[0-9]*[.,]?[0-9]*$" name="currency-value" inputmode="decimal"
+                            placeholder="0.0" minlenght="1" maxlenght="79"/>
+                        </div>
+                        
+                        <div class="tolerance">
+                            <span>Slipping tolerance</span>
+                            <span>0.5%</span>
+                        </div>
+                    </div>
+                    <button class="connect-wallet hover-active-class">Connect Wallet</button>
+            
+                </div>
+            </section>
+
+            <!--FOOTER WITH BUTTON AND HELP BUNNY-->
+            <section class="trade-page-footer">
+
+                <div class="version-conversion">
+                    <div class="version-button">
+                        <button class="v2-link">V2</button>
+                        <a class="v1-link" href="#">V1 (old)</a>
+                    </div>
+
+                    <div class="conversion-link">
+                        <a href="#">Convert ERC-20 to BEP-20</a>
+                        <img src="../../svg/go-to.svg"/>
+                    </div>
+                </div>
+
+                <div class="trade-help-box">
+                    <div class="trade-bubble-container">
+                        <a href="#">Need help?</a>
+                        <img src="../../svg/bubble-tail.svg"/>
+                    </div>
+                    <div class="trade-help-bunny">
+                        <img src="../../assets/images/subpages-images/help-bunny.png" alt="pancakeswap bunny cooking pancakes"/>
+                    </div>
+                </div>
+            </section>
+
         </div>
-    </main>
+   
 </body>
 
 </html>
