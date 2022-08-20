@@ -399,6 +399,11 @@ button {
   padding: 0px 16px;
 }
 
+@media screen and (min-width: 852px) {
+  .trade-navbar {
+    justify-content: center;
+  }
+}
 .complete-trade-card-wrapper {
   display: flex;
   flex-direction: column;
