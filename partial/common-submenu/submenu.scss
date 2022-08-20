@@ -1,6 +1,9 @@
+// HTML DI RIFERIMENT DEL MENU COMUNE SI TROVA IN ../TRADE-SUBPAGE/TRADE.SUBPAGE.HTML
+
 .trade-navbar-container {
     width: 100%;
 }
+
 
 .trade-navbar {
     display: flex;
@@ -14,31 +17,15 @@
     .trade-item {
         margin-right: 20px;
 //CLASSE DA AGGIUNGERE CON JS ONCLICK SUI PULSANTI DEL SUBMENU
-        .link-highlighted {
-            font-weight: 600;
-            color: rgb(118, 69, 217);
-            position: relative;
 
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                height: 4px;
-                width: 100%;
-                background-color: rgb(31, 199, 212);
-                border-radius: 2px 2px 0px 0px;
-            
-            }
-        }
     } 
 
     .trade-item:hover {
         background-color: rgb(239, 244, 245);
     }
+    
 
-    & div > a {
+    & .trade-link {
         display: flex;
         color: rgb(122, 110, 170);
         font-weight: 400;
@@ -51,6 +38,32 @@
         &:hover {
             text-decoration: none;
         }
+        
+    }
+    .link-highlighted {
+        font-weight: 600;
+        color: rgb(118, 69, 217);
+        position: relative;
+    
+    
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 4px;
+            width: 100%;
+            background-color: rgb(31, 199, 212);
+            border-radius: 2px 2px 0px 0px;
+        
+        }
+    }
+}
+
+
+@media screen and (min-width: 852px) {
+    .trade-navbar {
+        justify-content: center;
     }
 }
 
