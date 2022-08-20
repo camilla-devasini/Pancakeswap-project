@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limit Orders | PancakeSwap - $4.061</title>
     <link rel="shortcut icon" href="../../svg/light-blue-logo.svg" type="imag/x-icon"/>
-    <link rel="stylesheet" href="../card/cards-swap-limit.css"/>
     <link rel="stylesheet" href="trade-subpage.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
@@ -17,16 +16,17 @@
         <div class="trade-navbar-container">
             <nav class="trade-navbar">
                 <div class="trade-item">
-                    <div class="trade-link"><a class="link-highlighted" href="/swap">Swap</a></div>
+                    <div class="trade-link link-highlighted">Swap</div>
                 </div>
                 <div class="trade-item">
-                    <div class="trade-link"><a href="/limit">Limit</a></div>
+                    <!-- ; this.onclick=null; PER FAR FUNZIONARE ONCLICK SOLO UNA VOLTA-->
+                    <div onclick="toggleTradeCards(); this.onclick=null" class="trade-link">Limit</div>
                 </div>
                 <div class="trade-item">
-                    <div class="trade-link"><a href="/liquidity">Liquidity</a></div>
+                    <div class="trade-link">Liquidity</div>
                 </div>
                 <div class="trade-item">
-                    <div class="trade-link"><a href="/perpetual">Perpetual</a></div>
+                    <div class="trade-link">Perpetual</div>
                 </div>
             </nav>
         </div>
@@ -85,7 +85,7 @@
 
     
             <!-- CARD SWAP-->
-            <section class="trade-card-container">
+            <section id="trade-card-container-swap">
                 <header class="trade-header">
                     <div class="trade-icons">
                         <div class="trade-item">
@@ -153,8 +153,8 @@
                 </div>
             </section>
 
-            <!-- CARD LIMIT-->
-            <section class="trade-card-container show-card">
+            <!-- CARD LIMIT INIZIALMENTE NASCOSTA-->
+            <section id="trade-card-container-limit">
                 <header class="trade-header">
                     <div class="trade-icons">
                         <div class="trade-item">
@@ -246,7 +246,6 @@
             </section>
 
         </div>
-   
+<script src="../../logic/trade-cards-switch.js"></script>  
 </body>
-
 </html>

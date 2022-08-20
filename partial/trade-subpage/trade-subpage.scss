@@ -1,14 +1,22 @@
-// in trade.subpage.html è stato importato il foglio di stile relativo alle card: "card/cards-swap-limmit.css"
 @import "../common-submenu/submenu.scss";
+@import "../card/cards-swap-limit.scss";
 
 .complete-trade-card-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+     
 }
 
-//STILE SUBMENU COMUNE
+#trade-card-container-limit {
+    @extend %style-trade-card;
+    display: none;
+}
 
+
+.show-card {
+    display: none;
+}
 
 .trade-page-footer {
     display: flex;

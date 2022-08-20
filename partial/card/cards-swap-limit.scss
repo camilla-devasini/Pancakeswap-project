@@ -23,11 +23,8 @@
 .complete-trade-card-wrapper {
     padding: 24px 24px 0px;
 
-//CLASSE DA AGGIUNGERE/TOGLIERE CON JS ONCLICK
-    .show-card {
-        display: none;
-    }
 }
+
 
 
 
@@ -88,7 +85,7 @@ button {
     background-color: transparent;
 }
 
-.trade-card-container {
+%style-trade-card {
     width: 326px;
     height: 516px;
     border: 1px solid rgb(231, 227, 235);
@@ -197,9 +194,6 @@ button {
             }
       
        
-    
-
-
             .currency-select-container {
                 display: flex;
                 justify-content: flex-start;
@@ -261,6 +255,13 @@ button {
         padding: 0 24px;
         margin-top: 49px;
     }       
+}
+
+
+
+#trade-card-container-swap {
+    @extend %style-trade-card;
+    display: flex;
 }
 
 .card-graph-container {
@@ -425,6 +426,8 @@ button {
         }
     }
 }
+
+
 
 
 

@@ -21,9 +21,6 @@
 .complete-trade-card-wrapper {
   padding: 24px 24px 0px;
 }
-.complete-trade-card-wrapper .show-card {
-  display: none;
-}
 
 .card-graph-container .timeframes button:first-child, .card-graph-container .timeframes button:active {
   background-color: rgb(31, 199, 212);
@@ -54,7 +51,7 @@ button {
   background-color: transparent;
 }
 
-.trade-card-container {
+#trade-card-container-swap {
   width: 326px;
   height: 516px;
   border: 1px solid rgb(231, 227, 235);
@@ -65,26 +62,26 @@ button {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
 }
-.trade-card-container .trade-header {
+#trade-card-container-swap .trade-header {
   padding: 24px;
   border-bottom: 1px solid rgb(231, 227, 235);
   display: flex;
   flex-direction: column;
   height: 20%;
 }
-.trade-card-container .trade-header .trade-icons {
+#trade-card-container-swap .trade-header .trade-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.trade-card-container .trade-header .trade-icons .trade-item > button {
+#trade-card-container-swap .trade-header .trade-icons .trade-item > button {
   margin-right: auto;
   outline: none;
 }
-.trade-card-container .trade-header .trade-icons .trade-item-2 {
+#trade-card-container-swap .trade-header .trade-icons .trade-item-2 {
   width: 100%;
 }
-.trade-card-container .trade-header .trade-icons .trade-item-2 > h2 {
+#trade-card-container-swap .trade-header .trade-icons .trade-item-2 > h2 {
   color: rgb(40, 13, 95);
   font-weight: 600;
   font-size: 16px;
@@ -94,37 +91,37 @@ button {
   margin-bottom: 0px;
   text-align: center;
 }
-.trade-card-container .trade-header .trade-icons .trade-item-2-swap {
+#trade-card-container-swap .trade-header .trade-icons .trade-item-2-swap {
   padding-left: 75px;
 }
-.trade-card-container .trade-header .trade-icons .trade-icons-right {
+#trade-card-container-swap .trade-header .trade-icons .trade-icons-right {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.trade-card-container .trade-header .trade-icons .trade-icons-right > button {
+#trade-card-container-swap .trade-header .trade-icons .trade-icons-right > button {
   margin: 3px;
   outline: none;
 }
-.trade-card-container .trade-header > h3 {
+#trade-card-container-swap .trade-header > h3 {
   color: rgb(122, 110, 170);
   font-size: 14px;
   text-align: center;
   margin-top: 5px;
 }
-.trade-card-container .trade-card-content {
+#trade-card-container-swap .trade-card-content {
   display: flex;
   flex-direction: column;
   padding: 16px;
   height: 412px;
 }
-.trade-card-container .trade-card-content .trade-info {
+#trade-card-container-swap .trade-card-content .trade-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   row-gap: 8px;
 }
-.trade-card-container .trade-card-content .trade-info .currency-insert > input {
+#trade-card-container-swap .trade-card-content .trade-info .currency-insert > input {
   font-size: 16px;
   text-align: right;
   height: 60px;
@@ -136,7 +133,7 @@ button {
   box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
   outline: none;
 }
-.trade-card-container .trade-card-content .trade-info .value-conversion {
+#trade-card-container-swap .trade-card-content .trade-info .value-conversion {
   border-radius: 50px;
   background: rgb(238, 234, 244) url("../../svg/down-arrow-blue.svg") no-repeat center;
   width: 32px;
@@ -145,52 +142,52 @@ button {
   align-self: center;
   outline: none;
 }
-.trade-card-container .trade-card-content .trade-info .value-conversion:hover {
+#trade-card-container-swap .trade-card-content .trade-info .value-conversion:hover {
   background: rgba(31, 199, 212, 0.6) url("../../svg/switch-arrows.svg") no-repeat center;
 }
-.trade-card-container .trade-card-content .trade-info .currency-select-container {
+#trade-card-container-swap .trade-card-content .trade-info .currency-select-container {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 5px;
   padding: 0 8px;
 }
-.trade-card-container .trade-card-content .trade-info .currency-select-container .copy-btn {
+#trade-card-container-swap .trade-card-content .trade-info .currency-select-container .copy-btn {
   width: 16px;
   height: 16px;
   margin-left: 10px;
   align-self: center;
   cursor: pointer;
 }
-.trade-card-container .trade-card-content .trade-info .currency-select-container .currency-select {
+#trade-card-container-swap .trade-card-content .trade-info .currency-select-container .currency-select {
   outline: none;
 }
-.trade-card-container .trade-card-content .trade-info .currency-select-container .currency-select > span {
+#trade-card-container-swap .trade-card-content .trade-info .currency-select-container .currency-select > span {
   color: rgb(40, 13, 95);
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
   margin-left: 8px;
 }
-.trade-card-container .trade-card-content .trade-info .currency-select-container .currency-select > img {
+#trade-card-container-swap .trade-card-content .trade-info .currency-select-container .currency-select > img {
   width: 20px;
   height: 20px;
 }
-.trade-card-container .trade-card-content .trade-info .tolerance {
+#trade-card-container-swap .trade-card-content .trade-info .tolerance {
   display: flex;
   justify-content: space-between;
   padding: 10px 16px 0px;
 }
-.trade-card-container .trade-card-content .trade-info .tolerance > span:first-child {
+#trade-card-container-swap .trade-card-content .trade-info .tolerance > span:first-child {
   color: rgb(118, 69, 217);
   font-size: 12px;
   font-weight: 600;
 }
-.trade-card-container .trade-card-content .trade-info .tolerance > span:nth-child(2) {
+#trade-card-container-swap .trade-card-content .trade-info .tolerance > span:nth-child(2) {
   color: rgb(31, 199, 212);
   font-size: 16px;
   font-weight: 600;
 }
-.trade-card-container .connect-wallet {
+#trade-card-container-swap .connect-wallet {
   width: 96.26px;
   height: 32px;
   padding: 0 16px;
@@ -209,6 +206,10 @@ button {
   height: 48px;
   padding: 0 24px;
   margin-top: 49px;
+}
+
+#trade-card-container-swap {
+  display: flex;
 }
 
 .card-graph-container {
