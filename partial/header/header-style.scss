@@ -45,11 +45,15 @@
     }
 }
 
+body, html {
+    min-width: fit-content;
+}
 /* HEADER ON TOP */
 .nav {
     display: flex;
     height: 56px;
     width: 100%;
+    min-width: fit-content;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(231, 227, 235);
