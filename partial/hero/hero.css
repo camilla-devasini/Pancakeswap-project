@@ -1,0 +1,917 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Kanit", sans-serif;
+  width: 100vw;
+}
+body button:hover {
+  opacity: 75%;
+}
+body .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+body .main-container .main-banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  position: relative;
+}
+body .main-container .main-banner-container .main-banner-sub-container {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  height: 218px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  position: relative;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+  color: white;
+  font-family: Kanit, sans-serif;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+  font-size: 24px;
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+  margin-bottom: 8px;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .link-aquagreen {
+  text-decoration: none;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .link-aquagreen .main-banner-button-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: rgb(31, 199, 212);
+  border: none;
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+}
+body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .link-aquagreen .main-banner-button-a .mbb-svg-a {
+  fill: white;
+  align-self: center;
+}
+body .main-container .main-banner-container .main-banner-sub-container .swiper-slide {
+  background-color: transparent;
+  width: 100px;
+  height: 8px;
+  background-color: rgba(186, 235, 74, 0.174);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+  width: 50%;
+  height: 8px;
+  background-color: white;
+}
+body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+  visibility: initial;
+}
+body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+  visibility: hidden;
+}
+body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a {
+  width: 30%;
+  height: 121%;
+  position: absolute;
+  border-radius: 24px;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-mobile {
+  display: none;
+}
+body .main-container .hero-container {
+  margin-top: 30px;
+  width: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+body .main-container .hero-container .container-1 {
+  width: 50%;
+  height: 280.8;
+}
+body .main-container .hero-container .container-1 .h2-hero {
+  line-height: 1;
+  font-size: 64px;
+  color: rgb(118, 69, 217);
+  margin-bottom: 20px;
+}
+body .main-container .hero-container .container-1 .h3-hero {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(40, 13, 95);
+}
+body .main-container .hero-container .container-1 .connect-wallet {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: rgb(31, 199, 212);
+  border: none;
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  margin-right: 5px;
+}
+body .main-container .hero-container .container-1 .trade-now {
+  width: 130px;
+  height: 48px;
+  font-size: 16px;
+  color: rgb(31, 199, 212);
+  background-color: transparent;
+  border: 2px solid rgb(31, 199, 212);
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 16px;
+}
+body .main-container .hero-container .container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 280.8;
+}
+body .main-container .hero-container .container-2 .bunny-container {
+  width: 90%;
+  margin-bottom: -50px;
+}
+body .main-container .hero-container .container-2 .bunny-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 858px) and (min-width: 426px) {
+  body {
+    font-family: "Kanit", sans-serif;
+    width: 100vw;
+  }
+  body .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .main-container .main-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 24px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 25px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a .mbb-svg-a {
+    align-self: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: white;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 30%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-desktop {
+    display: none;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-mobile {
+    display: block;
+  }
+  body .main-container .hero-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  body .main-container .hero-container .container-1 {
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-1 .h2-hero {
+    line-height: 1;
+    font-size: 50px;
+    color: rgb(118, 69, 217);
+    margin-bottom: 20px;
+  }
+  body .main-container .hero-container .container-1 .h3-hero {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-container .hero-container .container-1 .connect-wallet {
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+    margin-right: 5px;
+  }
+  body .main-container .hero-container .container-1 .trade-now {
+    width: 130px;
+    height: 48px;
+    font-size: 16px;
+    color: rgb(31, 199, 212);
+    background-color: transparent;
+    border: 2px solid rgb(31, 199, 212);
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  body .main-container .hero-container .container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-2 .bunny-container {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .main-container .hero-container .container-2 .bunny-container img {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  body .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .main-container .main-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 19px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a .mbb-svg-a {
+    align-self: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: white;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 30%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-desktop {
+    display: none;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-mobile {
+    display: block;
+  }
+  body .main-container .hero-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  body .main-container .hero-container .container-1 {
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-1 .h2-hero {
+    line-height: 1;
+    font-size: 40px;
+    color: rgb(118, 69, 217);
+    margin-bottom: 20px;
+  }
+  body .main-container .hero-container .container-1 .h3-hero {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-container .hero-container .container-1 .connect-wallet {
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+    margin-right: 5px;
+  }
+  body .main-container .hero-container .container-1 .trade-now {
+    width: 130px;
+    height: 48px;
+    font-size: 16px;
+    color: rgb(31, 199, 212);
+    background-color: transparent;
+    border: 2px solid rgb(31, 199, 212);
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  body .main-container .hero-container .container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-2 .bunny-container {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .main-container .hero-container .container-2 .bunny-container img {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  body .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .main-container .main-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 19px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a .mbb-svg-a {
+    align-self: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: white;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 30%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-desktop {
+    display: none;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-mobile {
+    display: block;
+  }
+  body .main-container .hero-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  body .main-container .hero-container .container-1 {
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-1 .h2-hero {
+    line-height: 1;
+    font-size: 35px;
+    color: rgb(118, 69, 217);
+    margin-bottom: 30px;
+  }
+  body .main-container .hero-container .container-1 .h3-hero {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-container .hero-container .container-1 .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  body .main-container .hero-container .container-1 .buttons .connect-wallet {
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+    margin-right: 5px;
+  }
+  body .main-container .hero-container .container-1 .buttons .trade-now {
+    width: 130px;
+    height: 48px;
+    font-size: 16px;
+    color: rgb(31, 199, 212);
+    background-color: transparent;
+    border: 2px solid rgb(31, 199, 212);
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  body .main-container .hero-container .container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-2 .bunny-container {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .main-container .hero-container .container-2 .bunny-container img {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .main-container .main-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    height: 220px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px;
+    position: relative;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-title {
+    color: white;
+    font-family: Kanit, sans-serif;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a1 {
+    font-size: 19px;
+    background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*controllare quale usare, forse vanno messi entrambi, sia con sia senza il prefisso WEBKIT*/
+    margin-bottom: 8px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .mbt-a2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 4px 3px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .main-banner-content-container .main-banner-button-a .mbb-svg-a {
+    align-self: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide {
+    background-color: transparent;
+    width: 100px;
+    height: 8px;
+    background-color: rgba(186, 235, 74, 0.174);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swiper {
+    width: 50%;
+    height: 8px;
+    background-color: white;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
+    visibility: initial;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
+    visibility: hidden;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a {
+    width: 30%;
+    height: 121%;
+    position: absolute;
+    border-radius: 24px;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-desktop {
+    display: none;
+  }
+  body .main-container .main-banner-container .main-banner-sub-container .bunny-container-a-mobile {
+    display: block;
+  }
+  body .main-container .hero-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  body .main-container .hero-container .container-1 {
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-1 .h2-hero {
+    line-height: 1;
+    font-size: 35px;
+    color: rgb(118, 69, 217);
+    margin-bottom: 30px;
+  }
+  body .main-container .hero-container .container-1 .h3-hero {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-container .hero-container .container-1 .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  body .main-container .hero-container .container-1 .buttons .connect-wallet {
+    width: 160px;
+    height: 48px;
+    color: white;
+    background-color: rgb(31, 199, 212);
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+    margin-right: 5px;
+  }
+  body .main-container .hero-container .container-1 .buttons .trade-now {
+    width: 130px;
+    height: 48px;
+    font-size: 16px;
+    color: rgb(31, 199, 212);
+    background-color: transparent;
+    border: 2px solid rgb(31, 199, 212);
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  body .main-container .hero-container .container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280.8;
+  }
+  body .main-container .hero-container .container-2 .bunny-container {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .main-container .hero-container .container-2 .bunny-container img {
+    width: 180px;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */
