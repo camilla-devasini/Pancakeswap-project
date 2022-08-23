@@ -21,16 +21,32 @@ function toggleTradeCards() {
 
 
 
-
+// CONVIENE FARE TANTE FUNZIONI E POI RICHIAMARLE COME CON TOGGLECARDS()
 //PER AGGIUNGERE CLASSE HIGHLIGHTED CON STILE PER DIV CLICCATI
 let menuLabels = document.querySelectorAll('.trade-link');
 
 menuLabels.forEach(function(item) {
     item.addEventListener('click', function() {
-        item.classList.add('link-highlighted');
+        if (!item.classList.contains('link-highlighted')) {
 
-        i
+            toggleTradeCards();
+            item.classList.add('link-highlighted');
+            let otherLabel = document.querySelectorAll('.trade-link');
+    
+            
+            // let idx = item.id; 
+            otherLabel.forEach(function(itemL) {
+                if (item.id != itemL.id) {
+                itemL.classList.remove('link-highlighted');
+    
+                }
+    
+            });
+
+        }
+       
     });    
 });
+
 
     
