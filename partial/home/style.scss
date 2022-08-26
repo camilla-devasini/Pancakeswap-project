@@ -189,23 +189,17 @@ button:hover {
                     height: 280.8;
                     
 
-
-
-
                 .h2-hero {
                     line-height: 1;
                     font-size: 64px;
                     color: rgb(118, 69, 217);
                     margin-bottom: 20px;
-
-
                 }
 
                 .h3-hero {
                     margin-bottom: 20px;
                     font-size: 20px;
                     color: rgb(40, 13, 95);
-
                 }
 
 
@@ -289,7 +283,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1350px;
+    width: 100%;
     height: auto;
     margin-top: 150px;
     
@@ -314,6 +308,7 @@ button:hover {
             font-size: 18px;
             font-weight: lighter;
             margin-bottom: 25px;
+            text-align: center;
                    
     }
 
@@ -322,6 +317,7 @@ button:hover {
         color: rgb(122, 110, 170);
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
     }
 
     }
@@ -762,31 +758,34 @@ button:hover {
 }
 
 
-@media screen and (max-width: 1180px) and (min-width: 1001px){
+// @media screen and (max-width: 1180px) and (min-width: 1001px){
 
-    .main-section .container-3  {
+//     .main-section .container-3  {
         
-        width: 1300px;
-       }
+//         width: 1300px;
+//        }
 
       
 
       
-}
+// }
 
 
-@media screen and (max-width: 1000px) and (min-width: 859) {
+// @media screen and (max-width: 1000px) and (min-width: 859) {
 
-    .main-container .container-3 .container-text h2 {
-        font-size: 20px;
-    }
-}
+//     .main-container .container-3 .container-text h2 {
+//         font-size: 20px;
+//     }
+// }
 
 
 @media screen and (max-width: 858px) and (min-width: 426px) {
 
       
     body {
+
+
+
         
     
      
@@ -1039,7 +1038,16 @@ button:hover {
 
     body {
     
-        
+        .main-section .background-gradient-1 .container-2 h2 {
+
+            font-size: 35px;
+        }
+
+        .main-section .background-gradient-1 .container-2 h4 {
+
+            font-size: 11px;
+        }
+
         .hero-section{
             
             display: flex;

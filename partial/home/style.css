@@ -213,7 +213,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 1350px;
+  width: 100%;
   height: auto;
   margin-top: 150px;
 }
@@ -233,11 +233,13 @@ button:hover {
   font-size: 18px;
   font-weight: lighter;
   margin-bottom: 25px;
+  text-align: center;
 }
 .main-section .background-gradient-1 .container-2 h3 {
   color: rgb(122, 110, 170);
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
 }
 .main-section .background-gradient-1 .cards-section1 {
   display: flex;
@@ -527,16 +529,6 @@ button:hover {
     fill: rgb(237, 75, 158);
   }
 }
-@media screen and (max-width: 1180px) and (min-width: 1001px) {
-  .main-section .container-3 {
-    width: 1300px;
-  }
-}
-@media screen and (max-width: 1000px) and (min-width: 859) {
-  .main-container .container-3 .container-text h2 {
-    font-size: 20px;
-  }
-}
 @media screen and (max-width: 858px) and (min-width: 426px) {
   body .hero-section {
     display: flex;
@@ -716,6 +708,12 @@ button:hover {
   }
 }
 @media screen and (max-width: 425px) and (min-width: 376px) {
+  body .main-section .background-gradient-1 .container-2 h2 {
+    font-size: 35px;
+  }
+  body .main-section .background-gradient-1 .container-2 h4 {
+    font-size: 11px;
+  }
   body .hero-section {
     display: flex;
     align-items: center;
