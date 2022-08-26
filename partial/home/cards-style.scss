@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;    
+}
+
+.cards-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .card-section1 {
+        width: 280px;
+        height: 166px;
+        background-color: white;
+        border-radius: 24px;
+        border: 1px solid rgb(231, 227, 235);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+
+        .svg {
+            width: 36px;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+
+            .svg1 {
+                fill: rgb(118, 69, 217);
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            color: rgb(40, 13, 95);
+
+            &:nth-child(2) {
+                color: rgb(118, 69, 217);
+                position: relative;
+                bottom: 15px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: auto;
+            color: rgb(122, 110, 170);
+        }
+    }
+}
+
+.card-section1.green {
+    h2:nth-child(2) {
+        color: rgb(31, 199, 212);
+    }
+
+    svg {
+        fill: rgb(31, 199, 212);
+    }
+}
+
+.card-section1.red {
+    h2:nth-child(2) {
+        color: rgb(237, 75, 158);
+    }
+
+    svg {
+        fill: rgb(237, 75, 158);
+    }
+}
+
+// .millions-in-prizes-cards {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+
+//     .card-million {
+//         width: 273px;
+//         height: 355px;
+//         display: flex;
+//         flex-direction: column;
+//         border-radius: 24px;
+//         padding: 24px;
+//         font-family: 'Kanit', sans-serif;
+//         position: relative;
+//         justify-content: space-evenly;
+
+//         p:nth-child(1) {
+//             position: relative;
+//             top: 20px;
+//         }
+
+//         p:nth-child(3) {
+//             position: relative;
+//             bottom: 15px;
+//         }
+
+//         button {
+//             width: 225px;
+//             height: 48px;
+//             background-color: rgb(31, 199, 212);
+//             border: 0;
+//             border-radius: 16px;
+//             box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+//             color: rgb(255, 255, 255);
+//             font-weight: 600;
+//             line-height: 1.5;
+//             font-family: 'Kanit', sans-serif;
+//             font-size: 16px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+
+//             svg {
+//                 fill: white;
+//                 margin-left: 4px;
+//             }
+//         }
+
+//         p {
+//             font-size: 16px;            
+//         }
+
+//         h2 {
+//             font-size: 32px;
+//         }
+
+//         span {
+//             font-size: 32px;
+//         }
+
+//         .svg {
+//             position: absolute;
+//             top: 24px;
+//             right: 24px;
+//         }
+//     }
+// }
+
+// .yellow {
+//     background-color: rgb(255, 178, 55);
+//     color: rgb(40, 13, 95);
+//     background:linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+//     box-shadow: 1px 3px rgb(255, 178, 55);
+
+// }
+
+// .purple {
+//     background-color: rgb(60, 23, 134);
+//     color: white;
+//     box-shadow: 1px 3px black;
+
+
+//     span {
+//         color: rgb(253, 171, 50);
+//     }
+
+//     svg {
+//         fill: white;
+//     }
+// }
+
+@media screen and (min-width: 852px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-section1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // .millions-in-prizes-cards {
+    //     display: flex;
+    //     flex-direction: row;
+    //     margin-top: 20px;
+
+    //     .card-million.yellow {
+    //         transform: rotate(-2deg);
+    //     }
+
+    //     .card-million.purple {
+    //         transform: rotate(2deg);
+    //     }
+    // }
+}

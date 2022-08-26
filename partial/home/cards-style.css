@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cards-section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards-section1 .card-section1 {
+  width: 280px;
+  height: 166px;
+  background-color: white;
+  border-radius: 24px;
+  border: 1px solid rgb(231, 227, 235);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif;
+  position: relative;
+}
+.cards-section1 .card-section1 .svg {
+  width: 36px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.cards-section1 .card-section1 .svg .svg1 {
+  fill: rgb(118, 69, 217);
+}
+.cards-section1 .card-section1 h2 {
+  font-size: 32px;
+  color: rgb(40, 13, 95);
+}
+.cards-section1 .card-section1 h2:nth-child(2) {
+  color: rgb(118, 69, 217);
+  position: relative;
+  bottom: 15px;
+}
+.cards-section1 .card-section1 p {
+  font-size: 16px;
+  margin-top: auto;
+  color: rgb(122, 110, 170);
+}
+
+.card-section1.green h2:nth-child(2) {
+  color: rgb(31, 199, 212);
+}
+.card-section1.green svg {
+  fill: rgb(31, 199, 212);
+}
+
+.card-section1.red h2:nth-child(2) {
+  color: rgb(237, 75, 158);
+}
+.card-section1.red svg {
+  fill: rgb(237, 75, 158);
+}
+
+@media screen and (min-width: 852px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-section1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=cards-style.css.map */
