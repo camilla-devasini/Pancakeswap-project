@@ -199,7 +199,7 @@ button:hover {
   flex-direction: column;
   width: 100%;
 }
-.main-content .background-content {
+.main-content .background-content-1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +208,7 @@ button:hover {
   background: linear-gradient(white, rgba(118, 69, 217, 0.3));
   z-index: -1;
 }
-.main-content .background-content .container-1 {
+.main-content .background-content-1 .container-1 {
   padding: 57px;
   display: flex;
   align-items: center;
@@ -218,17 +218,17 @@ button:hover {
   height: auto;
   margin-top: 150px;
 }
-.main-content .background-content .container-1 svg {
+.main-content .background-content-1 .container-1 svg {
   margin-bottom: 25px;
 }
-.main-content .background-content .container-1 h2 {
+.main-content .background-content-1 .container-1 h2 {
   color: rgb(40, 13, 95);
   line-height: 1.1;
   font-size: 45px;
   text-align: center;
   margin-bottom: 30px;
 }
-.main-content .background-content .container-1 h4 {
+.main-content .background-content-1 .container-1 h4 {
   line-height: 1.5;
   color: rgb(122, 110, 170);
   font-size: 18px;
@@ -236,13 +236,13 @@ button:hover {
   margin-bottom: 25px;
   text-align: center;
 }
-.main-content .background-content .container-1 h3 {
+.main-content .background-content-1 .container-1 h3 {
   color: rgb(122, 110, 170);
   font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
-.main-content .background-content .cards-section1 {
+.main-content .background-content-1 .cards-section1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +250,7 @@ button:hover {
   gap: 20px;
   margin-bottom: 100px;
 }
-.main-content .background-content .cards-section1 .card-section1 {
+.main-content .background-content-1 .cards-section1 .card-section1 {
   width: 300px;
   height: 300px;
   background-color: white;
@@ -263,38 +263,38 @@ button:hover {
   font-family: "Kanit", sans-serif;
   position: relative;
 }
-.main-content .background-content .cards-section1 .card-section1 .svg {
+.main-content .background-content-1 .cards-section1 .card-section1 .svg {
   width: 36px;
   position: absolute;
   right: 20px;
   top: 30px;
 }
-.main-content .background-content .cards-section1 .card-section1 .svg .svg1 {
+.main-content .background-content-1 .cards-section1 .card-section1 .svg .svg1 {
   fill: rgb(118, 69, 217);
 }
-.main-content .background-content .cards-section1 .card-section1 h2 {
+.main-content .background-content-1 .cards-section1 .card-section1 h2 {
   font-size: 43px;
   color: rgb(40, 13, 95);
 }
-.main-content .background-content .cards-section1 .card-section1 h2:nth-child(2) {
+.main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
   color: rgb(118, 69, 217);
   position: relative;
   bottom: 15px;
 }
-.main-content .background-content .cards-section1 .card-section1 p {
+.main-content .background-content-1 .cards-section1 .card-section1 p {
   font-size: 16px;
   color: rgb(122, 110, 170);
 }
-.main-content .background-content .card-section1.green h2:nth-child(2) {
+.main-content .background-content-1 .card-section1.green h2:nth-child(2) {
   color: rgb(31, 199, 212);
 }
-.main-content .background-content .card-section1.green svg {
+.main-content .background-content-1 .card-section1.green svg {
   fill: rgb(31, 199, 212);
 }
-.main-content .background-content .card-section1.red h2:nth-child(2) {
+.main-content .background-content-1 .card-section1.red h2:nth-child(2) {
   color: rgb(237, 75, 158);
 }
-.main-content .background-content .card-section1.red svg {
+.main-content .background-content-1 .card-section1.red svg {
   fill: rgb(237, 75, 158);
 }
 .main-content .container-2 {
@@ -478,7 +478,7 @@ button:hover {
     flex-direction: column;
     width: 100%;
   }
-  .main-content .background-content {
+  .main-content .background-content-1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,7 +487,7 @@ button:hover {
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
   }
-  .main-content .background-content .cards-section1 {
+  .main-content .background-content-1 .cards-section1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,7 +495,7 @@ button:hover {
     gap: 20px;
     margin-bottom: 100px;
   }
-  .main-content .background-content .cards-section1 .card-section1 {
+  .main-content .background-content-1 .cards-section1 .card-section1 {
     width: 300px;
     height: 166px;
     background-color: white;
@@ -508,25 +508,25 @@ button:hover {
     font-family: "Kanit", sans-serif;
     position: relative;
   }
-  .main-content .background-content .cards-section1 .card-section1 h2 {
+  .main-content .background-content-1 .cards-section1 .card-section1 h2 {
     font-size: 35px;
     color: rgb(40, 13, 95);
   }
-  .main-content .background-content .cards-section1 .card-section1 h2:nth-child(2) {
+  .main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
     color: rgb(118, 69, 217);
     position: relative;
     bottom: 15px;
   }
-  .main-content .background-content .card-section1.green h2:nth-child(2) {
+  .main-content .background-content-1 .card-section1.green h2:nth-child(2) {
     color: rgb(31, 199, 212);
   }
-  .main-content .background-content .card-section1.green svg {
+  .main-content .background-content-1 .card-section1.green svg {
     fill: rgb(31, 199, 212);
   }
-  .main-content .background-content .card-section1.red h2:nth-child(2) {
+  .main-content .background-content-1 .card-section1.red h2:nth-child(2) {
     color: rgb(237, 75, 158);
   }
-  .main-content .background-content .card-section1.red svg {
+  .main-content .background-content-1 .card-section1.red svg {
     fill: rgb(237, 75, 158);
   }
 }
@@ -709,10 +709,10 @@ button:hover {
   }
 }
 @media screen and (max-width: 425px) and (min-width: 376px) {
-  body .main-content .background-content .container-1 h2 {
+  body .main-content .background-content-1 .container-1 h2 {
     font-size: 35px;
   }
-  body .main-content .background-content .container-1 h4 {
+  body .main-content .background-content-1 .container-1 h4 {
     font-size: 11px;
   }
   body .hero-section {

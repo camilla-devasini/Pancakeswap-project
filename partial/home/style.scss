@@ -264,7 +264,7 @@ button:hover {
     width: 100%;
     
 
-    .background-content {
+    .background-content-1 {
 
         display: flex;
         align-items: center;
@@ -395,7 +395,6 @@ button:hover {
     }
     
 }
-
 
 
    .container-2 {
@@ -648,7 +647,6 @@ button:hover {
 }
 
 
-
 }
 
 
@@ -657,8 +655,6 @@ button:hover {
 // --------------------------------- MEDIA QUERIES ---------------------------------
 
 
-
-//BREAK POINT//
 
 
 
@@ -673,7 +669,7 @@ button:hover {
         width: 100%;
         
 
-        .background-content {
+        .background-content-1 {
     
             display: flex;
             align-items: center;
@@ -1026,12 +1022,12 @@ button:hover {
 
     body {
     
-        .main-content .background-content .container-1 h2 {
+        .main-content .background-content-1 .container-1 h2 {
 
             font-size: 35px;
         }
 
-        .main-content .background-content .container-1 h4 {
+        .main-content .background-content-1 .container-1 h4 {
 
             font-size: 11px;
         }
