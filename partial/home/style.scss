@@ -255,7 +255,7 @@ button:hover {
 }
 
 
-.main-section {
+.main-content {
 
     display: flex;
     align-items: center;
@@ -264,7 +264,7 @@ button:hover {
     width: 100%;
     
 
-    .background-gradient-1 {
+    .background-content {
 
         display: flex;
         align-items: center;
@@ -481,7 +481,7 @@ button:hover {
    }
 
 
-   .background-gradient-2 {
+   .background-content-3 {
 
     display: flex;
     align-items: center;
@@ -664,7 +664,7 @@ button:hover {
 
 @media screen and (max-width: 880px) and (min-width: 320px) {
         
-    .main-section {
+    .main-content {
 
         display: flex;
         align-items: center;
@@ -673,7 +673,7 @@ button:hover {
         width: 100%;
         
 
-        .background-gradient-1 {
+        .background-content {
     
             display: flex;
             align-items: center;
@@ -1026,12 +1026,12 @@ button:hover {
 
     body {
     
-        .main-section .background-gradient-1 .container-2 h2 {
+        .main-content .background-content .container-2 h2 {
 
             font-size: 35px;
         }
 
-        .main-section .background-gradient-1 .container-2 h4 {
+        .main-content .background-content .container-2 h4 {
 
             font-size: 11px;
         }
