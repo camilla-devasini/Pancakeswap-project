@@ -173,7 +173,7 @@ button:hover {
         .hero-container {
 
             margin-top: 70px;
-            width: 75%;
+            width: 77%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -458,6 +458,12 @@ button:hover {
                             margin-left: 10px;
                             text-decoration: none;
                         }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+
+                        
     }
 
 
@@ -546,6 +552,10 @@ button:hover {
             font-size: 18px;
             margin-left: 10px;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
 

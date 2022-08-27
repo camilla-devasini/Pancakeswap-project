@@ -133,7 +133,7 @@ button:hover {
 }
 .hero-content .hero-container {
   margin-top: 70px;
-  width: 75%;
+  width: 77%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,6 +346,9 @@ button:hover {
   margin-left: 10px;
   text-decoration: none;
 }
+.main-content .container-2 .container-text a:hover {
+  text-decoration: underline;
+}
 .main-content .container-2 .img-container {
   width: 50%;
   position: relative;
@@ -408,6 +411,9 @@ button:hover {
   font-size: 18px;
   margin-left: 10px;
   text-decoration: none;
+}
+.main-content .background-content-3 .container-3 .container-text a:hover {
+  text-decoration: underline;
 }
 .main-content .background-content-3 .container-3 .img-container {
   width: 50%;
