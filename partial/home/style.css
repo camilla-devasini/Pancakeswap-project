@@ -20,13 +20,14 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding-top: 100px;
 }
 .hero-section .main-banner-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 75%;
   position: relative;
 }
 .hero-section .main-banner-container .main-banner-sub-container {
@@ -131,7 +132,7 @@ button:hover {
   display: none;
 }
 .hero-section .hero-container {
-  margin-top: 30px;
+  margin-top: 70px;
   width: 75%;
   display: flex;
   align-items: center;
