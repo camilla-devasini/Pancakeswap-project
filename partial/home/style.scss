@@ -17,7 +17,7 @@ button:hover {
 }   
 
 
-.hero-section{
+.hero-content{
         
     display: flex;
     align-items: center;
@@ -255,7 +255,7 @@ button:hover {
 }
 
 
-.main-content {
+.main-content{
 
     display: flex;
     align-items: center;
@@ -407,7 +407,6 @@ button:hover {
     margin-bottom: 170px;
    
       
-
     .container-text {
 
         display: flex;
@@ -461,6 +460,7 @@ button:hover {
                         }
     }
 
+
     .img-container {
 
         width: 50%;
@@ -468,7 +468,6 @@ button:hover {
         display: flex;
         flex-direction: row;
         
-
 
         & img {
             
@@ -773,7 +772,7 @@ button:hover {
     body {
 
 
-        .hero-section{
+        .hero-content{
             
             display: flex;
             align-items: center;
@@ -1032,7 +1031,7 @@ button:hover {
             font-size: 11px;
         }
 
-        .hero-section{
+        .hero-content{
             
             display: flex;
             align-items: center;
@@ -1289,7 +1288,7 @@ button:hover {
     body {
         
 
-        .hero-section{
+        .hero-content{
             
             display: flex;
             align-items: center;
@@ -1560,7 +1559,7 @@ button:hover {
        
     
            
-        .hero-section{
+        .hero-content{
             
             display: flex;
             align-items: center;
