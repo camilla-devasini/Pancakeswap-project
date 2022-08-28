@@ -323,16 +323,14 @@ button:hover {
   justify-content: center;
   padding-top: 150px;
   padding: 20px;
-  width: 100vw;
-  height: 500px;
-  display: flex;
+  width: 1350px;
+  height: 580px;
 }
 .main-content .container-2 .container-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 480px;
-  width: 50%;
+  width: 500px;
 }
 .main-content .container-2 .container-text span {
   color: rgb(118, 69, 217);
@@ -371,14 +369,14 @@ button:hover {
   text-decoration: underline;
 }
 .main-content .container-2 .img-container {
-  width: 450px;
+  width: 500px;
   position: relative;
   display: flex;
   flex-direction: row;
 }
 .main-content .container-2 .img-container img {
   position: absolute;
-  width: 100%;
+  width: 95%;
 }
 .main-content .background-content-3 {
   position: relative;
@@ -407,7 +405,7 @@ button:hover {
 }
 .main-content .background-content-3 .container-3 .container-text {
   justify-content: center;
-  width: 450px;
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -447,7 +445,7 @@ button:hover {
   text-decoration: underline;
 }
 .main-content .background-content-3 .container-3 .img-container {
-  width: 450px;
+  width: 500px;
   position: relative;
   display: flex;
   flex-direction: row;

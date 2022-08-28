@@ -433,9 +433,9 @@ button:hover {
         justify-content: center;
         padding-top: 150px;
         padding: 20px;
-        width: 100vw;
-        height: 500px;
-        display: flex;
+        width: 1350px;
+        height: 580px;
+        
         
    
    
@@ -445,8 +445,7 @@ button:hover {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 480px;
-        width: 50%;
+        width: 500px;
         
 
         span {
@@ -497,7 +496,7 @@ button:hover {
         .img-container {
 
             
-            width:450px;
+            width:500px;
             position: relative;
             display: flex;
             flex-direction: row;
@@ -506,7 +505,7 @@ button:hover {
             & img {
 
                 position: absolute;
-                width: 100%;
+                width: 95%;
             }
         }
 
@@ -548,7 +547,7 @@ button:hover {
             .container-text {
 
                 justify-content: center;
-                width: 450px;
+                width: 500px;
                 display: flex;
                 flex-direction: column;
        
@@ -597,7 +596,7 @@ button:hover {
             .img-container {
                 
             
-                width: 450px;
+                width: 500px;
                 position: relative;
                 display: flex;
                 flex-direction: row;
