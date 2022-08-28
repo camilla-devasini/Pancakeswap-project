@@ -717,29 +717,6 @@ button:hover {
     font-size: 20px;
     color: rgb(40, 13, 95);
   }
-  body .hero-content .hero-container .container-1 .connect-wallet {
-    width: 160px;
-    height: 48px;
-    color: white;
-    background-color: rgb(31, 199, 212);
-    border: none;
-    border-radius: 16px;
-    font-family: inherit;
-    font-size: 16px;
-    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
-    margin-right: 5px;
-  }
-  body .hero-content .hero-container .container-1 .trade-now {
-    width: 130px;
-    height: 48px;
-    font-size: 16px;
-    color: rgb(31, 199, 212);
-    background-color: transparent;
-    border: 2px solid rgb(31, 199, 212);
-    border-radius: 16px;
-    font-family: inherit;
-    font-size: 16px;
-  }
   body .hero-content .hero-container .container-2 {
     display: flex;
     justify-content: center;
@@ -1156,29 +1133,6 @@ button:hover {
     display: flex;
     flex-direction: row;
   }
-  body .hero-content .hero-container .container-1 .buttons .connect-wallet {
-    width: 160px;
-    height: 48px;
-    color: white;
-    background-color: rgb(31, 199, 212);
-    border: none;
-    border-radius: 16px;
-    font-family: inherit;
-    font-size: 16px;
-    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
-    margin-right: 5px;
-  }
-  body .hero-content .hero-container .container-1 .buttons .trade-now {
-    width: 130px;
-    height: 48px;
-    font-size: 16px;
-    color: rgb(31, 199, 212);
-    background-color: transparent;
-    border: 2px solid rgb(31, 199, 212);
-    border-radius: 16px;
-    font-family: inherit;
-    font-size: 16px;
-  }
   body .hero-content .hero-container .container-2 {
     display: flex;
     justify-content: center;
@@ -1338,29 +1292,6 @@ button:hover {
   body .hero-content .hero-container .container-1 .buttons {
     display: flex;
     flex-direction: row;
-  }
-  body .hero-content .hero-container .container-1 .buttons .connect-wallet {
-    width: 160px;
-    height: 48px;
-    color: white;
-    background-color: rgb(31, 199, 212);
-    border: none;
-    border-radius: 16px;
-    font-family: inherit;
-    font-size: 16px;
-    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
-    margin-right: 5px;
-  }
-  body .hero-content .hero-container .container-1 .buttons .trade-now {
-    width: 130px;
-    height: 48px;
-    font-size: 16px;
-    color: rgb(31, 199, 212);
-    background-color: transparent;
-    border: 2px solid rgb(31, 199, 212);
-    border-radius: 16px;
-    font-family: inherit;
-    font-size: 16px;
   }
   body .hero-content .hero-container .container-2 {
     display: flex;
