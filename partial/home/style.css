@@ -384,7 +384,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 650px;
+  height: 550px;
   background-color: rgba(122, 110, 170, 0.1);
 }
 .main-content .background-content-3 .container-3 {
@@ -757,7 +757,7 @@ button:hover {
     width: 220px;
   }
   body .main-content .container-2 {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -800,6 +800,9 @@ button:hover {
   body .main-content .background-content-3 .container-3 .img-container img {
     right: 0;
     width: 220px;
+  }
+  body .background-content-3 {
+    height: 570px !important;
   }
   body .background-content-3 .container-3 {
     height: fit-content;

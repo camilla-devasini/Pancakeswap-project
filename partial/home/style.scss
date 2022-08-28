@@ -270,22 +270,12 @@ button:hover {
                     width: 100vw;
                     background-color: rgb(230, 254, 255);
                     z-index: -1;
-
-                    
-          
+        
                   }
 
-
- 
             }
 
-            
-            
-       
-
 }
-
-
 
 
 .main-content{
@@ -530,7 +520,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 650px;
+    height: 550px;
     background-color: rgb(122, 110, 170, 10%) ;
     
 
@@ -836,7 +826,7 @@ button:hover {
             }
         }
         
-        .background-content-3 {
+            .background-content-3 {
         
         .container-3 {
 
@@ -857,11 +847,11 @@ button:hover {
             }
         }
       
+            }
+
+
+
     }
-
-
-
-        }
 
       
 }
@@ -873,6 +863,7 @@ button:hover {
       
     body {
  
+
         .hero-content{
             
             display: flex;
@@ -1092,7 +1083,7 @@ button:hover {
                                             }
                                 }
                         }
-                }
+        }
 
                 .main-content {
           
@@ -1100,7 +1091,7 @@ button:hover {
 
                 .container-2 {
 
-                        margin-bottom: 30px;
+                        margin-bottom: 70px;
                         height: fit-content;
                         flex-direction: column-reverse;
                         width: 100%;
@@ -1131,6 +1122,7 @@ button:hover {
 
                 .background-content-3 {
                     
+
 
                         .container-3 {
             
@@ -1166,16 +1158,16 @@ button:hover {
                     }
 
 
-        }
+                }
         
         
-
-        .background-content-3 {
-                    
-
+                        .background-content-3 {
+                  
+            height: 570px!important;
+             
             .container-3 {
 
-
+                
                 height: fit-content;
                 flex-direction: column-reverse;
                 width: 100%;
@@ -1207,7 +1199,7 @@ button:hover {
                 }
             }
 
-        }
+                        }
 
     }
 
@@ -1222,6 +1214,7 @@ button:hover {
 
     body {
     
+
         .main-content .background-content-1 .container-1 h2 {
 
             font-size: 35px;
