@@ -1087,40 +1087,40 @@ button:hover {
 
                 .main-content {
           
-           
 
-                .container-2 {
-
-                        margin-bottom: 70px;
-                        height: fit-content;
-                        flex-direction: column-reverse;
-                        width: 100%;
-                        padding: 20px;
-            
-                        .container-text {
-                            padding: 0;
-                            width: 95vw;
-                            height: fit-content;
-                            
-        
-                            h2 {
-                                font-size: 33px;
+                    .container-2 {
+                                
+                                margin-top: 30px;
+                                margin-bottom: 70px;
+                                height: fit-content;
+                                flex-direction: column-reverse;
+                                width: 100%;
+                                padding: 20px;
+                    
+                                .container-text {
+                                    padding: 0;
+                                    width: 95vw;
+                                    height: fit-content;
+                                    
+                
+                                    h2 {
+                                        font-size: 33px;
+                                    }
+                                }
+                    
+                                .img-container {
+                                    
+                                    height: 220px;
+                                    width: 100%;
+                
+                                    & img {
+                                        right:  0;
+                                        width: 220px;
+                                    }
+                                }
                             }
-                        }
-            
-                        .img-container {
-                            
-                            height: 220px;
-                            width: 100%;
-        
-                            & img {
-                                right:  0;
-                                width: 220px;
-                            }
-                        }
-                    }
 
-                .background-content-3 {
+                        .background-content-3 {
                     
 
 

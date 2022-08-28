@@ -757,6 +757,7 @@ button:hover {
     width: 220px;
   }
   body .main-content .container-2 {
+    margin-top: 30px;
     margin-bottom: 70px;
     height: fit-content;
     flex-direction: column-reverse;
