@@ -1040,6 +1040,9 @@ button:hover {
     right: 0;
     width: 220px;
   }
+  body .main-content .background-content-3 .background-content-data {
+    display: grid;
+  }
 }
 @media screen and (max-width: 375px) and (min-width: 321px) {
   body .hero-content {
@@ -1303,6 +1306,9 @@ button:hover {
     right: 0;
     width: 220px;
   }
+  body .main-content .background-content-3 .background-content-data {
+    display: grid;
+  }
 }
 @media screen and (max-width: 320px) {
   body .hero-content {
@@ -1565,6 +1571,9 @@ button:hover {
     left: unset;
     right: 0;
     width: 220px;
+  }
+  body .main-content .background-content-3 .background-content-data {
+    display: grid;
   }
 }
 

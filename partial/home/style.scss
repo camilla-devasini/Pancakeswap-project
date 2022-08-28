@@ -1068,6 +1068,10 @@ button:hover {
                                 }
                             }
                             }
+
+                            // .background-content-data {
+
+                            // }
             
                         }
 
@@ -1078,8 +1082,6 @@ button:hover {
 } 
 
 
-
-//Mobile L//
 
 @media screen and (max-width: 425px) and (min-width: 376px) {
 
@@ -1331,7 +1333,7 @@ button:hover {
                         }
         }
 
-        .main-content {
+            .main-content {
 
 
             .background-content-1 {
@@ -1442,7 +1444,6 @@ button:hover {
                     }
 
                 .background-content-3 {
-            
                     height: 570px;
 
                     .container-3 {
@@ -1477,6 +1478,12 @@ button:hover {
                         }
                     }
                     }
+
+                    .background-content-data {
+
+                        display: grid;
+
+                    }
     
                 }
 
@@ -1487,8 +1494,6 @@ button:hover {
 }
 
 
-
-//Mobile M//
 
 @media screen and (max-width: 375px) and (min-width: 321px) {
 
@@ -1867,6 +1872,12 @@ button:hover {
                         }
                     }
                     }
+
+                    .background-content-data {
+
+                        display: grid;
+                        
+                    }
     
                 }
 
@@ -1878,8 +1889,6 @@ button:hover {
 }
 
 
-
-//Mobile S//
 
 @media screen and (max-width: 320px) {
 
@@ -2250,6 +2259,12 @@ button:hover {
                             width: 220px;
                         }
                     }
+                    }
+
+                    .background-content-data {
+
+                        display: grid;
+                        
                     }
     
                 }
