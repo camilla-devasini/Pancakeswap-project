@@ -516,6 +516,16 @@ button:hover {
 
    .background-content-3 {
 
+   
+    .svg-border-grey {
+        fill: rgb(255, 255, 255);
+        width: 170vw;
+        position: absolute;
+        top: 0;
+       }
+
+
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

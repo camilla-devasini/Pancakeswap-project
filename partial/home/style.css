@@ -380,12 +380,19 @@ button:hover {
   width: 75%;
 }
 .main-content .background-content-3 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 550px;
   background-color: rgba(122, 110, 170, 0.1);
+}
+.main-content .background-content-3 .svg-border-grey {
+  fill: rgb(255, 255, 255);
+  width: 170vw;
+  position: absolute;
+  top: 0;
 }
 .main-content .background-content-3 .container-3 {
   padding: 58px;
