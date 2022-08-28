@@ -1018,6 +1018,10 @@ button:hover {
                                     h2 {
                                         font-size: 33px;
                                     }
+
+                                    h4 {
+                                        font-size:17px; 
+                                    }
                                 }
                     
                                 .img-container {
@@ -1054,6 +1058,11 @@ button:hover {
                                 h2 {
                                     font-size: 33px;
                                 }
+
+                                h4 {
+                                    font-size:17px; 
+                                }
+
                             }
                 
                             .img-container {
@@ -1069,9 +1078,17 @@ button:hover {
                             }
                             }
 
-                            // .background-content-data {
+                            .background-content-data {
 
-                            // }
+                                .container-data {
+
+                                    .group {
+                                        display: grid;
+                                    }
+
+                                }  
+
+                            }
             
                         }
 
@@ -1479,11 +1496,6 @@ button:hover {
                     }
                     }
 
-                    .background-content-data {
-
-                        display: grid;
-
-                    }
     
                 }
 
@@ -1858,6 +1870,11 @@ button:hover {
                         h2 {
                             font-size: 33px;
                         }
+
+                        h4 {
+                            font-size:17px; 
+                        }
+
                     }
         
                     .img-container {
@@ -1873,11 +1890,6 @@ button:hover {
                     }
                     }
 
-                    .background-content-data {
-
-                        display: grid;
-                        
-                    }
     
                 }
 
@@ -2246,6 +2258,11 @@ button:hover {
                         h2 {
                             font-size: 33px;
                         }
+
+                        h4 {
+                            font-size:17px; 
+                        }
+                        
                     }
         
                     .img-container {
@@ -2261,11 +2278,6 @@ button:hover {
                     }
                     }
 
-                    .background-content-data {
-
-                        display: grid;
-                        
-                    }
     
                 }
 

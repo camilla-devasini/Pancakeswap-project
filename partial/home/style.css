@@ -723,6 +723,9 @@ button:hover {
   body .main-content .container-2 .container-text h2 {
     font-size: 33px;
   }
+  body .main-content .container-2 .container-text h4 {
+    font-size: 17px;
+  }
   body .main-content .container-2 .img-container {
     height: 220px;
     width: 100%;
@@ -749,6 +752,9 @@ button:hover {
   body .main-content .background-content-3 .container-3 .container-text h2 {
     font-size: 33px;
   }
+  body .main-content .background-content-3 .container-3 .container-text h4 {
+    font-size: 17px;
+  }
   body .main-content .background-content-3 .container-3 .img-container {
     height: 220px;
     width: 100%;
@@ -757,6 +763,9 @@ button:hover {
     left: unset;
     right: 0;
     width: 220px;
+  }
+  body .main-content .background-content-3 .background-content-data .container-data .group {
+    display: grid;
   }
 }
 @media screen and (max-width: 425px) and (min-width: 376px) {
@@ -1040,9 +1049,6 @@ button:hover {
     right: 0;
     width: 220px;
   }
-  body .main-content .background-content-3 .background-content-data {
-    display: grid;
-  }
 }
 @media screen and (max-width: 375px) and (min-width: 321px) {
   body .hero-content {
@@ -1297,6 +1303,9 @@ button:hover {
   body .main-content .background-content-3 .container-3 .container-text h2 {
     font-size: 33px;
   }
+  body .main-content .background-content-3 .container-3 .container-text h4 {
+    font-size: 17px;
+  }
   body .main-content .background-content-3 .container-3 .img-container {
     height: 220px;
     width: 100%;
@@ -1305,9 +1314,6 @@ button:hover {
     left: unset;
     right: 0;
     width: 220px;
-  }
-  body .main-content .background-content-3 .background-content-data {
-    display: grid;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1563,6 +1569,9 @@ button:hover {
   body .main-content .background-content-3 .container-3 .container-text h2 {
     font-size: 33px;
   }
+  body .main-content .background-content-3 .container-3 .container-text h4 {
+    font-size: 17px;
+  }
   body .main-content .background-content-3 .container-3 .img-container {
     height: 220px;
     width: 100%;
@@ -1571,9 +1580,6 @@ button:hover {
     left: unset;
     right: 0;
     width: 220px;
-  }
-  body .main-content .background-content-3 .background-content-data {
-    display: grid;
   }
 }
 
