@@ -796,8 +796,8 @@ button:hover {
     padding: 20px;
   }
   body .background-content-3 .container-3 .container-text {
+    background-color: red;
     padding: 0;
-    width: 95vw;
     height: fit-content;
   }
   body .background-content-3 .container-3 .container-text h2 {
