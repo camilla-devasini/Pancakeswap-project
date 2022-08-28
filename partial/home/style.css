@@ -390,7 +390,8 @@ button:hover {
 }
 .main-content .background-content-3 .svg-border-grey {
   fill: rgb(255, 255, 255);
-  width: 170vw;
+  width: 100vw;
+  float: right;
   position: absolute;
   top: 0;
 }
@@ -513,92 +514,6 @@ button:hover {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 880px) and (min-width: 320px) {
-  .main-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .main-content .background-content-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: auto;
-    background: linear-gradient(white, rgba(118, 69, 217, 0.3));
-    z-index: -1;
-  }
-  .main-content .background-content-1 .cards-section1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    height: 600px;
-  }
-  .main-content .background-content-1 .cards-section1 .card-section1 {
-    width: 300px;
-    height: 166px;
-    background-color: white;
-    border-radius: 24px;
-    border: 1px solid rgb(231, 227, 235);
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-family: "Kanit", sans-serif;
-    position: relative;
-  }
-  .main-content .background-content-1 .cards-section1 .card-section1 h2 {
-    font-size: 35px;
-    color: rgb(40, 13, 95);
-  }
-  .main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
-    color: rgb(118, 69, 217);
-    position: relative;
-    bottom: 15px;
-  }
-  .main-content .background-content-1 .card-section1.green h2:nth-child(2) {
-    color: rgb(31, 199, 212);
-  }
-  .main-content .background-content-1 .card-section1.green svg {
-    fill: rgb(31, 199, 212);
-  }
-  .main-content .background-content-1 .card-section1.red h2:nth-child(2) {
-    color: rgb(237, 75, 158);
-  }
-  .main-content .background-content-1 .card-section1.red svg {
-    fill: rgb(237, 75, 158);
-  }
-}
-@media screen and (max-width: 1180px) and (min-width: 859px) {
-  .main-content .container-2 {
-    width: calc(1000px + 15vw);
-  }
-  .main-content .container-2 .container-text {
-    width: 50%;
-  }
-  .main-content .container-2 .container-text h2 {
-    font-size: 33px;
-  }
-  .main-content .container-2 .img-container {
-    width: 50%;
-  }
-  .main-content .background-content-3 .container-3 {
-    width: calc(1000px + 15vw);
-  }
-  .main-content .background-content-3 .container-3 .container-text {
-    width: 50%;
-  }
-  .main-content .background-content-3 .container-3 .container-text h2 {
-    font-size: 33px;
-  }
-  .main-content .background-content-3 .container-3 .img-container {
-    width: 50%;
-  }
-}
 @media screen and (max-width: 858px) and (min-width: 426px) {
   body .hero-content {
     display: flex;
@@ -740,6 +655,57 @@ button:hover {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 220px;
   }
+  body .main-content .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(white, rgba(118, 69, 217, 0.3));
+    z-index: -1;
+  }
+  body .main-content .background-content-1 .cards-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 {
+    width: 300px;
+    height: 166px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid rgb(231, 227, 235);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2 {
+    font-size: 35px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
+    color: rgb(118, 69, 217);
+    position: relative;
+    bottom: 15px;
+  }
+  body .main-content .background-content-1 .card-section1.green h2:nth-child(2) {
+    color: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.green svg {
+    fill: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.red h2:nth-child(2) {
+    color: rgb(237, 75, 158);
+  }
+  body .main-content .background-content-1 .card-section1.red svg {
+    fill: rgb(237, 75, 158);
+  }
   body .main-content .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
@@ -750,6 +716,7 @@ button:hover {
   }
   body .main-content .container-2 .container-text {
     padding: 0;
+    padding-left: 20px;
     width: 95vw;
     height: fit-content;
   }
@@ -764,6 +731,9 @@ button:hover {
     right: 0;
     width: 220px;
   }
+  body .main-content .background-content-3 {
+    height: 570px;
+  }
   body .main-content .background-content-3 .container-3 {
     height: fit-content;
     flex-direction: column-reverse;
@@ -772,6 +742,7 @@ button:hover {
   }
   body .main-content .background-content-3 .container-3 .container-text {
     padding: 0;
+    padding-left: 15px;
     width: 95vw;
     height: fit-content;
   }
@@ -783,42 +754,12 @@ button:hover {
     width: 100%;
   }
   body .main-content .background-content-3 .container-3 .img-container img {
+    left: unset;
     right: 0;
     width: 220px;
   }
-  body .background-content-3 {
-    height: 570px !important;
-  }
-  body .background-content-3 .container-3 {
-    height: fit-content;
-    flex-direction: column-reverse;
-    width: 100%;
-    padding: 20px;
-  }
-  body .background-content-3 .container-3 .container-text {
-    background-color: red;
-    padding: 0;
-    height: fit-content;
-  }
-  body .background-content-3 .container-3 .container-text h2 {
-    font-size: 33px;
-  }
-  body .background-content-3 .container-3 .img-container {
-    height: 220px;
-    width: 100%;
-  }
-  body .background-content-3 .container-3 .img-container img {
-    left: initial !important;
-    width: 230px !important;
-  }
 }
 @media screen and (max-width: 425px) and (min-width: 376px) {
-  body .main-content .background-content-1 .container-1 h2 {
-    font-size: 35px;
-  }
-  body .main-content .background-content-1 .container-1 h4 {
-    font-size: 11px;
-  }
   body .hero-content {
     display: flex;
     align-items: center;
@@ -996,6 +937,109 @@ button:hover {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 220px;
   }
+  body .main-content .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(white, rgba(118, 69, 217, 0.3));
+    z-index: -1;
+  }
+  body .main-content .background-content-1 .cards-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 {
+    width: 300px;
+    height: 166px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid rgb(231, 227, 235);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2 {
+    font-size: 35px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
+    color: rgb(118, 69, 217);
+    position: relative;
+    bottom: 15px;
+  }
+  body .main-content .background-content-1 .card-section1.green h2:nth-child(2) {
+    color: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.green svg {
+    fill: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.red h2:nth-child(2) {
+    color: rgb(237, 75, 158);
+  }
+  body .main-content .background-content-1 .card-section1.red svg {
+    fill: rgb(237, 75, 158);
+  }
+  body .main-content .container-2 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  body .main-content .container-2 .container-text {
+    padding: 0;
+    padding-left: 20px;
+    width: 95vw;
+    height: fit-content;
+  }
+  body .main-content .container-2 .container-text h2 {
+    font-size: 33px;
+  }
+  body .main-content .container-2 .img-container {
+    height: 220px;
+    width: 100%;
+  }
+  body .main-content .container-2 .img-container img {
+    right: 0;
+    width: 220px;
+  }
+  body .main-content .background-content-3 {
+    height: 570px;
+  }
+  body .main-content .background-content-3 .container-3 {
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  body .main-content .background-content-3 .container-3 .container-text {
+    padding: 0;
+    padding-left: 15px;
+    width: 95vw;
+    height: fit-content;
+  }
+  body .main-content .background-content-3 .container-3 .container-text h2 {
+    font-size: 33px;
+  }
+  body .main-content .background-content-3 .container-3 .img-container {
+    height: 220px;
+    width: 100%;
+  }
+  body .main-content .background-content-3 .container-3 .img-container img {
+    left: unset;
+    right: 0;
+    width: 220px;
+  }
 }
 @media screen and (max-width: 375px) and (min-width: 321px) {
   body .hero-content {
@@ -1156,6 +1200,109 @@ button:hover {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 180px;
   }
+  body .main-content .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(white, rgba(118, 69, 217, 0.3));
+    z-index: -1;
+  }
+  body .main-content .background-content-1 .cards-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 {
+    width: 300px;
+    height: 166px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid rgb(231, 227, 235);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2 {
+    font-size: 35px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
+    color: rgb(118, 69, 217);
+    position: relative;
+    bottom: 15px;
+  }
+  body .main-content .background-content-1 .card-section1.green h2:nth-child(2) {
+    color: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.green svg {
+    fill: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.red h2:nth-child(2) {
+    color: rgb(237, 75, 158);
+  }
+  body .main-content .background-content-1 .card-section1.red svg {
+    fill: rgb(237, 75, 158);
+  }
+  body .main-content .container-2 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  body .main-content .container-2 .container-text {
+    padding: 0;
+    padding-left: 15px;
+    width: 95vw;
+    height: fit-content;
+  }
+  body .main-content .container-2 .container-text h2 {
+    font-size: 33px;
+  }
+  body .main-content .container-2 .img-container {
+    height: 220px;
+    width: 100%;
+  }
+  body .main-content .container-2 .img-container img {
+    right: 0;
+    width: 220px;
+  }
+  body .main-content .background-content-3 {
+    height: 570px;
+  }
+  body .main-content .background-content-3 .container-3 {
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  body .main-content .background-content-3 .container-3 .container-text {
+    padding: 0;
+    padding-left: 20px;
+    width: 95vw;
+    height: fit-content;
+  }
+  body .main-content .background-content-3 .container-3 .container-text h2 {
+    font-size: 33px;
+  }
+  body .main-content .background-content-3 .container-3 .img-container {
+    height: 220px;
+    width: 100%;
+  }
+  body .main-content .background-content-3 .container-3 .img-container img {
+    left: unset;
+    right: 0;
+    width: 220px;
+  }
 }
 @media screen and (max-width: 320px) {
   body .hero-content {
@@ -1315,6 +1462,109 @@ button:hover {
   }
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 180px;
+  }
+  body .main-content .background-content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(white, rgba(118, 69, 217, 0.3));
+    z-index: -1;
+  }
+  body .main-content .background-content-1 .cards-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 {
+    width: 300px;
+    height: 166px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid rgb(231, 227, 235);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2 {
+    font-size: 35px;
+    color: rgb(40, 13, 95);
+  }
+  body .main-content .background-content-1 .cards-section1 .card-section1 h2:nth-child(2) {
+    color: rgb(118, 69, 217);
+    position: relative;
+    bottom: 15px;
+  }
+  body .main-content .background-content-1 .card-section1.green h2:nth-child(2) {
+    color: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.green svg {
+    fill: rgb(31, 199, 212);
+  }
+  body .main-content .background-content-1 .card-section1.red h2:nth-child(2) {
+    color: rgb(237, 75, 158);
+  }
+  body .main-content .background-content-1 .card-section1.red svg {
+    fill: rgb(237, 75, 158);
+  }
+  body .main-content .container-2 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  body .main-content .container-2 .container-text {
+    padding: 0;
+    padding-left: 20px;
+    width: 95vw;
+    height: fit-content;
+  }
+  body .main-content .container-2 .container-text h2 {
+    font-size: 33px;
+  }
+  body .main-content .container-2 .img-container {
+    height: 220px;
+    width: 100%;
+  }
+  body .main-content .container-2 .img-container img {
+    right: 0;
+    width: 220px;
+  }
+  body .main-content .background-content-3 {
+    height: 570px;
+  }
+  body .main-content .background-content-3 .container-3 {
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  body .main-content .background-content-3 .container-3 .container-text {
+    padding: 0;
+    padding-left: 15px;
+    width: 95vw;
+    height: fit-content;
+  }
+  body .main-content .background-content-3 .container-3 .container-text h2 {
+    font-size: 33px;
+  }
+  body .main-content .background-content-3 .container-3 .img-container {
+    height: 220px;
+    width: 100%;
+  }
+  body .main-content .background-content-3 .container-3 .img-container img {
+    left: unset;
+    right: 0;
+    width: 220px;
   }
 }
 
