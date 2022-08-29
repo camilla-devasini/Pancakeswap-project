@@ -433,7 +433,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 550px;
+        height: 650px;
 
         .container-2 {
 
@@ -442,7 +442,9 @@ button:hover {
         padding-top: 150px;
         padding: 20px;
         width: 1350px;
-        height: 580px;
+        height: 550px;
+     
+       
         
         
    
@@ -454,6 +456,8 @@ button:hover {
         justify-content: center;
         flex-direction: column;
         width: 500px;
+       
+       
         
 
         span {
@@ -508,6 +512,7 @@ button:hover {
             position: relative;
             display: flex;
             flex-direction: row;
+            align-items: center;
         
 
             & img {
@@ -609,6 +614,7 @@ button:hover {
                 position: relative;
                 display: flex;
                 flex-direction: row;
+                
         
 
                 & img {
@@ -715,6 +721,57 @@ button:hover {
 
         .main-content {
 
+
+            .background-content-1 {
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                height: auto;
+                background: linear-gradient(white, rgb(118, 69, 217, 30%) );
+                z-index: -1;
+            
+            
+                .cards-section1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    gap: 20px;
+                    
+               
+            
+                    .card-section1 {
+                        width: 263px;
+                        height: 263px;
+                        background-color: white;
+                        border-radius: 24px;
+                        border: 1px solid rgb(231, 227, 235);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        font-family: 'Kanit', sans-serif;
+                        position: relative;
+        
+            
+                        h2 {
+                        
+                            font-size: 35px;
+                            color: rgb(40, 13, 95);
+            
+                            &:nth-child(2) {
+                                color: rgb(118, 69, 217);
+                                position: relative;
+                                bottom: 15px;
+                            }
+                        }
+            
+                  
+                    }
+                }
+                               
+            }
 
             .background-content-2 {
 
