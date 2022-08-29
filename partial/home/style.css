@@ -221,7 +221,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 950px;
+  height: 980px;
   background: linear-gradient(white, rgba(118, 69, 217, 0.3));
   z-index: -1;
 }
@@ -529,7 +529,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 950px;
+    height: 980px;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
   }
@@ -1014,7 +1014,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 1300px;
+    height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
   }
@@ -1283,7 +1283,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 1300px;
+    height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
   }
@@ -1555,7 +1555,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 1050px;
+    height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
   }
