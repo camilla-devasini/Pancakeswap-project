@@ -812,6 +812,14 @@ button:hover {
     right: 0;
     width: 220px;
   }
+  body .main-content .background-content-data {
+    display: unset;
+    height: 420px;
+    background-color: rgba(122, 110, 170, 0.1);
+  }
+  body .main-content .background-content-data .container-data {
+    margin-top: 50px;
+  }
   body .main-content .background-content-data .container-data .group {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -1100,6 +1108,14 @@ button:hover {
     right: 0;
     width: 220px;
   }
+  body .main-content .background-content-data {
+    display: unset;
+    height: 420px;
+    background-color: rgba(122, 110, 170, 0.1);
+  }
+  body .main-content .background-content-data .container-data {
+    margin-top: 50px;
+  }
   body .main-content .background-content-data .container-data .group {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -1371,6 +1387,14 @@ button:hover {
     left: unset;
     right: 0;
     width: 220px;
+  }
+  body .main-content .background-content-data {
+    display: unset;
+    height: 420px;
+    background-color: rgba(122, 110, 170, 0.1);
+  }
+  body .main-content .background-content-data .container-data {
+    margin-top: 50px;
   }
   body .main-content .background-content-data .container-data .group {
     display: grid;
@@ -1644,6 +1668,14 @@ button:hover {
     left: unset;
     right: 0;
     width: 220px;
+  }
+  body .main-content .background-content-data {
+    display: unset;
+    height: 420px;
+    background-color: rgba(122, 110, 170, 0.1);
+  }
+  body .main-content .background-content-data .container-data {
+    margin-top: 50px;
   }
   body .main-content .background-content-data .container-data .group {
     display: grid;
