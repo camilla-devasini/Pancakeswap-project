@@ -383,9 +383,13 @@ section.container-6 .box-data .current-emissions {
   section.container-6 {
     height: 700px;
     padding: 0 24px;
+    align-items: center;
   }
   section.container-6 .wrapper-6 {
     padding: 48px 24px;
+    width: 1020px;
+    height: 750px;
+    justify-content: center;
   }
   section.container-6 .wrapper-6 .top-6 {
     display: flex;

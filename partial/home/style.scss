@@ -349,6 +349,7 @@ section.container-6 {
     background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
     width: 100%;
     
+    
     // .background {
     //     display: flex;
     //     align-items: center;
@@ -488,10 +489,13 @@ section.container-6 {
     section.container-6 {
         height: 700px;
         padding: 0 24px;
+        align-items: center;
 
         .wrapper-6 {
             padding: 48px 24px;
-
+            width: 1020px;
+            height: 750px;
+            justify-content: center;
             .top-6 {
                 // padding-top: 150px;
                 display: flex;
