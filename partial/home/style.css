@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
 
 body {
   overflow-x: hidden;
-  font-family: "Kanit", sans-serif;
   width: 100vw;
 }
 
@@ -92,8 +92,8 @@ button:hover {
   background-color: rgb(31, 199, 212);
   border: none;
   border-radius: 16px;
-  font-family: inherit;
   font-size: 16px;
+  font-weight: 600;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
 }
 .hero-content .main-banner-container .main-banner-sub-container .main-banner-content-container .link-aquagreen .main-banner-button-a .mbb-svg-a {
@@ -171,8 +171,8 @@ button:hover {
   background-color: rgb(31, 199, 212);
   border: none;
   border-radius: 16px;
-  font-family: inherit;
   font-size: 16px;
+  font-weight: 600;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
   margin-right: 5px;
 }
@@ -180,11 +180,11 @@ button:hover {
   width: 130px;
   height: 48px;
   font-size: 16px;
+  font-weight: 600;
   color: rgb(31, 199, 212);
   background-color: transparent;
   border: 2px solid rgb(31, 199, 212);
   border-radius: 16px;
-  font-family: inherit;
   font-size: 16px;
 }
 .hero-content .hero-container .container-2 {
@@ -363,11 +363,12 @@ button:hover {
   background-color: rgb(31, 199, 212);
   border: none;
   border-radius: 16px;
-  font-family: inherit;
   font-size: 18px;
+  font-weight: 600;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
 }
 .main-content .background-content-2 .container-2 .container-text a {
+  font-weight: 600;
   color: rgb(31, 199, 212);
   font-size: 18px;
   margin-left: 10px;
@@ -440,11 +441,12 @@ button:hover {
   background-color: rgb(31, 199, 212);
   border: none;
   border-radius: 16px;
-  font-family: inherit;
   font-size: 18px;
+  font-weight: 600;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
 }
 .main-content .background-content-3 .container-3 .container-text a {
+  font-weight: 600;
   color: rgb(31, 199, 212);
   font-size: 18px;
   margin-left: 10px;
@@ -521,6 +523,344 @@ button:hover {
   font-size: 18px;
   color: rgb(122, 110, 170);
   font-weight: lighter;
+}
+
+.container-5 {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 968px;
+  background: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.container-5 picture.balls img {
+  position: absolute;
+  top: -95px;
+  right: 0px;
+  width: 192px;
+  height: 192px;
+}
+.container-5 picture.cards img {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  bottom: -330px;
+}
+.container-5 .box-wrapper {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 16px;
+  border: 1px solid rgb(231, 227, 235);
+  box-sizing: border-box;
+  backdrop-filter: blur(12px);
+  border-radius: 72px;
+  width: 90%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+.container-5 .box-wrapper .box-prizes {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container-5 .box-wrapper .box-prizes h2 {
+  font-size: 32px;
+  color: rgb(40, 13, 95);
+}
+.container-5 .box-wrapper .box-prizes h2 span {
+  color: rgb(118, 69, 217);
+}
+.container-5 .box-wrapper .box-prizes p {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-section1.green h2:nth-child(2) {
+  color: rgb(31, 199, 212);
+}
+.card-section1.green svg {
+  fill: rgb(31, 199, 212);
+}
+
+.card-section1.red h2:nth-child(2) {
+  color: rgb(237, 75, 158);
+}
+.card-section1.red svg {
+  fill: rgb(237, 75, 158);
+}
+
+.millions-in-prizes-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.millions-in-prizes-cards .card-million {
+  width: 273px;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 24px;
+  font-family: "Kanit", sans-serif;
+  position: relative;
+  justify-content: space-evenly;
+}
+.millions-in-prizes-cards .card-million p:nth-child(1) {
+  position: relative;
+  top: 20px;
+}
+.millions-in-prizes-cards .card-million p:nth-child(3) {
+  position: relative;
+  bottom: 15px;
+}
+.millions-in-prizes-cards .card-million button {
+  width: 225px;
+  height: 48px;
+  background-color: rgb(31, 199, 212);
+  border: 0;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.millions-in-prizes-cards .card-million button svg {
+  fill: white;
+  margin-left: 4px;
+}
+.millions-in-prizes-cards .card-million button:hover {
+  opacity: 0.65;
+}
+.millions-in-prizes-cards .card-million p {
+  font-size: 16px;
+}
+.millions-in-prizes-cards .card-million h2 {
+  font-size: 40px;
+}
+.millions-in-prizes-cards .card-million span {
+  font-size: 40px;
+  font-weight: 600;
+}
+.millions-in-prizes-cards .card-million .svg {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.yellow {
+  background-color: rgb(255, 178, 55);
+  color: rgb(40, 13, 95);
+  background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+  box-shadow: 1px 3px rgb(255, 178, 55);
+}
+
+.purple {
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  color: white;
+  box-shadow: 1px 3px black;
+}
+.purple span {
+  color: rgb(253, 171, 50);
+}
+.purple svg {
+  fill: white;
+}
+
+section.container-6 {
+  background: rgb(250, 249, 250);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  align-items: center;
+}
+section.container-6 .wrapper-6 {
+  display: flex;
+  flex-direction: column;
+}
+section.container-6 .wrapper-6 .top-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+section.container-6 .wrapper-6 .top-6 picture {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  align-self: flex-end;
+}
+section.container-6 .wrapper-6 .top-6 picture img {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  right: 10px;
+  margin-top: 60px;
+}
+section.container-6 .wrapper-6 .top-6 .box-cake {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+section.container-6 .wrapper-6 .top-6 .box-cake h2 {
+  font-size: 32px;
+  color: rgb(40, 13, 95);
+  line-height: 1.1;
+}
+section.container-6 .wrapper-6 .top-6 .box-cake span {
+  font-size: 32px;
+  color: rgb(118, 69, 217);
+}
+section.container-6 .wrapper-6 .top-6 .box-cake p {
+  font-size: 16px;
+  color: rgb(122, 110, 170);
+}
+section.container-6 .wrapper-6 .top-6 .cake-buttons {
+  display: flex;
+  align-items: center;
+}
+section.container-6 .wrapper-6 .top-6 .cake-buttons button {
+  width: 125px;
+  height: 48px;
+  background-color: rgb(31, 199, 212);
+  border: 0px;
+  border-radius: 16px;
+  color: white;
+  font-size: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  padding: 0px 24px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  margin-right: 16px;
+  font-weight: 600;
+}
+section.container-6 .wrapper-6 .top-6 .cake-buttons button:hover {
+  opacity: 0.65;
+}
+section.container-6 .wrapper-6 .top-6 .cake-buttons a {
+  text-decoration: none;
+  color: rgb(31, 199, 212);
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+}
+section.container-6 .wrapper-6 .top-6 .cake-buttons a:hover {
+  text-decoration: underline;
+}
+section.container-6 .box-data {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: "a d" "b e" "c f";
+  gap: 16px 8px;
+  align-self: stretch;
+  padding: 0 20px 60px 20px;
+}
+section.container-6 .box-data p {
+  font-size: 16px;
+  color: rgb(122, 110, 170);
+}
+section.container-6 .box-data span {
+  font-size: 24px;
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.1;
+}
+section.container-6 .box-data .circulating-supply {
+  grid-area: a;
+}
+section.container-6 .box-data .market-cap {
+  grid-area: d;
+  border-left: 1px solid rgb(215, 202, 236);
+  padding: 0px 8px;
+}
+section.container-6 .box-data .total-supply {
+  grid-area: b;
+}
+section.container-6 .box-data .burned-to-date {
+  grid-area: e;
+  border-left: 1px solid rgb(215, 202, 236);
+  padding: 0px 8px;
+}
+section.container-6 .box-data .max-supply {
+  grid-area: c;
+}
+section.container-6 .box-data .current-emissions {
+  grid-area: f;
+  border-left: 1px solid rgb(215, 202, 236);
+  padding: 0px 8px;
+}
+
+.container-7 {
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  width: 100%;
+}
+.container-7 picture.left {
+  display: none;
+}
+.container-7 picture.right {
+  display: none;
+}
+.container-7 .wrapper-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+  gap: 20px;
+}
+.container-7 .wrapper-7 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: white;
+}
+.container-7 .wrapper-7 .text-7 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+}
+.container-7 .wrapper-7 .text-7 span {
+  font-weight: 600;
+}
+.container-7 .wrapper-7 a {
+  color: rgb(31, 199, 212);
+  text-decoration: none;
+  font-weight: 600;
+}
+.container-7 .wrapper-7 a:hover {
+  text-decoration: underline;
+}
+.container-7 .wrapper-7 button {
+  font-size: 16px;
+  padding: 0px 24px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 16px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  height: 48px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+.container-7 .wrapper-7 button:hover {
+  opacity: 0.65;
 }
 
 @media screen and (max-width: 1050px) and (min-width: 859px) {
@@ -1694,6 +2034,131 @@ button:hover {
   body .main-content .background-content-data .container-data .group .fifth {
     grid-column: 2;
     grid-row: 3;
+  }
+}
+@media all and (min-width: 852px) {
+  body {
+    width: 100%;
+  }
+  body .container-5 {
+    max-width: 100%;
+  }
+  body .container-5 picture.balls img {
+    width: 512px;
+    height: 512px;
+  }
+  body .container-5 picture.cards {
+    top: 450px;
+    position: relative;
+  }
+  body .container-5 picture.cards img {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+  }
+  body .container-5 .box-wrapper {
+    width: 80% !important;
+  }
+  body .container-5 .box-wrapper .box-prizes h2, body .container-5 .box-wrapper .box-prizes span {
+    font-size: 42px !important;
+  }
+  body .container-5 .box-wrapper .millions-in-prizes-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  body .container-5 .box-wrapper .millions-in-prizes-cards .card-million.yellow {
+    transform: rotate(-2deg);
+  }
+  body .container-5 .box-wrapper .millions-in-prizes-cards .card-million.purple {
+    transform: rotate(2deg);
+  }
+  section.container-6 {
+    height: 700px;
+    padding: 0 24px;
+    align-items: center;
+  }
+  section.container-6 .wrapper-6 {
+    padding: 48px 24px;
+    width: 1020px;
+    height: 750px;
+    justify-content: center;
+  }
+  section.container-6 .wrapper-6 .top-6 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section.container-6 .wrapper-6 .top-6 picture.bunny {
+    position: relative;
+    width: 410px;
+    height: 400px;
+    bottom: 55px;
+    right: 40px;
+  }
+  section.container-6 .wrapper-6 .top-6 picture.bunny img {
+    width: 410px;
+    height: 400px;
+  }
+  section.container-6 .wrapper-6 .top-6 .box-cake {
+    align-self: center;
+    flex: 1 1 0%;
+  }
+  section.container-6 .wrapper-6 .top-6 .box-cake h2 {
+    font-size: 40px;
+  }
+  section.container-6 .wrapper-6 .top-6 .box-cake h2 span {
+    font-size: 40px;
+  }
+  section.container-6 .box-data {
+    display: grid;
+    grid-template-areas: " a b c" "d e f" !important;
+    grid-template-columns: repeat(3, auto) !important;
+    gap: 32px !important;
+  }
+  section.container-6 .box-data .max-supply {
+    border-left: 1px solid rgb(215, 202, 236);
+    padding: 0px 8px;
+  }
+  section.container-6 .box-data .total-supply {
+    border-left: 1px solid rgb(215, 202, 236);
+    padding: 0px 8px;
+  }
+  section.container-6 .box-data .market-cap {
+    border-left: 0px !important;
+    padding: 0 !important;
+  }
+  .container-7 {
+    height: 420px;
+  }
+  .container-7 picture.left {
+    padding-bottom: 20px;
+    display: flex;
+  }
+  .container-7 picture.left img {
+    width: 256px;
+    height: 256px;
+    position: absolute;
+  }
+  .container-7 picture.right {
+    display: flex;
+  }
+  .container-7 picture.right img {
+    width: 239px;
+    height: 224px;
+    position: absolute;
+    right: 0;
+    margin-top: 150px;
+  }
+  .container-7 .wrapper-7 .title-7 h2 {
+    font-size: 40px;
+  }
+  .container-7 .wrapper-7 .title-7 p {
+    font-weight: 400;
+  }
+  .container-7 .wrapper-7 .title-7 span {
+    font-weight: 600;
   }
 }
 
