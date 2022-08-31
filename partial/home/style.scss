@@ -201,77 +201,92 @@ section.container-6 {
     .wrapper-6 {
         display: flex;
         flex-direction: column;
-        gap: 80px;
-    }
+        // gap: 80px;
 
-    picture.bunny img {
-        position: absolute;
-        width: 192px;
-        height: 192px;
-        right: 10px;
-        margin-top: 60px;
-    }
+        .top-6 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
 
-    .box-cake {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
+            picture {
+                width: 192px;
+                height: 192px;
+                position: relative;
+                align-self: flex-end;
+
+                img {
+                    position: absolute;
+                    width: 192px;
+                    height: 192px;
+                    right: 10px;
+                    margin-top: 60px;
+                }
+            }
+
         
-        h2 {
-            font-size: 32px;
-            color: rgb(40, 13, 95);
-            line-height: 1.1;
-        }
-
-        span {
-            font-size: 32px;
-            color: rgb(118, 69, 217);
-        }
-
-        p {
-            font-size: 16px;
-            color: rgb(122, 110, 170);
-        }
-    }
-
-    .cake-buttons {
-        display: flex;
-        align-items: center;
-
-        button {
-            width: 125px;
-            height: 48px;
-            background-color: rgb(31, 199, 212);
-            border: 0px;
-            border-radius: 16px;
-            color: white;
-            font-size: 16px;
-            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-            cursor: pointer;
-            padding: 0px 24px;
-            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-            margin-right: 16px;
-            font-weight: 600;
-
-        }
+            .box-cake {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+                
+                h2 {
+                    font-size: 32px;
+                    color: rgb(40, 13, 95);
+                    line-height: 1.1;
+                }
         
-        button:hover {
-            opacity: 0.65;
-        }
-
-        a {
-            text-decoration: none;
-            color: rgb(31, 199, 212);
-            font-weight: 600;
-            line-height: 1.5;
-            cursor: pointer;
-        }
-
-        a:hover {
-            text-decoration: underline;
+                span {
+                    font-size: 32px;
+                    color: rgb(118, 69, 217);
+                }
+        
+                p {
+                    font-size: 16px;
+                    color: rgb(122, 110, 170);
+                }
+            }
+        
+            .cake-buttons {
+                display: flex;
+                align-items: center;
+        
+                button {
+                    width: 125px;
+                    height: 48px;
+                    background-color: rgb(31, 199, 212);
+                    border: 0px;
+                    border-radius: 16px;
+                    color: white;
+                    font-size: 16px;
+                    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                    cursor: pointer;
+                    padding: 0px 24px;
+                    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                    margin-right: 16px;
+                    font-weight: 600;
+        
+                }
+                
+                button:hover {
+                    opacity: 0.65;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: rgb(31, 199, 212);
+                    font-weight: 600;
+                    line-height: 1.5;
+                    cursor: pointer;
+                }
+        
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
+
 
     .box-data {
         display: grid;        
@@ -282,7 +297,7 @@ section.container-6 {
         "c f";
         gap: 16px 8px;
         align-self: stretch;
-        padding: 20px;
+        padding: 0 20px 60px 20px;
         
         p {
             font-size: 16px;
@@ -332,6 +347,7 @@ section.container-6 {
 
 .container-7 {
     background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+    width: 100%;
     
     // .background {
     //     display: flex;
@@ -471,15 +487,40 @@ section.container-6 {
     //container 6
     section.container-6 {
         height: 700px;
-        .top-6 {
-            padding-top: 150px;
+        padding: 0 24px;
 
-            .box-cake h2{
-                font-size: 40px;
+        .wrapper-6 {
+            padding: 48px 24px;
 
-                span {
-                    font-size: 40px;
+            .top-6 {
+                // padding-top: 150px;
+                display: flex;
+                flex-direction: row-reverse;
+                picture.bunny {
+                    position: relative;
+                    width: 410px;
+                    height: 400px;
+                    bottom: 55px;
+                    right: 40px;
+    
+                    img {
+                        width: 410px;
+                        height: 400px;
+                    }
                 }
+    
+                .box-cake {
+                    align-self: center;
+                    flex: 1 1 0%;
+
+                    h2{
+                        font-size: 40px;
+        
+                        span {
+                            font-size: 40px;
+                        }
+                    }
+                } 
             }
         }
         .box-data {
@@ -523,8 +564,8 @@ section.container-6 {
             display: flex;
 
             img {
-                width: 256px;
-                height: 256px;
+                width: 239px;
+                height: 224px;
                 position: absolute;
                 right: 0;
                 margin-top: 150px;
