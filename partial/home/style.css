@@ -195,10 +195,15 @@ button:hover {
   height: 280.8;
 }
 .hero-content .hero-container .container-2 .bunny-container {
+  position: relative;
   width: 90%;
   margin-bottom: -50px;
 }
 .hero-content .hero-container .container-2 .bunny-container img {
+  width: 100%;
+}
+.hero-content .hero-container .container-2 .bunny-container .star {
+  position: absolute;
   width: 100%;
 }
 .hero-content .hero-container .svg-border {

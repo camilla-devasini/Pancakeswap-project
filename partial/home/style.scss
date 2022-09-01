@@ -253,13 +253,19 @@ button:hover {
                     
 
                     .bunny-container {
- 
+                        position: relative;
                         width: 90%;
                         margin-bottom: -50px;
                 
                             img {
                                  width: 100%;
-                            }   
+                            } 
+
+                            .star {
+                                position: absolute;
+                                width: 100%;
+                            }
+                            
                     }
             }
  
