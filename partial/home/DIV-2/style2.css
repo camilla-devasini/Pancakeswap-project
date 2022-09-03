@@ -127,6 +127,8 @@ button:hover {
 .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
   z-index: 1;
   visibility: initial;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .hero-content .main-banner-container .main-banner-sub-container .bunny-container-a {
   width: 97%;
@@ -255,6 +257,8 @@ button:hover {
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     z-index: 1;
     visibility: initial;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .bunny-container-a {
     width: 97%;
@@ -391,6 +395,8 @@ button:hover {
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     z-index: 1;
     visibility: initial;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .bunny-container-a {
     width: 97%;

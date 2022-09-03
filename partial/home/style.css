@@ -120,6 +120,8 @@ button:hover {
 .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
   z-index: 1;
   visibility: initial;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
   z-index: 1;
@@ -960,6 +962,8 @@ section.container-6 .box-data .current-emissions {
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
     visibility: initial;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     visibility: hidden;
@@ -1158,6 +1162,8 @@ section.container-6 .box-data .current-emissions {
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
     visibility: initial;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     visibility: hidden;
@@ -1422,6 +1428,8 @@ section.container-6 .box-data .current-emissions {
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
     visibility: initial;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     visibility: hidden;
@@ -1721,6 +1729,8 @@ section.container-6 .box-data .current-emissions {
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
     visibility: initial;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     visibility: hidden;
@@ -2004,6 +2014,8 @@ section.container-6 .box-data .current-emissions {
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-a {
     visibility: initial;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   body .hero-content .main-banner-container .main-banner-sub-container .swiper-slide .swpr-b {
     visibility: hidden;
