@@ -1,18 +1,96 @@
 @import "../common-submenu/submenu.scss";
 @import "../card/cards-swap-limit.scss";
 
+
 .complete-trade-card-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-     
-}
+  
 
-#trade-card-container-limit {
-    @extend %style-trade-card;
-    display: none;
-}
+    #trade-card-container-limit {
+        @extend %style-trade-card;
+        display: none;
+        margin-left: 24px;
+        margin-right: 24px;
+        height: fit-content;
 
+        & .connect-wallet {
+            margin-bottom: 40px;
+        }
+
+        
+
+    }
+
+    %clicked-btn {
+        color: rgb(40, 13, 95);
+        background-color: #fff;
+    }
+
+    #trade-orders-card {
+        @extend %style-trade-card;
+        display: none;
+        margin-top: 20px;
+        border-top-left-radius: 16px;
+        min-width: 376px;
+        height: fit-content;
+       
+        
+      
+
+        & header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(238, 234, 244);
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        
+            & button {
+                padding: 0 25px;
+                flex: 1 1 auto;
+                font-weight: 600;
+                color: rgb(122, 110, 170);
+                padding: 10px 0px;
+                text-align: center;
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+
+            }
+
+            & button:first-child {
+                @extend %clicked-btn;
+        
+            }  
+        }
+
+        & .orders-content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgb(189, 194, 196);
+
+            & > img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        & .orders-scroll {
+            padding: 32px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+    
+            & span {
+                margin: 0px 20px;
+            }
+        }
+
+    }
+}
 
 .show-card {
     display: none;
@@ -28,6 +106,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+
 
         .version-button {
             display: flex;
@@ -103,7 +183,10 @@
                 outline: 0px;
                 line-height: 48px;
                 font-weight: 600;
-                
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
 
             & > img {
@@ -122,17 +205,50 @@
 
 
 @media screen and (min-width: 576px) {
+    .complete-trade-card-wrapper .trade-cards-only-container {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        flex: 1;
+        flex-direction: row-reverse;
+        position: relative;
+        
+
+        
+
+
+        & > #trade-card-container-limit {
+            width: 326px;
+       
+        }
+
+        & > #trade-orders-card {
+            margin-top: 0px;
+            min-width: 40vw;
+            flex-grow: 1;
+
+           
+       
+        
+        }
+       
+    }
+
     .trade-page-footer .version-conversion {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-        gap: 40px;
+        
+
+   
     }
+    
 }
 
 @media screen and (min-width: 852px) {
     .trade-page-footer {
-        width: 100%;
+        min-width: 90%;
         flex-direction: row;
         justify-content: space-between;
     }
