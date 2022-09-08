@@ -1,0 +1,112 @@
+
+.container_card_wallet{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 500px;
+    color-scheme: light;
+    
+    border-radius: 40px;
+    border: 1px solid;
+    justify-content: space-between;
+   
+        .head_card_wallet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(236,245,255);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        .title_card_wallet{
+            display: flex;
+            justify-content: space-around;
+            gap: 150px;
+            padding: 10px;
+            h2{
+                color: rgb(40,13,95);
+                font-weight: bold;
+            }
+        }
+       .close_x_card_wallet{
+        margin: auto;
+        color: rgb(84,210,223);
+       }
+   
+    }.body_card_wallet{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid lightslategrey;
+        height: 300px;
+        justify-content: space-around;
+        padding: 20px;
+        text-align: center;
+
+    .body_card1{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        margin-left: 10px;
+
+        .metamask_card_wallet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:rgb(122,110,170);
+            justify-content: center;
+        }
+        .binance_card_wallet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(122,110,170);
+            justify-content: center;
+        }
+    }
+    .body_card2{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin-left: -20px;
+        
+        .coinbase_card_wallet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:rgb(122,110,170);
+            justify-content: center;
+            margin-left: 8px;
+        }
+        .other_card_wallet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(122,110,170);
+            justify-content: center;
+            margin-right: 15px;
+        }
+    }
+
+}
+.foot_card_wallet{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    height: 170px;
+    .p_foot{
+        color: rgb(124,112,171);
+        font-weight: bold;
+    }
+    .foot_btn{
+        width: 290px;
+        height: 50px;
+        border-radius: 12px;
+        background-color: rgb(122,110,170);
+        color: rgb(255,255,255);
+        font-weight: bold;
+    }
+}
+}
