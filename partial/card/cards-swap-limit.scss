@@ -336,10 +336,12 @@ button {
 
 }
 
-.trade-cards-only-container {
-    display: flex;
-   
-}
+.trade-cards-only-container > .limit-card-plus-orders {
+        display: flex;
+        flex-direction: row-reverse;
+        align-self: flex-start;
+    }
+
 
 .card-graph-container {
     display: none;

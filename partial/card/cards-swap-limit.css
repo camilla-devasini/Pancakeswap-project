@@ -267,8 +267,10 @@ button {
   display: flex;
 }
 
-.trade-cards-only-container {
+.trade-cards-only-container > .limit-card-plus-orders {
   display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-start;
 }
 
 .card-graph-container {

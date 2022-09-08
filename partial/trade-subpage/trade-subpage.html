@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body class="body-trade-page">
+ 
    
         <!--SUBMENU COMUNE-->
         <div class="trade-navbar-container">
@@ -40,7 +41,7 @@
                         <button class="close-btn hover-active-class">
                             <picture>
                                 <source class="expand-btn" media="(min-width: 576px)" srcset="../../svg/expand-icon.svg" alt="edxpand arrows"/>
-                                <img src="../../svg/close-icon.svg" alt="close icon"/>
+                                <img id="graph-close-icon" src="../../svg/close-icon.svg" alt="close icon"/>
                             </picture>
                         </button>
 
@@ -92,7 +93,7 @@
                         <div class="trade-icons">
                             <div class="trade-item">
                                 <button class="hover-active-class">
-                                    <img class="graph-icon" src="../../svg/show-graph-icon.svg" alt="graph icon"/>
+                                    <img id="graph-icon" class="graph-icon" src="../../svg/show-graph-icon.svg" alt="graph icon"/>
                                 </button>
                             </div>
 
@@ -156,13 +157,13 @@
                 </section>
 
                     <!-- CARD LIMIT INIZIALMENTE NASCOSTA-->
-                
+                <div class="limit-card-plus-orders">
                     <section id="trade-card-container-limit">
                         <header class="trade-header">
                             <div class="trade-icons">
                                 <div class="trade-item">
                                     <button class="hover-active-class">
-                                        <img class="graph-icon" src="../../svg/show-graph-icon.svg" alt="hidden graph icon"/>
+                                        <img id="limit-graph-icon" class="graph-icon" src="../../svg/show-graph-icon.svg" alt="hidden graph icon"/>
                                     </button>
                                 </div>
 
@@ -248,7 +249,7 @@
                             <img src="../../svg/right-arrow-grey.svg"/>
                         </div>
                     </section>
-       
+                </div>
             </div>
 
             <!--FOOTER WITH BUTTON AND HELP BUNNY-->

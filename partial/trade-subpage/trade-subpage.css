@@ -322,8 +322,10 @@ button {
   display: flex;
 }
 
-.trade-cards-only-container {
+.trade-cards-only-container > .limit-card-plus-orders {
   display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-start;
 }
 
 .card-graph-container {
@@ -500,6 +502,12 @@ button {
   flex-direction: column;
   align-items: center;
 }
+.complete-trade-card-wrapper .limit-card-plus-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 .complete-trade-card-wrapper #trade-card-container-limit {
   display: none;
   margin-left: 24px;
@@ -517,7 +525,8 @@ button {
 }
 .complete-trade-card-wrapper #trade-orders-card {
   display: none;
-  margin-top: 20px;
+  margin-top: 0px;
+  align-self: flex-start;
   border-top-left-radius: 16px;
   min-width: 376px;
   height: -webkit-fit-content;
@@ -663,23 +672,25 @@ button {
     width: -moz-fit-content;
     width: fit-content;
     justify-content: center;
-    flex: 1;
-    flex-direction: row-reverse;
     position: relative;
   }
-  .complete-trade-card-wrapper .trade-cards-only-container > #trade-card-container-limit {
+  .complete-trade-card-wrapper .trade-cards-only-container .limit-card-plus-orders {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .complete-trade-card-wrapper .trade-cards-only-container .limit-card-plus-orders > #trade-card-container-limit {
     width: 326px;
   }
   .complete-trade-card-wrapper .trade-cards-only-container > #trade-orders-card {
     margin-top: 0px;
     min-width: 40vw;
-    flex-grow: 1;
   }
   .trade-page-footer .version-conversion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 852px) {

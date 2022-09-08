@@ -6,7 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
+    & .limit-card-plus-orders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+   
 
     #trade-card-container-limit {
         @extend %style-trade-card;
@@ -31,7 +38,8 @@
     #trade-orders-card {
         @extend %style-trade-card;
         display: none;
-        margin-top: 20px;
+        margin-top: 0px;
+        align-self: flex-start;
         border-top-left-radius: 16px;
         min-width: 376px;
         height: fit-content;
@@ -209,40 +217,54 @@
         display: flex;
         width: fit-content;
         justify-content: center;
-        flex: 1;
-        flex-direction: row-reverse;
         position: relative;
         
+        & .limit-card-plus-orders {
+            display: flex;
+            flex-direction: row-reverse;
+            
+            
 
+            & > #trade-card-container-limit {
+                width: 326px;
         
-
-
-        & > #trade-card-container-limit {
-            width: 326px;
-       
+            }
         }
 
         & > #trade-orders-card {
+
             margin-top: 0px;
             min-width: 40vw;
-            flex-grow: 1;
-
            
-       
-        
-        }
-       
+        }  
     }
+
 
     .trade-page-footer .version-conversion {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-        
-
-   
+        gap: 20px;
     }
+
+    // .violet-layer {
+    //     z-index: 1;
+    //     position: relative;
+    //     background-color:blue;
+  
+    
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0px;
+    //         opacity: 0.3;
+    //         height: 100vh;
+    //         width: 100vw;
+    //         background-color:blue;
+        
+    //     }
+    // }
     
 }
 
