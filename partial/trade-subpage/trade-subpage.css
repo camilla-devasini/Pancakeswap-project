@@ -52,6 +52,11 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 852px) {
+  .trade-navbar {
+    justify-content: center;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -399,11 +404,6 @@ button {
   padding: 0px 16px;
 }
 
-@media screen and (min-width: 852px) {
-  .trade-navbar {
-    justify-content: center;
-  }
-}
 .complete-trade-card-wrapper {
   display: flex;
   flex-direction: column;

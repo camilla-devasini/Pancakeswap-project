@@ -42,8 +42,152 @@
                 <img src="../../../svg/carousel-arrow-right.svg" alt="right-arrow"/>
             </button>
 
+            <!-- COUNTERS WITH THE CLOCK-->
+            <div class="counters-container">
+               
+                <div class="coins-counter">
+                    <img class="coins-img" src="../../../svg/coins.png" alt="coins"/>
+                    
+                    <div class="prediction-counter">
+                        <span>BNBUSD</span>
+                        <span id="usd-counter">......</span>
+                    </div>
+                </div>
+
+                <div class="violet-prediction-btn">
+                    <img src="../../../svg/question-mark.svg"/>
+                </div>
+
+                <div class="violet-prediction-btn">
+                    <img src="../../../svg/trophy.svg"/>
+                </div>
+               
+               
+                <div class="coins-counter">
+                    <img class="clock-img" src="../../../svg/alarm.svg" alt="alarm"/>
+                    <div class="prediction-counter">
+                        <span id="time-counter">.....</span>
+                        <span>5m</span>
+                    </div>
+                </div>
+            </div>
+
             <!--CAROUSEL-->
             <div class="prediction-cards-carousel">
+
+                <!--CAROUSEL CARD EXPIRED - stilizzata come card base-->
+                <div class="prediction-card expired-card"> <!--classe per opacity 0.65 per le cards expired (diventa 1 con hover)-->
+                    <header class="prediction-header">
+                        <div>
+                            <img class="prediction-icons" src="../../../svg/prohibition.svg" alt="prohibition sign"/>
+                            <span>Expired</span>
+                        </div>
+                        <span>#xxx</span>
+                    </header>
+
+                    <div class="prediction-content">
+                        <div class="prediction-label">
+                            <div class="prediction-shape">
+                                <img src="../../../svg/gray-shape-up.svg" alt=""/>
+                            </div>
+                            <div class="prediction-text">
+                                <span>UP</span>
+                                <div>
+                                    <span>xxx</span>
+                                    <span>Payout</span>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="prediction-info">
+                            <span>closed price</span>
+                            
+                            <div class="prediction-grid">
+                                <div class="info-grid1"><span>&dollar;nnnnn</span></div>
+                                <div class="info-grid2">
+                                     <img src="../../../svg/arrow-up.svg" alt="arrow up"/>
+                                     <img src="../../../svg/arrow-down.svg" alt="arrow down"/> <!-- A SECONDA DEL VALORE DI CHIUSURA NEGOZIAZIONE -->
+                                     <span>&dollar;zzzzz</span>
+
+                                </div>
+                                <div class="info-grid3"><span>Locked Price:</span></div>
+                                <div class="info-grid4"><span></span>&dollar;xxxx</span></div>
+                                <div class="info-grid5"><span></span>Prize Pool:</span></div>
+                                <div class="info-grid6"><span></span>xxxx BNB</span></div>   
+                            </div>
+                        </div>
+
+                        <div class="prediction-label">
+                            <div class="prediction-shape">
+                                <img src="../../../svg/grey-shape-down.svg" alt=""/>
+                            </div>
+                            <div class="prediction-text pred-reverse">
+                                <span>DOWN</span>
+                                <div>
+                                    <span>xxx</span>
+                                    <span>Payout</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CAROUSEL CARD EXPIRED - stilizzata come card base-->
+                <div class="prediction-card expired-card"> <!--classe per opacity 0.65 per le cards expired (diventa 1 con hover)-->
+                    <header class="prediction-header">
+                        <div>
+                            <img class="prediction-icons" src="../../../svg/prohibition.svg" alt="prohibition sign"/>
+                            <span>Expired</span>
+                        </div>
+                        <span>#xxx</span>
+                    </header>
+
+                    <div class="prediction-content">
+                        <div class="prediction-label">
+                            <div class="prediction-shape">
+                                <img src="../../../svg/gray-shape-up.svg" alt=""/>
+                            </div>
+                            <div class="prediction-text">
+                                <span>UP</span>
+                                <div>
+                                    <span>xxx</span>
+                                    <span>Payout</span>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <div class="prediction-info">
+                            <span>closed price</span>
+                            
+                            <div class="prediction-grid">
+                                <div class="info-grid1"><span>&dollar;nnnnn</span></div>
+                                <div class="info-grid2">
+                                     <img src="../../../svg/arrow-up.svg" alt="arrow up"/>
+                                     <img src="../../../svg/arrow-down.svg" alt="arrow down"/> <!-- A SECONDA DEL VALORE DI CHIUSURA NEGOZIAZIONE -->
+                                     <span>&dollar;zzzzz</span>
+
+                                </div>
+                                <div class="info-grid3"><span>Locked Price:</span></div>
+                                <div class="info-grid4"><span></span>&dollar;xxxx</span></div>
+                                <div class="info-grid5"><span></span>Prize Pool:</span></div>
+                                <div class="info-grid6"><span></span>xxxx BNB</span></div>   
+                            </div>
+                        </div>
+
+                        <div class="prediction-label">
+                            <div class="prediction-shape">
+                                <img src="../../../svg/grey-shape-down.svg" alt=""/>
+                            </div>
+                            <div class="prediction-text pred-reverse">
+                                <span>DOWN</span>
+                                <div>
+                                    <span>xxx</span>
+                                    <span>Payout</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!--CAROUSEL CARD EXPIRED - stilizzata come card base-->
                 <div class="prediction-card expired-card"> <!--classe per opacity 0.65 per le cards expired (diventa 1 con hover)-->

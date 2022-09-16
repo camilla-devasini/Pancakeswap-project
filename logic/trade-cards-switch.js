@@ -29,7 +29,7 @@ menuLabels.forEach(function(item) {
     item.addEventListener('click', function() {
         item.classList.add('link-highlighted');
 
-        i
+        
     });    
 });
 
