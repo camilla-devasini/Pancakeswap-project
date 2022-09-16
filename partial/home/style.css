@@ -317,12 +317,23 @@ button:hover {
   height: 280.8;
 }
 .hero-content .hero-container .container-2 .bunny-container {
-  animation-duration: 25000ms;
-  animation-name: lunar-bunny;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 25000ms;
+          animation-duration: 25000ms;
+  -webkit-animation-name: lunar-bunny;
+          animation-name: lunar-bunny;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   position: relative;
   width: 90%;
   margin-bottom: -50px;
+}
+@-webkit-keyframes lunar-bunny {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50px) translateY(-50px);
+  }
 }
 @keyframes lunar-bunny {
   0%, 100% {
@@ -523,10 +534,22 @@ button:hover {
   align-items: center;
 }
 .main-content .background-content-2 .container-2 .img-container .trade-1 {
-  animation-duration: 8000ms;
-  animation-delay: 2000ms;
-  animation-name: bitcoin-biscuit;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 8000ms;
+          animation-duration: 8000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25px) translateY(-25px);
+  }
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -537,10 +560,14 @@ button:hover {
   }
 }
 .main-content .background-content-2 .container-2 .img-container .trade-2 {
-  animation-duration: 9000ms;
-  animation-delay: 1000ms;
-  animation-name: bitcoin-biscuit;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 9000ms;
+          animation-duration: 9000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -551,9 +578,12 @@ button:hover {
   }
 }
 .main-content .background-content-2 .container-2 .img-container .trade-3 {
-  animation-duration: 8000ms;
-  animation-name: bitcoin-biscuit;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 8000ms;
+          animation-duration: 8000ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -722,18 +752,158 @@ button:hover {
   width: 192px;
   height: 192px;
 }
+.container-5 picture.balls img.prima {
+  -webkit-animation-duration: 8000ms;
+          animation-duration: 8000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-12px) translateY(-12px);
+  }
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-12px) translateY(-12px);
+  }
+}
+.container-5 picture.balls img.seconda {
+  -webkit-animation-duration: 8000ms;
+          animation-duration: 8000ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-12px) translateY(-12px);
+  }
+}
+.container-5 picture.balls img.quarta {
+  -webkit-animation-duration: 4000ms;
+          animation-duration: 4000ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-8px) translateY(-8px);
+  }
+}
 .container-5 picture.cards img {
   position: absolute;
   width: 192px;
   height: 192px;
-  bottom: -330px;
+  bottom: 0;
+  margin-bottom: -60px;
+}
+.container-5 picture.cards img.card-1 {
+  -webkit-animation-duration: 6000ms;
+          animation-duration: 6000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 2;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-100px) translateY(-100px);
+  }
+}
+.container-5 picture.cards img.card-2 {
+  -webkit-animation-duration: 6500ms;
+          animation-duration: 6500ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 3;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-15px) translateY(-15px);
+  }
+}
+.container-5 picture.cards img.card-3 {
+  -webkit-animation-duration: 3500ms;
+          animation-duration: 3500ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-bottom: -72px;
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-15px) translateY(-15px);
+  }
+}
+.container-5 picture.cards img.card-4 {
+  -webkit-animation-duration: 3500ms;
+          animation-duration: 3500ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 1;
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-12px) translateY(-12px);
+  }
 }
 .container-5 .box-wrapper {
   background: rgba(255, 255, 255, 0.6);
   padding: 16px;
   border: 1px solid rgb(231, 227, 235);
   box-sizing: border-box;
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   border-radius: 72px;
   width: 90%;
   align-self: center;
@@ -742,6 +912,7 @@ button:hover {
   margin-top: 50px;
   margin-bottom: 50px;
   gap: 40px;
+  z-index: 4;
 }
 .container-5 .box-wrapper .box-prizes {
   align-self: center;
@@ -889,6 +1060,78 @@ section.container-6 .wrapper-6 .top-6 picture img {
   height: 192px;
   right: 10px;
   margin-top: 60px;
+}
+section.container-6 .wrapper-6 .top-6 picture img.bottom-right {
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-10px) translateY(-10px);
+  }
+}
+section.container-6 .wrapper-6 .top-6 picture img.top-left {
+  -webkit-animation-duration: 3500ms;
+          animation-duration: 3500ms;
+  -webkit-animation-delay: 3300ms;
+          animation-delay: 3300ms;
+  -webkit-animation-name: balls;
+          animation-name: balls;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes balls {
+  0%, 100% {
+    transform: translateY(0) translateY(0);
+  }
+  50% {
+    transform: translateY(-5px) translateY(-5px);
+  }
+}
+section.container-6 .wrapper-6 .top-6 picture img.top-right {
+  -webkit-animation-duration: 3500ms;
+          animation-duration: 3500ms;
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-5px) translateY(-5px);
+  }
+}
+section.container-6 .wrapper-6 .top-6 picture img.coin {
+  -webkit-animation-duration: 3200ms;
+          animation-duration: 3200ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: bitcoin-biscuit;
+          animation-name: bitcoin-biscuit;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-5px) translateY(-5px);
+  }
 }
 section.container-6 .wrapper-6 .top-6 .box-cake {
   display: flex;
@@ -1430,6 +1673,8 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -1439,6 +1684,8 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 20px;
     width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -1456,6 +1703,8 @@ section.container-6 .box-data .current-emissions {
     width: 220px;
   }
   body .main-content .background-content-3 .container-3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -1465,6 +1714,8 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 15px;
     width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -1696,6 +1947,8 @@ section.container-6 .box-data .current-emissions {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -1733,6 +1986,8 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -1742,6 +1997,8 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 20px;
     width: 95vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -1759,6 +2016,8 @@ section.container-6 .box-data .current-emissions {
     height: 570px;
   }
   body .main-content .background-content-3 .container-3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -1768,6 +2027,8 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 15px;
     width: 95vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -1978,6 +2239,8 @@ section.container-6 .box-data .current-emissions {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2015,6 +2278,8 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2024,6 +2289,8 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 15px;
     width: 95vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -2041,6 +2308,8 @@ section.container-6 .box-data .current-emissions {
     height: 570px;
   }
   body .main-content .background-content-3 .container-3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2050,6 +2319,8 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 20px;
     width: 95vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -2263,6 +2534,8 @@ section.container-6 .box-data .current-emissions {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2300,6 +2573,8 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2308,6 +2583,8 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 .container-text {
     padding: 0;
     width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -2328,6 +2605,8 @@ section.container-6 .box-data .current-emissions {
     height: 570px;
   }
   body .main-content .background-content-3 .container-3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2336,6 +2615,8 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-3 .container-3 .container-text {
     padding: 0;
     width: 90vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -2387,10 +2668,6 @@ section.container-6 .box-data .current-emissions {
   body .container-5 {
     max-width: 100%;
   }
-  body .container-5 picture.balls img {
-    width: 512px;
-    height: 512px;
-  }
   body .container-5 picture.cards {
     top: 450px;
     position: relative;
@@ -2399,6 +2676,7 @@ section.container-6 .box-data .current-emissions {
     position: absolute;
     width: 512px;
     height: 512px;
+    bottom: -280px;
   }
   body .container-5 .box-wrapper {
     width: 80% !important;
@@ -2485,6 +2763,76 @@ section.container-6 .box-data .current-emissions {
     height: 256px;
     position: absolute;
   }
+  .container-7 picture.left img.pancake-bottom {
+    -webkit-animation-duration: 2800ms;
+            animation-duration: 2800ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
+    -webkit-animation-name: balls;
+            animation-name: balls;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes balls {
+    0%, 100% {
+      transform: translateY(0) translateY(0);
+    }
+    50% {
+      transform: translateY(-5px) translateY(-5px);
+    }
+  }
+  @keyframes balls {
+    0%, 100% {
+      transform: translateY(0) translateY(0);
+    }
+    50% {
+      transform: translateY(-5px) translateY(-5px);
+    }
+  }
+  .container-7 picture.left img.pancake-left {
+    -webkit-animation-duration: 2780ms;
+            animation-duration: 2780ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
+    -webkit-animation-name: bitcoin-biscuit;
+            animation-name: bitcoin-biscuit;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes bitcoin-biscuit {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-5px) translateY(-5px);
+    }
+  }
+  @keyframes bitcoin-biscuit {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-5px) translateY(-5px);
+    }
+  }
+  .container-7 picture.left img.pancake-top {
+    -webkit-animation-duration: 2880ms;
+            animation-duration: 2880ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
+    -webkit-animation-name: bitcoin-biscuit;
+            animation-name: bitcoin-biscuit;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @keyframes bitcoin-biscuit {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-5px) translateY(-5px);
+    }
+  }
   .container-7 picture.right {
     display: flex;
   }
@@ -2494,6 +2842,62 @@ section.container-6 .box-data .current-emissions {
     position: absolute;
     right: 0;
     margin-top: 150px;
+  }
+  .container-7 picture.right img.flying-bottom {
+    -webkit-animation-duration: 2780ms;
+            animation-duration: 2780ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
+    -webkit-animation-name: balls;
+            animation-name: balls;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @keyframes balls {
+    0%, 100% {
+      transform: translateY(0) translateY(0);
+    }
+    50% {
+      transform: translateY(-5px) translateY(-5px);
+    }
+  }
+  .container-7 picture.right img.flying-top {
+    -webkit-animation-duration: 2980ms;
+            animation-duration: 2980ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
+    -webkit-animation-name: balls;
+            animation-name: balls;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    z-index: 1;
+  }
+  @keyframes balls {
+    0%, 100% {
+      transform: translateY(0) translateY(0);
+    }
+    50% {
+      transform: translateY(-5px) translateY(-5px);
+    }
+  }
+  .container-7 picture.right img.flying-right {
+    -webkit-animation-duration: 2780ms;
+            animation-duration: 2780ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
+    -webkit-animation-name: bitcoin-biscuit;
+            animation-name: bitcoin-biscuit;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    z-index: 2;
+  }
+  @keyframes bitcoin-biscuit {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-5px) translateY(-5px);
+    }
   }
   .container-7 .wrapper-7 .title-7 h2 {
     font-size: 40px;
@@ -2780,6 +3184,4 @@ section.container-6 .box-data .current-emissions {
     width: 220px;
     float: right;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -30,6 +30,13 @@
 
 }
 
+@mixin container5 ($partenza, $distanza) {
+    @keyframes balls{
+        0%, 100% {transform: translateY($partenza) translateY($partenza);}
+        50% {transform: translateY($distanza) translateY($distanza);}
+    }
+}
+
 
 
 
@@ -963,21 +970,95 @@ button:hover {
     display: flex;
     flex-direction: column;
 
-    picture.balls img {
-        position: absolute;
-        top: -95px;
-        right: 0px;
-        width: 192px;
-        height: 192px;
-    
+    picture.balls {
+        img {
+            position: absolute;
+            top: -95px;
+            right: 0px;
+            width: 192px;
+            height: 192px;    
+        
+        }
+
+       img.prima {
+            @include container5(0, -12px);
+                animation-duration: 8000ms;
+                animation-delay: 2000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+        }
+
+        img.seconda {
+            @include container5(0, -12px);
+                animation-duration: 8000ms;
+                animation-delay: 3000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+        }
+
+
+        img.quarta {
+            @include container5(0, -8px);
+                animation-duration: 4000ms;
+                animation-delay: 3000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+        }
     }
 
-    picture.cards img {
-        position: absolute;
-        width: 192px;
-        height: 192px;
-        bottom: -330px;
-    }
+
+    
+
+    
+
+    picture.cards {
+        img {
+            position: absolute;
+            width: 192px;
+            height: 192px;
+            bottom: 0;
+            margin-bottom: -60px;
+
+            &.card-1 {
+                @include container2(0, -100px);
+                animation-duration: 6000ms;
+                animation-delay: 2000ms;
+                animation-name: bitcoin-biscuit; 
+                animation-iteration-count: infinite;
+                z-index: 2;
+            }
+
+            &.card-2 {
+                @include container2(0, -15px);
+                animation-duration: 6500ms;
+                animation-delay: 2000ms;
+                animation-name: bitcoin-biscuit; 
+                animation-iteration-count: infinite;
+                z-index: 3;
+            }
+
+            &.card-3 {
+                @include container5(0, -15px);
+                animation-duration: 3500ms;
+                animation-delay: 2000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+                // z-index: 5;
+                margin-bottom: -72px;
+            }
+
+            &.card-4 {
+                @include container5(0, -12px);
+                animation-duration: 3500ms;
+                animation-delay: 2000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+                z-index: 1;
+            }
+        }
+
+    } 
+    
 
     .box-wrapper {
         background: rgba(255, 255, 255, 0.6);
@@ -993,6 +1074,7 @@ button:hover {
         margin-top: 50px;
         margin-bottom: 50px;
         gap: 40px;
+        z-index: 4;
 
         .box-prizes {
             align-self: center;
@@ -1169,6 +1251,38 @@ section.container-6 {
                     height: 192px;
                     right: 10px;
                     margin-top: 60px;
+
+                    &.bottom-right {
+                        @include container5(0, -10px);
+                        animation-duration: 3000ms;
+                        animation-delay: 3000ms;
+                        animation-name: balls; 
+                        animation-iteration-count: infinite;
+                    }
+
+                    &.top-left {
+                        @include container5(0, -5px);
+                        animation-duration: 3500ms;
+                        animation-delay: 3300ms;
+                        animation-name: balls; 
+                        animation-iteration-count: infinite;
+                    }
+
+                    &.top-right {
+                        @include container2(0, -5px);
+                        animation-duration: 3500ms;
+                        animation-delay: 2400ms;
+                        animation-name: bitcoin-biscuit; 
+                        animation-iteration-count: infinite;
+                    }
+
+                    &.coin {
+                        @include container2(0, -5px);
+                        animation-duration: 3200ms;
+                        animation-delay: 2000ms;
+                        animation-name: bitcoin-biscuit; 
+                        animation-iteration-count: infinite;
+                    }
                 }
             }
 
@@ -3329,11 +3443,6 @@ section.container-6 {
         .container-5 {
             max-width: 100%;
 
-            picture.balls img {
-                width: 512px;
-                height: 512px;
-            }
-
             picture.cards {
                 // bottom: 0px;
                 // position: absolute;
@@ -3344,6 +3453,7 @@ section.container-6 {
                     position: absolute;
                     width: 512px;
                     height: 512px;
+                    bottom: -280px;
                 }
             }
             .box-wrapper {
@@ -3453,7 +3563,32 @@ section.container-6 {
                 width: 256px;
                 height: 256px;
                 position: absolute;
+                
+                &.pancake-bottom {
+                    @include container5(0, -5px);
+                    animation-duration: 2800ms;
+                    animation-delay: 2000ms;
+                    animation-name: balls; 
+                    animation-iteration-count: infinite;
+                }
+
+                &.pancake-left {
+                    @include container2(0, -5px);
+                    animation-duration: 2780ms;
+                    animation-delay: 2000ms;
+                    animation-name: bitcoin-biscuit; 
+                    animation-iteration-count: infinite;
+                }
+
+                &.pancake-top {
+                    @include container2(0, -5px);
+                    animation-duration: 2880ms;
+                    animation-delay: 2000ms;
+                    animation-name: bitcoin-biscuit; 
+                    animation-iteration-count: infinite;
+                }
             }
+
         }
 
         picture.right {
@@ -3465,6 +3600,32 @@ section.container-6 {
                 position: absolute;
                 right: 0;
                 margin-top: 150px;
+
+                &.flying-bottom {
+                    @include container5(0, -5px);
+                    animation-duration: 2780ms;
+                    animation-delay: 2000ms;
+                    animation-name: balls; 
+                    animation-iteration-count: infinite;
+                }
+
+                &.flying-top {
+                    @include container5(0, -5px);
+                    animation-duration: 2980ms;
+                    animation-delay: 2000ms;
+                    animation-name: balls; 
+                    animation-iteration-count: infinite;
+                    z-index: 1;
+                }
+
+                &.flying-right {
+                    @include container2(0, -5px);
+                    animation-duration: 2780ms;
+                    animation-delay: 2000ms;
+                    animation-name: bitcoin-biscuit; 
+                    animation-iteration-count: infinite;
+                    z-index: 2;
+                }
 
             }
         }
