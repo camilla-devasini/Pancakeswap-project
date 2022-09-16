@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
     </style>
+    
 
 </head>
 <body>
@@ -18,7 +19,7 @@
 
         <div class="background-hero"></div>
         
-        <section class="main-banner-container">
+        <section class="main-banner-container java-slide" id='div-1'> 
     
         <div class="main-banner-sub-container">
             <div class="main-banner-content-container">
@@ -39,8 +40,8 @@
             </div>
     
             <div class="swiper-slide">
-                <div class="swiper swpr-a"></div>
-                <div class="swiper swpr-b"></div>
+                <div class="swiper swpr-a" onclick="currentSlide(1)"></div>
+                <div class="swiper swpr-b" onclick="currentSlide(2)"></div>
             </div>
     
             <div class="bunny-container-a bunny-container-a-desktop">
@@ -56,7 +57,7 @@
         </section>
 
 
-        <section class="main-banner-container-2">
+        <section class="main-banner-container-2 java-slide" id='div-2'>
     
             <div class="main-banner-sub-container">
                 <div class="main-banner-content-container">
@@ -81,7 +82,7 @@
         
                 <div class="swiper-slide">
                     <div class="swiper swpr-a" onclick="currentSlide(1)"></div>
-                    <div class="swiper swpr-b"></div>
+                    <div class="swiper swpr-b" onclick="currentSlide(2)"></div>
                 </div>
         
                 <div class="bunny-container-a bunny-container-a-desktop">
@@ -471,11 +472,10 @@
         <button>Connect wallet</button>
     </div>
 </section>
-
+<script src="java-script.js"></script>
 </body>
 
 </html>
 
 
-</body>
-</html>
+

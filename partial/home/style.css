@@ -317,9 +317,20 @@ button:hover {
   height: 280.8;
 }
 .hero-content .hero-container .container-2 .bunny-container {
+  animation-duration: 25000ms;
+  animation-name: lunar-bunny;
+  animation-iteration-count: infinite;
   position: relative;
   width: 90%;
   margin-bottom: -50px;
+}
+@keyframes lunar-bunny {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50px) translateY(-50px);
+  }
 }
 .hero-content .hero-container .container-2 .bunny-container img {
   width: 100%;
@@ -510,6 +521,47 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.main-content .background-content-2 .container-2 .img-container .trade-1 {
+  animation-duration: 8000ms;
+  animation-delay: 2000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25px) translateY(-25px);
+  }
+}
+.main-content .background-content-2 .container-2 .img-container .trade-2 {
+  animation-duration: 9000ms;
+  animation-delay: 1000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-15px) translateY(-15px);
+  }
+}
+.main-content .background-content-2 .container-2 .img-container .trade-3 {
+  animation-duration: 8000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-15px) translateY(-15px);
+  }
 }
 .main-content .background-content-2 .container-2 .img-container img {
   position: absolute;
