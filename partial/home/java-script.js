@@ -27,12 +27,10 @@ function showSlides(slide, dot) {
         window.clearTimeout(timeout);
         timeout = setTimeout(showSlides, 4000);
     }
-
-
-
-
     
 }
+
+
 
 
  

@@ -7,7 +7,7 @@
 }
 
 
-@mixin container ($partenza, $distanza ) {
+@mixin container ($partenza, $distanza) {
     @keyframes lunar-bunny{
       0%, 100% {transform: translateX($partenza) translateY($partenza);}
 
@@ -24,6 +24,17 @@
       0%, 100% {transform: translateX($partenza) translateY($partenza);}
 
       50% {transform: translateX($distanza) translateY($distanza);}
+
+      
+    }
+
+}
+
+@mixin star-container ($opacity1, $opacity2) {
+    @keyframes stars{
+      0%, 100% {opacity: $opacity1;}
+
+      50% {opacity: $opacity2;}
 
       
     }
@@ -450,23 +461,60 @@ button:hover {
                     
 
                     .bunny-container {
-                        @include container(0, -50px);
-                        animation-duration: 25000ms;
-                        animation-name: lunar-bunny; 
-                        animation-iteration-count: infinite;
+                      
                         position: relative;
                         width: 90%;
                         margin-bottom: -50px;
                 
+                            .lunar-bunny {
+
+                                @include container(0, -9px,);
+                                animation-duration: 9500ms;
+                                animation-name: lunar-bunny; 
+                                animation-iteration-count: infinite;
+
+
+                            }
+
+
+
                             img {
                                  width: 100%;
                             } 
 
-                            .star {
+                            .star:first-of-type {
+                                
+
+                                @include star-container(100%,5%);
+                                animation-duration: 8000ms;
+                                animation-name: stars; 
+                                animation-iteration-count: infinite;
+                                position: absolute;
+                                width: 100%;
+                            }
+
+                            .star:nth-of-type(2) {
+
+                                @include star-container(100%,5%);
+                                animation-duration: 8000ms;
+                                animation-delay: 1000ms;
+                                animation-name: stars; 
+                                animation-iteration-count: infinite;
                                 position: absolute;
                                 width: 100%;
                             }
                             
+                            .star:nth-of-type(3) {
+
+                                @include star-container(100%,5%);
+                                animation-duration: 8000ms;
+                                animation-delay: 1500ms;
+                                animation-name: stars; 
+                                animation-iteration-count: infinite;
+                                position: absolute;
+                                width: 100%;
+
+                            }
                     }
             }
  
@@ -854,7 +902,32 @@ button:hover {
                 display: flex;
                 flex-direction: row;
                 
-        
+                & .earn-1 {
+
+                    @include container2(0, -15px);
+                    animation-duration: 8000ms;
+                    animation-delay: 500ms;
+                    animation-name: bitcoin-biscuit; 
+                    animation-iteration-count: infinite;
+                }
+    
+                & .earn-2 {
+    
+                    @include container2(0, -15px);
+                    animation-duration: 8000ms;
+                    animation-delay: 1500ms;
+                    animation-name: bitcoin-biscuit; 
+                    animation-iteration-count: infinite;
+                }
+    
+    
+                & .earn-3 {
+    
+                    @include container2(0, -15px);
+                    animation-duration: 8000ms;
+                    animation-name: bitcoin-biscuit; 
+                    animation-iteration-count: infinite;
+                }
 
                 & img {
             
@@ -1575,7 +1648,15 @@ section.container-6 {
                                                     width: 220px;
                                                     }
 
-                                                    .star {
+                                                    .star:first-of-type  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(2)  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(3)  {
                                                         width: 220px;
                                                     }
                                             
@@ -1865,10 +1946,18 @@ section.container-6 {
                                                     width: 220px;
                                                     }
 
-                                                    .star {
+
+                                                    .star:first-of-type  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(2)  {
                                                         width: 220px;
                                                     }
                                             
+                                                    .star:nth-of-type(3)  {
+                                                        width: 220px;
+                                                    }
                                             }
                                 }
                         }
@@ -2299,7 +2388,15 @@ section.container-6 {
                                                     width: 220px;
                                                     }
 
-                                                    .star {
+                                                    .star:first-child  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(2)  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(3)  {
                                                         width: 220px;
                                                     }
                                     
@@ -2709,8 +2806,16 @@ section.container-6 {
                                                     width: 180px;
                                                     }
                                                     
-                                                    .star {
-                                                        width: 180px;
+                                                    .star:first-child  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(2)  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(3)  {
+                                                        width: 220px;
                                                     }
                                             }
                                 }
@@ -3126,8 +3231,18 @@ section.container-6 {
                                                     width: 180px;
                                                     }
 
-                                                    .star {
-                                                        width: 180px;
+
+                                                    .star:first-child  {
+                                                        width: 220px;
+                                                    }
+
+
+                                                    .star:nth-of-type(2)  {
+                                                        width: 220px;
+                                                    }
+
+                                                    .star:nth-of-type(3)  {
+                                                        width: 220px;
                                                     }
                                             
                                             }

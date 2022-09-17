@@ -317,27 +317,72 @@ button:hover {
   height: 280.8;
 }
 .hero-content .hero-container .container-2 .bunny-container {
-  animation-duration: 25000ms;
-  animation-name: lunar-bunny;
-  animation-iteration-count: infinite;
   position: relative;
   width: 90%;
   margin-bottom: -50px;
+}
+.hero-content .hero-container .container-2 .bunny-container .lunar-bunny {
+  animation-duration: 10000ms;
+  animation-name: lunar-bunny;
+  animation-iteration-count: infinite;
 }
 @keyframes lunar-bunny {
   0%, 100% {
     transform: translateX(0) translateY(0);
   }
   50% {
-    transform: translateX(-50px) translateY(-50px);
+    transform: translateX(-9px) translateY(-9px);
   }
 }
 .hero-content .hero-container .container-2 .bunny-container img {
   width: 100%;
 }
-.hero-content .hero-container .container-2 .bunny-container .star {
+.hero-content .hero-container .container-2 .bunny-container .star:first-of-type {
+  animation-duration: 8000ms;
+  animation-name: stars;
+  animation-iteration-count: infinite;
   position: absolute;
   width: 100%;
+}
+@keyframes stars {
+  0%, 100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 5%;
+  }
+}
+.hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(2) {
+  animation-duration: 8000ms;
+  animation-delay: 1000ms;
+  animation-name: stars;
+  animation-iteration-count: infinite;
+  position: absolute;
+  width: 100%;
+}
+@keyframes stars {
+  0%, 100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 5%;
+  }
+}
+.hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(3) {
+  animation-duration: 8000ms;
+  animation-delay: 1500ms;
+  animation-name: stars;
+  animation-iteration-count: infinite;
+  position: absolute;
+  width: 100%;
+}
+@keyframes stars {
+  0%, 100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 5%;
+  }
 }
 .hero-content .hero-container .svg-border {
   margin-top: 150px;
@@ -639,6 +684,47 @@ button:hover {
   position: relative;
   display: flex;
   flex-direction: row;
+}
+.main-content .background-content-3 .container-3 .img-container .earn-1 {
+  animation-duration: 8000ms;
+  animation-delay: 500ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-15px) translateY(-15px);
+  }
+}
+.main-content .background-content-3 .container-3 .img-container .earn-2 {
+  animation-duration: 8000ms;
+  animation-delay: 1500ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-15px) translateY(-15px);
+  }
+}
+.main-content .background-content-3 .container-3 .img-container .earn-3 {
+  animation-duration: 8000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
+}
+@keyframes bitcoin-biscuit {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-15px) translateY(-15px);
+  }
 }
 .main-content .background-content-3 .container-3 .img-container img {
   position: absolute;
@@ -1185,7 +1271,13 @@ section.container-6 .box-data .current-emissions {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 220px;
   }
-  body .hero-content .hero-container .container-2 .bunny-container .star {
+  body .hero-content .hero-container .container-2 .bunny-container .star:first-of-type {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(2) {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(3) {
     width: 220px;
   }
   body .main-content .background-content-1 {
@@ -1385,7 +1477,13 @@ section.container-6 .box-data .current-emissions {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 220px;
   }
-  body .hero-content .hero-container .container-2 .bunny-container .star {
+  body .hero-content .hero-container .container-2 .bunny-container .star:first-of-type {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(2) {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(3) {
     width: 220px;
   }
   body .main-content .background-content-1 {
@@ -1688,7 +1786,13 @@ section.container-6 .box-data .current-emissions {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 220px;
   }
-  body .hero-content .hero-container .container-2 .bunny-container .star {
+  body .hero-content .hero-container .container-2 .bunny-container .star:first-child {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(2) {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(3) {
     width: 220px;
   }
   body .main-content .background-content-1 {
@@ -1970,8 +2074,14 @@ section.container-6 .box-data .current-emissions {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 180px;
   }
-  body .hero-content .hero-container .container-2 .bunny-container .star {
-    width: 180px;
+  body .hero-content .hero-container .container-2 .bunny-container .star:first-child {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(2) {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(3) {
+    width: 220px;
   }
   body .main-content .background-content-1 {
     display: flex;
@@ -2255,8 +2365,14 @@ section.container-6 .box-data .current-emissions {
   body .hero-content .hero-container .container-2 .bunny-container img {
     width: 180px;
   }
-  body .hero-content .hero-container .container-2 .bunny-container .star {
-    width: 180px;
+  body .hero-content .hero-container .container-2 .bunny-container .star:first-child {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(2) {
+    width: 220px;
+  }
+  body .hero-content .hero-container .container-2 .bunny-container .star:nth-of-type(3) {
+    width: 220px;
   }
   body .main-content .background-content-1 {
     display: flex;
