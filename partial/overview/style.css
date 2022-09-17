@@ -61,6 +61,18 @@
   color: rgb(40, 13, 95);
   position: relative;
 }
+.wrapper .nft-marketplace ::-moz-placeholder {
+  position: relative;
+  left: 20px;
+  color: rgb(122, 110, 170);
+  font-weight: 0px;
+}
+.wrapper .nft-marketplace :-ms-input-placeholder {
+  position: relative;
+  left: 20px;
+  color: rgb(122, 110, 170);
+  font-weight: 0px;
+}
 .wrapper .nft-marketplace ::placeholder {
   position: relative;
   left: 20px;
@@ -99,6 +111,4 @@
 }
 .wrapper .newest-collection .top-collection a svg {
   fill: rgb(31, 199, 212);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

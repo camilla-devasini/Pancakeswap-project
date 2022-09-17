@@ -1048,7 +1048,7 @@ button:hover {
     picture.balls {
         img {
             position: absolute;
-            top: -95px;
+            top: -45px;
             right: 0px;
             width: 192px;
             height: 192px;    
@@ -1071,11 +1071,26 @@ button:hover {
                 animation-iteration-count: infinite;
         }
 
+        img.terza {
+            @include container5(0, -8px);
+                animation-duration: 3000ms;
+                animation-delay: 2000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+        }
 
         img.quarta {
             @include container5(0, -8px);
                 animation-duration: 4000ms;
                 animation-delay: 3000ms;
+                animation-name: balls; 
+                animation-iteration-count: infinite;
+        }
+
+        img.quinta {
+            @include container5(0, -8px);
+                animation-duration: 4000ms;
+                animation-delay: 1000ms;
                 animation-name: balls; 
                 animation-iteration-count: infinite;
         }
@@ -3610,6 +3625,19 @@ section.container-6 {
                     }
                 }
             }
+
+            picture.balls {
+                
+                    img {
+                        position: absolute;
+                        top: -95px;
+                        right: 0px;
+                        width: 512px;
+                        height: 512px;    
+                    
+                    }
+                }
+            
         }
     }
 
