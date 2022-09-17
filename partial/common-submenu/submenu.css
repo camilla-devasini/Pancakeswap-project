@@ -31,8 +31,6 @@
 .trade-navbar .trade-link:hover {
   text-decoration: none;
 }
-<<<<<<< HEAD
-=======
 .trade-navbar .link-highlighted {
   font-weight: 600;
   color: rgb(118, 69, 217);
@@ -48,8 +46,12 @@
   background-color: rgb(31, 199, 212);
   border-radius: 2px 2px 0px 0px;
 }
->>>>>>> camilla/feat-trade-page
 
+@media screen and (min-width: 852px) {
+  .trade-navbar {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 852px) {
   .trade-navbar {
     justify-content: center;
