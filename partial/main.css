@@ -273,8 +273,6 @@
 }
 footer {
   background-color: #27262c;
-}
-footer * {
   font-size: var(--normal);
 }
 
@@ -360,6 +358,7 @@ footer * {
   border-radius: 20px;
   background-color: var(--color-cyan);
   color: white;
+  text-decoration: none;
 }
 .cont_footer .icon_bunny {
   width: 25px;
@@ -376,5 +375,6 @@ footer * {
 .cont_footer .lang {
   display: flex;
 }
-
-/*# sourceMappingURL=main.css.map */
+.cont_footer .cake-btn {
+  width: 150px;
+}/*# sourceMappingURL=main.css.map */
