@@ -322,20 +322,9 @@ button:hover {
   margin-bottom: -50px;
 }
 .hero-content .hero-container .container-2 .bunny-container .lunar-bunny {
-  -webkit-animation-duration: 9500ms;
-          animation-duration: 9500ms;
-  -webkit-animation-name: lunar-bunny;
-          animation-name: lunar-bunny;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes lunar-bunny {
-  0%, 100% {
-    transform: translateX(0) translateY(0);
-  }
-  50% {
-    transform: translateX(-9px) translateY(-9px);
-  }
+  animation-duration: 9500ms;
+  animation-name: lunar-bunny;
+  animation-iteration-count: infinite;
 }
 @keyframes lunar-bunny {
   0%, 100% {
@@ -349,22 +338,11 @@ button:hover {
   width: 100%;
 }
 .hero-content .hero-container .container-2 .bunny-container .star:first-child {
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
-  -webkit-animation-name: stars;
-          animation-name: stars;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 8000ms;
+  animation-name: stars;
+  animation-iteration-count: infinite;
   position: absolute;
   width: 100%;
-}
-@-webkit-keyframes stars {
-  0%, 100% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 5%;
-  }
 }
 @keyframes stars {
   0%, 100% {
@@ -375,14 +353,10 @@ button:hover {
   }
 }
 .hero-content .hero-container .container-2 .bunny-container .star:nth-child(2) {
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-  -webkit-animation-name: stars;
-          animation-name: stars;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 8000ms;
+  animation-delay: 1000ms;
+  animation-name: stars;
+  animation-iteration-count: infinite;
   position: absolute;
   width: 100%;
 }
@@ -395,14 +369,10 @@ button:hover {
   }
 }
 .hero-content .hero-container .container-2 .bunny-container .star:nth-child(3) {
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-  -webkit-animation-name: stars;
-          animation-name: stars;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 8000ms;
+  animation-delay: 1500ms;
+  animation-name: stars;
+  animation-iteration-count: infinite;
   position: absolute;
   width: 100%;
 }
@@ -598,22 +568,10 @@ button:hover {
   align-items: center;
 }
 .main-content .background-content-2 .container-2 .img-container .trade-1 {
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes bitcoin-biscuit {
-  0%, 100% {
-    transform: translateX(0) translateY(0);
-  }
-  50% {
-    transform: translateX(-25px) translateY(-25px);
-  }
+  animation-duration: 6000ms;
+  animation-delay: 2000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -624,14 +582,10 @@ button:hover {
   }
 }
 .main-content .background-content-2 .container-2 .img-container .trade-2 {
-  -webkit-animation-duration: 7000ms;
-          animation-duration: 7000ms;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 7000ms;
+  animation-delay: 1000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -642,12 +596,9 @@ button:hover {
   }
 }
 .main-content .background-content-2 .container-2 .img-container .trade-3 {
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 6000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -735,14 +686,10 @@ button:hover {
   flex-direction: row;
 }
 .main-content .background-content-3 .container-3 .img-container .earn-1 {
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 6000ms;
+  animation-delay: 500ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -753,14 +700,10 @@ button:hover {
   }
 }
 .main-content .background-content-3 .container-3 .img-container .earn-2 {
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 6000ms;
+  animation-delay: 1500ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -771,12 +714,9 @@ button:hover {
   }
 }
 .main-content .background-content-3 .container-3 .img-container .earn-3 {
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 6000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -849,6 +789,58 @@ button:hover {
   color: rgb(122, 110, 170);
   font-weight: lighter;
 }
+.main-content .background-content-data .container-data-2 {
+  margin: 55px;
+  width: 80%;
+  height: 170px;
+}
+.main-content .background-content-data .container-data-2 .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-content .background-content-data .container-data-2 .title button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.main-content .background-content-data .container-data-2 span {
+  font-size: 23px;
+  color: rgb(118, 69, 217);
+}
+.main-content .background-content-data .container-data-2 h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 23px;
+  color: rgb(40, 13, 95);
+}
+.main-content .background-content-data .container-data-2 .group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-content .background-content-data .container-data-2 .group .group-border {
+  border-left: 1px solid rgba(118, 69, 217, 0.35);
+  padding-left: 20px;
+}
+.main-content .background-content-data .container-data-2 .group h2 {
+  font-size: 13px;
+  color: rgb(118, 69, 217);
+}
+.main-content .background-content-data .container-data-2 .group h3 {
+  font-size: 13px;
+  color: rgb(40, 13, 95);
+}
+.main-content .background-content-data .container-data-2 .group h4 {
+  font-size: 18px;
+  color: rgb(122, 110, 170);
+  font-weight: lighter;
+}
 
 .container-5 {
   overflow: hidden;
@@ -869,22 +861,10 @@ button:hover {
   height: 192px;
 }
 .container-5 picture.balls img.prima {
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes balls {
-  0%, 100% {
-    transform: translateY(0) translateY(0);
-  }
-  50% {
-    transform: translateY(-12px) translateY(-12px);
-  }
+  animation-duration: 8000ms;
+  animation-delay: 2000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -895,14 +875,10 @@ button:hover {
   }
 }
 .container-5 picture.balls img.seconda {
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 8000ms;
+  animation-delay: 3000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -913,14 +889,10 @@ button:hover {
   }
 }
 .container-5 picture.balls img.terza {
-  -webkit-animation-duration: 3000ms;
-          animation-duration: 3000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3000ms;
+  animation-delay: 2000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -931,14 +903,10 @@ button:hover {
   }
 }
 .container-5 picture.balls img.quarta {
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 4000ms;
+  animation-delay: 3000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -949,14 +917,10 @@ button:hover {
   }
 }
 .container-5 picture.balls img.quinta {
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 4000ms;
+  animation-delay: 1000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -974,14 +938,10 @@ button:hover {
   margin-bottom: -60px;
 }
 .container-5 picture.cards img.card-1 {
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 6000ms;
+  animation-delay: 2000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
   z-index: 2;
 }
 @keyframes bitcoin-biscuit {
@@ -993,14 +953,10 @@ button:hover {
   }
 }
 .container-5 picture.cards img.card-2 {
-  -webkit-animation-duration: 6500ms;
-          animation-duration: 6500ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 6500ms;
+  animation-delay: 2000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
   z-index: 3;
 }
 @keyframes bitcoin-biscuit {
@@ -1012,14 +968,10 @@ button:hover {
   }
 }
 .container-5 picture.cards img.card-3 {
-  -webkit-animation-duration: 3500ms;
-          animation-duration: 3500ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3500ms;
+  animation-delay: 2000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
   margin-bottom: -72px;
 }
 @keyframes balls {
@@ -1031,14 +983,10 @@ button:hover {
   }
 }
 .container-5 picture.cards img.card-4 {
-  -webkit-animation-duration: 3500ms;
-          animation-duration: 3500ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3500ms;
+  animation-delay: 2000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
   z-index: 1;
 }
 @keyframes balls {
@@ -1054,8 +1002,7 @@ button:hover {
   padding: 16px;
   border: 1px solid rgb(231, 227, 235);
   box-sizing: border-box;
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-radius: 72px;
   width: 90%;
   align-self: center;
@@ -1214,14 +1161,10 @@ section.container-6 .wrapper-6 .top-6 picture img {
   margin-top: 60px;
 }
 section.container-6 .wrapper-6 .top-6 picture img.bottom-right {
-  -webkit-animation-duration: 3000ms;
-          animation-duration: 3000ms;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3000ms;
+  animation-delay: 3000ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -1232,14 +1175,10 @@ section.container-6 .wrapper-6 .top-6 picture img.bottom-right {
   }
 }
 section.container-6 .wrapper-6 .top-6 picture img.top-left {
-  -webkit-animation-duration: 3500ms;
-          animation-duration: 3500ms;
-  -webkit-animation-delay: 3300ms;
-          animation-delay: 3300ms;
-  -webkit-animation-name: balls;
-          animation-name: balls;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3500ms;
+  animation-delay: 3300ms;
+  animation-name: balls;
+  animation-iteration-count: infinite;
 }
 @keyframes balls {
   0%, 100% {
@@ -1250,14 +1189,10 @@ section.container-6 .wrapper-6 .top-6 picture img.top-left {
   }
 }
 section.container-6 .wrapper-6 .top-6 picture img.top-right {
-  -webkit-animation-duration: 3500ms;
-          animation-duration: 3500ms;
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3500ms;
+  animation-delay: 2400ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -1268,14 +1203,10 @@ section.container-6 .wrapper-6 .top-6 picture img.top-right {
   }
 }
 section.container-6 .wrapper-6 .top-6 picture img.coin {
-  -webkit-animation-duration: 3200ms;
-          animation-duration: 3200ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  -webkit-animation-name: bitcoin-biscuit;
-          animation-name: bitcoin-biscuit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 3200ms;
+  animation-delay: 2000ms;
+  animation-name: bitcoin-biscuit;
+  animation-iteration-count: infinite;
 }
 @keyframes bitcoin-biscuit {
   0%, 100% {
@@ -1837,8 +1768,6 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -1848,8 +1777,6 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 20px;
     width: 90vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -1867,8 +1794,6 @@ section.container-6 .box-data .current-emissions {
     width: 220px;
   }
   body .main-content .background-content-3 .container-3 {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -1878,8 +1803,6 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 15px;
     width: 90vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -1919,6 +1842,27 @@ section.container-6 .box-data .current-emissions {
     grid-row: 3;
   }
   body .main-content .background-content-data .container-data .group .fifth {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 {
+    margin-top: 50px;
+  }
+  body .main-content .background-content-data .container-data-2 .group {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  body .main-content .background-content-data .container-data-2 .group .group-border {
+    border: none;
+    padding-left: 0;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fourth {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fifth {
     grid-column: 2;
     grid-row: 3;
   }
@@ -2117,8 +2061,6 @@ section.container-6 .box-data .current-emissions {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2156,8 +2098,6 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2167,8 +2107,6 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 20px;
     width: 95vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -2186,8 +2124,6 @@ section.container-6 .box-data .current-emissions {
     height: 570px;
   }
   body .main-content .background-content-3 .container-3 {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2197,8 +2133,6 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 15px;
     width: 95vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -2236,6 +2170,27 @@ section.container-6 .box-data .current-emissions {
     grid-row: 3;
   }
   body .main-content .background-content-data .container-data .group .fifth {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 {
+    margin-top: 50px;
+  }
+  body .main-content .background-content-data .container-data-2 .group {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  body .main-content .background-content-data .container-data-2 .group .group-border {
+    border: none;
+    padding-left: 0;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fourth {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fifth {
     grid-column: 2;
     grid-row: 3;
   }
@@ -2415,8 +2370,6 @@ section.container-6 .box-data .current-emissions {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2454,8 +2407,6 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2465,8 +2416,6 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 15px;
     width: 95vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -2484,8 +2433,6 @@ section.container-6 .box-data .current-emissions {
     height: 570px;
   }
   body .main-content .background-content-3 .container-3 {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2495,8 +2442,6 @@ section.container-6 .box-data .current-emissions {
     padding: 0;
     padding-left: 20px;
     width: 95vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -2537,6 +2482,27 @@ section.container-6 .box-data .current-emissions {
     grid-row: 3;
   }
   body .main-content .background-content-data .container-data .group .fifth {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 {
+    margin-top: 50px;
+  }
+  body .main-content .background-content-data .container-data-2 .group {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  body .main-content .background-content-data .container-data-2 .group .group-border {
+    border: none;
+    padding-left: 0;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fourth {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fifth {
     grid-column: 2;
     grid-row: 3;
   }
@@ -2716,8 +2682,6 @@ section.container-6 .box-data .current-emissions {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2755,8 +2719,6 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 {
     margin-top: 30px;
     margin-bottom: 70px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2765,8 +2727,6 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-2 .container-2 .container-text {
     padding: 0;
     width: 90vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-2 .container-2 .container-text h2 {
@@ -2787,8 +2747,6 @@ section.container-6 .box-data .current-emissions {
     height: 570px;
   }
   body .main-content .background-content-3 .container-3 {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column-reverse;
     width: 100%;
@@ -2797,8 +2755,6 @@ section.container-6 .box-data .current-emissions {
   body .main-content .background-content-3 .container-3 .container-text {
     padding: 0;
     width: 90vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   body .main-content .background-content-3 .container-3 .container-text h2 {
@@ -2839,6 +2795,27 @@ section.container-6 .box-data .current-emissions {
     grid-row: 3;
   }
   body .main-content .background-content-data .container-data .group .fifth {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 {
+    margin-top: 50px;
+  }
+  body .main-content .background-content-data .container-data-2 .group {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  body .main-content .background-content-data .container-data-2 .group .group-border {
+    border: none;
+    padding-left: 0;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fourth {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body .main-content .background-content-data .container-data-2 .group .fifth {
     grid-column: 2;
     grid-row: 3;
   }
@@ -2953,22 +2930,10 @@ section.container-6 .box-data .current-emissions {
     position: absolute;
   }
   .container-7 picture.left img.pancake-bottom {
-    -webkit-animation-duration: 2800ms;
-            animation-duration: 2800ms;
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    -webkit-animation-name: balls;
-            animation-name: balls;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes balls {
-    0%, 100% {
-      transform: translateY(0) translateY(0);
-    }
-    50% {
-      transform: translateY(-5px) translateY(-5px);
-    }
+    animation-duration: 2800ms;
+    animation-delay: 2000ms;
+    animation-name: balls;
+    animation-iteration-count: infinite;
   }
   @keyframes balls {
     0%, 100% {
@@ -2979,22 +2944,10 @@ section.container-6 .box-data .current-emissions {
     }
   }
   .container-7 picture.left img.pancake-left {
-    -webkit-animation-duration: 2780ms;
-            animation-duration: 2780ms;
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    -webkit-animation-name: bitcoin-biscuit;
-            animation-name: bitcoin-biscuit;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes bitcoin-biscuit {
-    0%, 100% {
-      transform: translateX(0) translateY(0);
-    }
-    50% {
-      transform: translateX(-5px) translateY(-5px);
-    }
+    animation-duration: 2780ms;
+    animation-delay: 2000ms;
+    animation-name: bitcoin-biscuit;
+    animation-iteration-count: infinite;
   }
   @keyframes bitcoin-biscuit {
     0%, 100% {
@@ -3005,14 +2958,10 @@ section.container-6 .box-data .current-emissions {
     }
   }
   .container-7 picture.left img.pancake-top {
-    -webkit-animation-duration: 2880ms;
-            animation-duration: 2880ms;
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    -webkit-animation-name: bitcoin-biscuit;
-            animation-name: bitcoin-biscuit;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-duration: 2880ms;
+    animation-delay: 2000ms;
+    animation-name: bitcoin-biscuit;
+    animation-iteration-count: infinite;
   }
   @keyframes bitcoin-biscuit {
     0%, 100% {
@@ -3033,14 +2982,10 @@ section.container-6 .box-data .current-emissions {
     margin-top: 150px;
   }
   .container-7 picture.right img.flying-bottom {
-    -webkit-animation-duration: 2780ms;
-            animation-duration: 2780ms;
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    -webkit-animation-name: balls;
-            animation-name: balls;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-duration: 2780ms;
+    animation-delay: 2000ms;
+    animation-name: balls;
+    animation-iteration-count: infinite;
   }
   @keyframes balls {
     0%, 100% {
@@ -3051,14 +2996,10 @@ section.container-6 .box-data .current-emissions {
     }
   }
   .container-7 picture.right img.flying-top {
-    -webkit-animation-duration: 2980ms;
-            animation-duration: 2980ms;
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    -webkit-animation-name: balls;
-            animation-name: balls;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-duration: 2980ms;
+    animation-delay: 2000ms;
+    animation-name: balls;
+    animation-iteration-count: infinite;
     z-index: 1;
   }
   @keyframes balls {
@@ -3070,14 +3011,10 @@ section.container-6 .box-data .current-emissions {
     }
   }
   .container-7 picture.right img.flying-right {
-    -webkit-animation-duration: 2780ms;
-            animation-duration: 2780ms;
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    -webkit-animation-name: bitcoin-biscuit;
-            animation-name: bitcoin-biscuit;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-duration: 2780ms;
+    animation-delay: 2000ms;
+    animation-name: bitcoin-biscuit;
+    animation-iteration-count: infinite;
     z-index: 2;
   }
   @keyframes bitcoin-biscuit {
@@ -3373,4 +3310,6 @@ section.container-6 .box-data .current-emissions {
     width: 220px;
     float: right;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
