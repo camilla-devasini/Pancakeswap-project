@@ -85,6 +85,32 @@ body, html {
   white-space: nowrap;
   min-width: 100%;
 }
+.trade-navbar .trade-item .trade-link > a {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 10px;
+}
+.trade-navbar .trade-item .trade-link > a.link-highlighted {
+  font-weight: 600;
+  color: rgb(118, 69, 217);
+  position: relative;
+}
+.trade-navbar .trade-item .trade-link > a.link-highlighted::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(31, 199, 212);
+  border-radius: 2px 2px 0px 0px;
+}
+.trade-navbar .trade-item .trade-link > a.link-highlighted:hover {
+  text-decoration: none;
+}
 
 .prediction-cards-ext-wrapper {
   height: calc(100vh - 36px);
@@ -94,9 +120,45 @@ body, html {
 
 .prediction-cards-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
   background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
   height: calc(100vh - 100px);
+}
+.prediction-cards-container .counters-container {
+  display: flex;
+  padding: 16px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.prediction-cards-container .counters-container .coins-counter {
+  display: flex;
+}
+.prediction-cards-container .counters-container .coins-counter > .coins-img {
+  width: 57px;
+  height: 47px;
+}
+.prediction-cards-container .counters-container .coins-counter > .clock-img {
+  width: 48px;
+  height: 48px;
+}
+.prediction-cards-container .counters-container .coins-counter .prediction-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(40, 13, 95);
+  line-height: 21px;
+  width: 122px;
+  height: 39px;
+  background-color: white;
+  border-radius: 8px 8px 24px;
+  padding: 0px 8px 0px 24px;
+  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
+}
+.prediction-cards-container .counters-container .coins-counter .prediction-counter span:first-of-type {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .prediction-cards-container .prediction-pre-btn, .prediction-cards-container .prediction-next-btn {
   display: flex;
@@ -113,7 +175,6 @@ body, html {
   right: 1%;
 }
 .prediction-cards-container .prediction-cards-carousel {
-  width: 1000px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;

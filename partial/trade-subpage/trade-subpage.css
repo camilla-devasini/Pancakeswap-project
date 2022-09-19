@@ -471,6 +471,8 @@ button {
   padding: 0px 16px;
 }
 
+<<<<<<< HEAD
+=======
 @-webkit-keyframes graph-up {
   0% {
     transform: translateY(20%);
@@ -502,6 +504,7 @@ button {
     height: 279px;
   }
 }
+>>>>>>> develop
 .complete-trade-card-wrapper {
   display: flex;
   flex-direction: column;

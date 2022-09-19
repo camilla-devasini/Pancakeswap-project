@@ -26,6 +26,11 @@ function toggleTradeCards() {
 let menuLabels = document.querySelectorAll('.trade-link');
 menuLabels.forEach(function(item) {
     item.addEventListener('click', function() {
+<<<<<<< HEAD
+        item.classList.add('link-highlighted');
+
+        
+=======
         if (!item.classList.contains('link-highlighted')) {
             toggleTradeCards();
             item.classList.add('link-highlighted');
@@ -36,6 +41,7 @@ menuLabels.forEach(function(item) {
                 }
             });
         } 
+>>>>>>> develop
     });    
 });
 
