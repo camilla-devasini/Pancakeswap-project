@@ -70,11 +70,16 @@ body, html {
 /* HEADER ON TOP */
 .nav {
   display: flex;
+  flex-wrap: nowrap;
   height: 56px;
+<<<<<<< HEAD
   width: 100%;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+=======
+  width: 100vw;
+>>>>>>> develop
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(231, 227, 235);
@@ -84,6 +89,7 @@ body, html {
 }
 .nav .navbar-icons {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
   gap: 15px;
@@ -181,6 +187,7 @@ body, html {
 /* NAVBAR ON BOTTOM */
 .bottom-mobile-navbar {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid rgb(231, 227, 235);
@@ -190,7 +197,7 @@ body, html {
   height: 50px;
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  width: 100vw;
 }
 .bottom-mobile-navbar .bottom-drop-label, .bottom-mobile-navbar #mobile-trade-label {
   display: flex;

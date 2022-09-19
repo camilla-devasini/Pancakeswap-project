@@ -51,18 +51,26 @@ body, html {
 /* HEADER ON TOP */
 .nav {
     display: flex;
+    flex-wrap: nowrap;
     height: 56px;
+<<<<<<< HEAD
     width: 100%;
     min-width: fit-content;
     justify-content: space-around;
+=======
+    width: 100vw;
+    justify-content: space-between;
+>>>>>>> develop
     align-items: center;
     border-bottom: 1px solid rgb(231, 227, 235);
     color: rgb(122, 110, 170);
     font-size: var(--normal);
     padding: 0 16px;
+    
 
     .navbar-icons {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: baseline;
         gap: 15px;
@@ -200,6 +208,7 @@ body, html {
 
 .bottom-mobile-navbar {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid rgb(231, 227, 235); 
@@ -211,7 +220,9 @@ body, html {
     height: 50px;
     position: fixed;
     bottom: 0px;
-    width: 100%;
+    width: 100vw;
+
+    
 
 
     

@@ -1,0 +1,570 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+
+}
+
+.body-trade-page {
+    height: 100vh;
+    z-index: 0;
+    min-width: fit-content;
+    max-width: 100%;
+    background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%) no-repeat fixed;
+    
+
+    & .company-icons {
+        width: 24px;
+        height: 24px;  
+    }
+
+}
+
+.complete-trade-card-wrapper {
+    padding: 24px 24px 0px;
+    display: flex;
+    position: relative;
+  
+   
+
+}
+
+
+
+
+@mixin blue-button {
+    width: 96.26px;
+    height: 32px;
+    padding: 0 16px;
+    background-color: rgb(31, 199, 212);
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    font-weight: 600;
+    font-size: var(--normal);;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    line-height: 32px;      
+}
+
+%button-active {
+    background-color: rgb(31, 199, 212);
+    color: white;
+    outline: none;
+}
+
+%blue-button {
+    @include blue-button;
+}
+
+@mixin dark-violet-span {
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+%dark-violet-span {
+    @include dark-violet-span;
+}
+
+.hover-active-class {
+
+    &:hover {
+        opacity: 0.65;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    &:active {
+        transform: translateY(1.2px);
+    
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+%style-trade-card {
+    width: 326px;
+    height: 516px;
+    border: 1px solid rgb(231, 227, 235);
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+    
+ 
+
+    .trade-header {
+        padding: 24px;
+        border-bottom: 1px solid rgb(231, 227, 235);
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+
+        .trade-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .trade-item > button {
+                margin-right: auto;
+                outline: none;
+            }
+
+            & .trade-item-2 {
+                width: 100%;
+                
+            
+                & > h2 {
+                    @include dark-violet-span;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin-bottom: 0px;
+                    text-align: center;
+                }
+            }
+
+            & .trade-item-2-swap {
+                padding-left: 75px;
+
+            }
+
+            & .trade-icons-right {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+           
+                & > button {
+                    margin: 3px;
+                    outline: none;
+                }
+            }
+        }
+    & > h3 {
+        color: rgb(122, 110, 170);
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+        }
+    }
+
+
+    .trade-card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: fit-content;
+   
+        .trade-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 8px;
+
+            %currency-insert {
+                font-size: 16px;
+                text-align: right;
+                height: 60px;
+                border: none;
+                padding: 12px 16px;
+                width: 100%;
+                border-radius: 16px;
+                background-color: rgb(238, 234, 244);
+                box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+                outline: none;
+            }
+
+            .currency-insert > input {
+                    @extend %currency-insert;
+                }
+            }
+
+            .price-insert {
+                display: flex;
+                flex-direction: column;
+
+                & > input {
+                    height: 40px;
+                    width: 100%;
+                    border: 1px solid rgb(215, 202, 236);
+                    padding: 0px 16px;
+                    border-radius: 16px;
+                    background-color: rgb(233, 234, 235);
+                }
+                
+                & .cake-per-bnb {
+                    margin-left: auto;
+                    cursor: pointer;
+
+                    & span {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    & img {
+                        margin-left:5px;
+                    }
+                }
+            }
+
+           
+        
+
+            .value-conversion {
+                border-radius: 50px;
+                background: rgb(238, 234, 244) url("../../svg/down-arrow-blue.svg") no-repeat center;
+                width: 32px;
+                height: 32px;
+                box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+                align-self: center;
+                outline: none;
+//js - check https://stackoverflow.com/questions/18032220/how-to-change-source-of-img-tag-on-hover
+                &:hover {
+                    background: rgb(31, 199, 212, 0.6) url("../../svg/switch-arrows.svg") no-repeat center;
+                }
+            }
+      
+       
+            .currency-select-container {
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 5px;
+                padding: 0 8px;
+                
+
+ 
+                & .copy-btn {
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 10px;
+                    align-self: center;
+                    cursor: pointer;
+                } 
+
+                & .currency-select {
+                    outline: none;
+
+                    & > span {
+                        @include dark-violet-span;
+                        margin-left: 8px;
+                    }
+
+                    & > img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            .tolerance {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0px 0px;
+    
+                & > span:first-child {
+                    color: rgb(118, 69, 217);
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                & > span:nth-child(2) {
+                    color: rgb(31, 199, 212);
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                
+            }
+            .pricing {
+                display: flex;
+                justify-content: flex-start;
+                
+                
+                & > button {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 20px;
+                    font-size: 12px;
+                    padding: 0px 8px;
+                    border-radius: 16px;
+                    text-transform: uppercase;
+                    border: 2px solid rgb(233, 234, 235);
+                    box-shadow: none;
+                    color: rgb(189, 194, 196);
+                    cursor: not-allowed;
+                    font-weight: 600;
+                    letter-spacing: 0.7px;
+                    margin-left: 10px;
+
+                    & > img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+    .connect-wallet {
+        @include blue-button; 
+        width: 100%;
+        margin: auto auto;
+        text-align: center;
+        height: 48px;
+        padding: 0 24px;
+        margin-top: 49px;
+    }       
+
+
+
+
+    #trade-card-container-swap {
+    @extend %style-trade-card;
+    display: flex;
+
+}
+
+.trade-cards-only-container > .limit-card-plus-orders {
+        display: flex;
+        flex-direction: row-reverse;
+        align-self: flex-start;
+    }
+
+
+.card-graph-container {
+    display: none;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: fit-content;
+    bottom: 0%;
+    left: 0%;
+    top: 20%;
+    min-height: 80%;
+    max-height: 516px;
+    position: fixed;
+    background-color: #ffff;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border: 1px solid rgb(231, 227, 235);
+    
+
+    .graph-data {
+        background-color: rgb(231, 227, 235);
+        max-width: 100%;
+        height: 350px;
+        padding: 16px;
+        margin: 15px;    
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0%;
+        right: 5%;
+        width: 48px;
+        height: 48px;
+        outline: none; 
+                                                                                       
+        & picture > img {
+            height: 20px;
+            width: 20px;
+        }       
+    }
+
+    .mkt-icons-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0px 24px;
+        align-items: center;
+        height: 48px;
+        margin-top: 36px;
+       
+        & > button {
+            padding-left: 8px;
+            outline: none;
+        }
+
+        & > button:first-of-type {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        
+        & > button:last-of-type  {
+            background-color: rgba(31, 199, 212, 0.06);
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            outline: none;
+            
+            & > img {
+                width: 20px;
+                height: 18px;
+            }
+        }
+
+        & * {
+            padding-right: 3px;
+        }
+
+        & .coin-comparison-title {
+            @extend %dark-violet-span;
+        }
+
+        & > span, button {
+            text-transform: uppercase;
+            font-size: var(--size-paragraph);
+        }
+    }
+
+    .values-content {
+        padding: 12px 24px 0px 24px;
+    
+        .mkt-value-updates {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            gap: 10px;
+            
+            & h2 {
+                color: rgb(40, 13, 95);
+                font-size: 32px;
+                font-weight: 600;
+            }
+
+            & h3 {
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: rgb(122, 110, 170);
+            }
+
+            & h3:last-child {
+                color:  rgb(49, 208, 170);
+                font-size: 20px;
+            }
+        }
+    }
+
+    & .date { // js: inserire funzione js per recupero data
+        color: rgb(118, 69, 217);
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    & .timeframes {
+        background-color: rgb(239, 244, 245);
+        border-radius: 16px;
+        display: flex;
+        border: 1px solid rgb(233, 234, 235);
+        width: 221px;
+        cursor: pointer;
+        height: 32px;
+        justify-content: space-around;
+        
+        & button {
+            border-radius: 16px;
+            padding: 0px 16px;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(31, 199, 212);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            outline: none;
+
+            &:hover {
+                opacity: 0.65;
+                
+            }
+
+            &:focus {
+                background-color: rgb(31, 199, 212);
+                color: #ffff;
+            }
+        
+            &:active {
+                @extend %button-active;
+                transform: translateY(1px);
+            }
+
+        }
+    
+        & button:first-child {
+            padding: 0px 16px;
+            @extend %button-active;
+        }
+    }
+}
+
+
+
+
+
+@keyframes graph-up {
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+    // animation details: 
+
+    // animation-duration: 350ms;
+    // animation-timing-function: ease;
+    // animation-delay: 0s;
+    // animation-iteration-count: 1;
+    // animation-direction: normal;
+    // animation-fill-mode: forwards;
+    // animation-play-state: running;
+    // animation-name: "graph-up";
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+// il grafico è mostrato al click sull'icona 
+
+    // .complete-trade-card-wrapper {
+    //     display: flex;
+    //     justify-content: center;
+    //     position: relative;
+
+    // }
+
+    .card-graph-container {
+        display: none;
+        position: relative;
+        margin-right: 20px;
+        flex-grow: 1;
+        border-radius: 16px;
+        min-width: 40vw;
+        background: rgba(255, 255, 255, 0.5); // white with transparency
+
+        .graph-data {
+            height: 279px;
+        }   
+    }
+    
+
+}
