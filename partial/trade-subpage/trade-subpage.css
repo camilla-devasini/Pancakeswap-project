@@ -42,7 +42,7 @@ body, html {
   display: flex;
   flex-wrap: nowrap;
   height: 56px;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(231, 227, 235);
@@ -119,7 +119,7 @@ body, html {
   display: none;
   flex-direction: column;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 44%;
   top: 100%;
   background-color: white;
@@ -194,7 +194,7 @@ body, html {
 .bottom-mobile-navbar .menu-item-mobile:last-child > .bottom-drop-down-content {
   right: 0;
   left: auto;
-  height: 316px;
+  height: 148px;
 }
 .bottom-mobile-navbar .menu-item-mobile:last-child > .bottom-drop-down-content .external-link {
   display: flex;
@@ -274,8 +274,8 @@ body, html {
     height: 154px;
   }
   .nav .navbarmenu .drop-down-menu:nth-child(4) > .drop-down-content {
-    height: 316px;
-    top: 100%;
+    height: 148px;
+    top: 108%;
   }
   .nav .navbarmenu .drop-down-menu:nth-child(4) > .drop-down-content > div:nth-child(4) {
     border-top: 1px solid rgb(231, 227, 235);
@@ -981,15 +981,23 @@ footer {
 .cont_footer .icon {
   border-bottom: 1px var(--white-pure) solid;
 }
-.cont_footer .shop_cake {
+.cont_footer .last {
+  display: flex;
+  width: 220px;
+  gap: 10px;
+}
+.cont_footer .last .shop_cake {
   text-decoration: none;
   border: 1px solid var(--color-cyan);
   border-radius: 20px;
   background-color: var(--color-cyan);
   color: white;
-}
-.cont_footer .shop_cake .shop_cake:hover {
   text-decoration: none;
+}
+.cont_footer .last .shop_cake .cake-btn {
+  background-color: cyan;
+  text-decoration: none;
+  border: none;
 }
 .cont_footer .icon_bunny {
   width: 25px;
@@ -997,11 +1005,6 @@ footer {
 .cont_footer .icon_bunny:hover {
   transform: scale(1.2);
   transition: 0.7s;
-}
-.cont_footer .last {
-  display: flex;
-  width: 220px;
-  gap: 10px;
 }
 .cont_footer .lang {
   display: flex;

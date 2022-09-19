@@ -194,7 +194,7 @@ body, html {
 .bottom-mobile-navbar .menu-item-mobile:last-child > .bottom-drop-down-content {
   right: 0;
   left: auto;
-  height: 316px;
+  height: 148px;
 }
 .bottom-mobile-navbar .menu-item-mobile:last-child > .bottom-drop-down-content .external-link {
   display: flex;
