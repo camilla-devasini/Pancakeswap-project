@@ -50,6 +50,39 @@ body, html {
     overflow-y: hidden;
     white-space: nowrap;
     min-width: 100%;
+
+    & .trade-item .trade-link > a {
+        color: rgb(122, 110, 170);
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 10px 10px;
+
+        &.link-highlighted {
+                font-weight: 600;
+                color: rgb(118, 69, 217);
+                position: relative;
+        
+        
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 4px;
+                    width: 100%;
+                    background-color: rgb(31, 199, 212);
+                    border-radius: 2px 2px 0px 0px;
+        
+                }
+        
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        
 }
 
 
@@ -72,6 +105,7 @@ body, html {
         display: flex;
         padding: 16px;
         margin-bottom: 20px;
+        justify-content: space-between;
         
      
 
@@ -131,12 +165,10 @@ body, html {
     }
 
     .prediction-cards-carousel {
-        width: 1000px;
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
         align-items: center;
-        // margin: 0 auto;
         gap: 15px;
 
         &::-webkit-scrollbar {
