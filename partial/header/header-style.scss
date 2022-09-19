@@ -53,7 +53,7 @@ body, html {
     display: flex;
     flex-wrap: nowrap;
     height: 56px;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(231, 227, 235);
@@ -68,7 +68,7 @@ body, html {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         gap: 15px;
         position: relative;
 
@@ -145,7 +145,7 @@ body, html {
             display: none;
             flex-direction: column;
             position: absolute;
-            z-index: 1;
+            z-index: 2;
             right: 44%;
             top: 100%;
             background-color: #ffff;
@@ -447,13 +447,12 @@ body, html {
         .icons-mobile .connect-buttons .connect-wallet {
             @include blue-button;
             width: 149.16px;
+            margin-top: 0px;
         }
     
         .nav .icons-mobile button.connect {
             display: none;
-        }
-    
-    
+        }  
 }
 
 

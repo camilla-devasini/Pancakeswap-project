@@ -1,3 +1,5 @@
+@use "../variables/variables";
+
 footer {
     background-color: #27262c;    
     font-size: var(--normal);
@@ -97,7 +99,10 @@ footer {
         color: white;
         text-decoration: none;
         .cake-btn{
-            width: 150px;
+            background-color: cyan;
+            text-decoration: none;
+            border: none;
+            
         }
     }
 }

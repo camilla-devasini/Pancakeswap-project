@@ -56,7 +56,7 @@ body, html {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 15px;
   position: relative;
 }
@@ -119,7 +119,7 @@ body, html {
   display: none;
   flex-direction: column;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 44%;
   top: 100%;
   background-color: white;
@@ -341,6 +341,7 @@ body, html {
     margin-left: 20px;
     line-height: 32px;
     width: 149.16px;
+    margin-top: 0px;
   }
   .nav .icons-mobile button.connect {
     display: none;
@@ -352,6 +353,34 @@ body, html {
     height: 24.85px;
   }
 }
+:root {
+  --gradient-linear-purple: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  --gradient-orange-linear: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  --gradient-linear-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --gradient-radial-dark: radial-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --color-white-pure: rgb(255, 255, 255);
+  --color-white-shadow: rgb(244, 238, 255);
+  --color-grey-light: rgb(189, 194, 196);
+  --color-grey-dark: rgb(56, 50, 65);
+  --color-grey-purple: rgb(184, 173, 210);
+  --color-grey-purple-dark: rgb(122, 110, 170);
+  --color-dark: rgb(39, 38, 44);
+  --color-dark-alpha: rgba(39, 38, 44, 0.4);
+  --color-orangie: rgb(255, 178, 55);
+  --color-purplie: rgb(154, 106, 255);
+  --color-indaco: rgb(40, 13, 95);
+  --color-indigo-dark: rgb(25, 19, 38);
+  --color-cyans: rgb(31, 199, 212);
+  --color-pinky: rgb(237, 75, 158);
+  --size-note: 14px;
+  --size-normal: 16px;
+  --size-sub-title: 24px;
+  --size-title: 40px;
+  --size-paragraph: 20px;
+  --size-macro: 64px;
+  --size-micro: 12px;
+}
+
 footer {
   background-color: #27262c;
   font-size: var(--normal);
@@ -447,7 +476,9 @@ footer {
   text-decoration: none;
 }
 .cont_footer .last .shop_cake .cake-btn {
-  width: 150px;
+  background-color: cyan;
+  text-decoration: none;
+  border: none;
 }
 .cont_footer .icon_bunny {
   width: 25px;
@@ -2156,6 +2187,60 @@ section.container-6 .box-data .current-emissions {
     width: 95vw;
     height: 580px;
   }
+  body .main-content section.container-6 {
+    height: 700px;
+    padding: 0 24px;
+    align-items: center;
+  }
+  body .main-content section.container-6 .wrapper-6 {
+    padding: 48px 24px;
+    width: 95vw;
+    height: 750px;
+    justify-content: center;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 picture.bunny {
+    position: relative;
+    width: 410px;
+    height: 400px;
+    bottom: 55px;
+    right: 40px;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 picture.bunny img {
+    width: 410px;
+    height: 400px;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 .box-cake {
+    align-self: center;
+    flex: 1 1 0%;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 .box-cake h2 {
+    font-size: 40px;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 .box-cake h2 span {
+    font-size: 40px;
+  }
+  body .main-content section.container-6 .box-data {
+    display: grid;
+    grid-template-areas: " a b c" "d e f" !important;
+    grid-template-columns: repeat(3, auto) !important;
+    gap: 32px !important;
+  }
+  body .main-content section.container-6 .box-data .max-supply {
+    border-left: 1px solid rgb(215, 202, 236);
+    padding: 0px 8px;
+  }
+  body .main-content section.container-6 .box-data .total-supply {
+    border-left: 1px solid rgb(215, 202, 236);
+    padding: 0px 8px;
+  }
+  body .main-content section.container-6 .box-data .market-cap {
+    border-left: 0px !important;
+    padding: 0 !important;
+  }
 }
 @media screen and (max-width: 858px) and (min-width: 426px) {
   body .hero-content {
@@ -3491,7 +3576,7 @@ section.container-6 .box-data .current-emissions {
   }
   section.container-6 .wrapper-6 {
     padding: 48px 24px;
-    width: 1020px;
+    width: 95vw;
     height: 750px;
     justify-content: center;
   }

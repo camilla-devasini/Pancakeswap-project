@@ -102,7 +102,7 @@ body, html {
   display: flex;
   flex-wrap: nowrap;
   height: 56px;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(231, 227, 235);
@@ -116,7 +116,7 @@ body, html {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 15px;
   position: relative;
 }
@@ -179,7 +179,7 @@ body, html {
   display: none;
   flex-direction: column;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 44%;
   top: 100%;
   background-color: white;
@@ -401,6 +401,7 @@ body, html {
     margin-left: 20px;
     line-height: 32px;
     width: 149.16px;
+    margin-top: 0px;
   }
   .nav .icons-mobile button.connect {
     display: none;
@@ -412,6 +413,34 @@ body, html {
     height: 24.85px;
   }
 }
+:root {
+  --gradient-linear-purple: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+  --gradient-orange-linear: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  --gradient-linear-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --gradient-radial-dark: radial-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --color-white-pure: rgb(255, 255, 255);
+  --color-white-shadow: rgb(244, 238, 255);
+  --color-grey-light: rgb(189, 194, 196);
+  --color-grey-dark: rgb(56, 50, 65);
+  --color-grey-purple: rgb(184, 173, 210);
+  --color-grey-purple-dark: rgb(122, 110, 170);
+  --color-dark: rgb(39, 38, 44);
+  --color-dark-alpha: rgba(39, 38, 44, 0.4);
+  --color-orangie: rgb(255, 178, 55);
+  --color-purplie: rgb(154, 106, 255);
+  --color-indaco: rgb(40, 13, 95);
+  --color-indigo-dark: rgb(25, 19, 38);
+  --color-cyans: rgb(31, 199, 212);
+  --color-pinky: rgb(237, 75, 158);
+  --size-note: 14px;
+  --size-normal: 16px;
+  --size-sub-title: 24px;
+  --size-title: 40px;
+  --size-paragraph: 20px;
+  --size-macro: 64px;
+  --size-micro: 12px;
+}
+
 footer {
   background-color: #27262c;
   font-size: var(--normal);
@@ -507,7 +536,9 @@ footer {
   text-decoration: none;
 }
 .cont_footer .last .shop_cake .cake-btn {
-  width: 150px;
+  background-color: cyan;
+  text-decoration: none;
+  border: none;
 }
 .cont_footer .icon_bunny {
   width: 25px;
@@ -585,7 +616,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
+  overflow: auto;
   background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
   height: calc(100vh - 100px);
 }
@@ -643,6 +674,7 @@ body, html {
   scroll-behavior: smooth;
   align-items: center;
   gap: 15px;
+  max-width: 100vw;
 }
 .prediction-cards-container .prediction-cards-carousel::-webkit-scrollbar {
   display: none;
