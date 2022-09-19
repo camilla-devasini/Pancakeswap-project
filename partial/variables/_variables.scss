@@ -1,0 +1,42 @@
+$gradient-color-size: (
+  gradient: (
+    linear-purple: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%),
+    orange-linear: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%),
+    linear-dark: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%),
+    radial-dark: radial-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%)
+  ),
+  color: (
+    white-pure: rgb(255, 255, 255),
+    white-shadow: rgb(244, 238, 255),
+    grey-light: rgb(189, 194, 196),
+    grey-dark: rgb(56, 50, 65),
+    grey-purple: rgb(184, 173, 210),
+    grey-purple-dark: rgb(122, 110, 170),
+    dark: rgb(39, 38, 44),
+    dark-alpha: rgba(39, 38, 44, 0.4),
+    orangie: rgb(255, 178, 55),
+    purplie: rgb(154, 106, 255),
+    indaco: rgb(40, 13, 95),
+    indigo-dark: rgb(25, 19, 38),
+    cyans: rgb(31, 199, 212),
+    pinky: rgb(237, 75, 158)
+  ),
+  size: (
+    note: 14px,
+    normal: 16px,
+    sub-title: 24px,
+    title: 40px,
+    paragraph: 20px,
+    macro: 64px,
+    micro: 12px
+  )
+);
+
+// printing the custom properties from the variables map
+:root {
+  @each $name, $map in $gradient-color-size {
+    @each $property, $value in $map {
+      --#{$name}-#{$property}: #{$value};
+    }
+  }
+}

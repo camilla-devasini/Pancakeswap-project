@@ -8,10 +8,16 @@
     <meta name="description"
         content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE.">
     <title>Home | PancakeSwap - $3.523</title>
-    <link rel="stylesheet" href="partial/main.css" />
+    <link rel="stylesheet" href="style/main.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="svg/light-blue-logo.svg" type="image/x-icon">
+    </head>
 
 <body>
     <header>
@@ -30,8 +36,8 @@
             </div>
             <div class="navbarmenu">
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Trade</div>
-                    <div id="drop-content-1" class="drop-down-content">
+                    <div class="drop-label">Trade</div>
+                    <div id="drop-content" class="drop-down-content">
                         <div><a href="/swap">Swap</a></div>
                         <div><a href="/limit">Limit</a></div>
                         <div><a href="/liquidity">Liquidity</a></div>
@@ -42,14 +48,14 @@
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Earn</div>
-                    <div id="drop-content-2" class="drop-down-content">
+                    <div class="drop-label">Earn</div>
+                    <div id="drop-content" class="drop-down-content">
                         <div><a href="/farms">Farms</a></div>
                         <div><a href="/pools">Pools</a></div>
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Win</div>
+                    <div class="drop-label">Win</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/competition">Trading Competition</a></div>
                         <div><a href="/prediction">Prediction (BETA)</a></div>
@@ -57,7 +63,7 @@
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <img class="drop-label" onclick="dropMenu(this)" src="svg/menu-more.svg" />
+                    <img class="drop-label" src="svg/menu-more.svg" />
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/info">Info</a></div>
                         <div><a href="/ifo">IFO</a></div>
@@ -83,8 +89,8 @@
                     </a>
                 </div>
                 <div class="icons-mobile">
-                    <button class="languages-btn"><img src="svg/language-button.svg"></button>
-                    <div class="languages-container">
+                    <button class="hover-active-class"><img class="languages-btn" src="svg/language-button.svg"></button>
+                    <div id="myDropDown" class="languages-container">
                         <button class="lang">বাংলা</button>
                         <button class="lang">العربية</button>
                         <button class="lang">English</button>
@@ -115,11 +121,11 @@
                         <button class="lang">繁體中文</button>
                     </div>
                     <div class="settings-container">
-                        <button><img src="svg/settings-button.svg"></button>
+                        <button class="hover-active-class"><img src="svg/settings-button.svg"></button>
                     </div>
-                    <div>
-                        <button type="button" class="connect-wallet">Connect Wallet</button>
-                        <button type="button" class="connect">Connect</button>
+                    <div class="connect-buttons">
+                        <button type="button" class="connect-wallet hover-active-class">Connect Wallet</button>
+                        <button type="button" class="connect hover-active-class">Connect</button>
                     </div>
                 </div>
             </div>
@@ -316,43 +322,54 @@
         </div>
         <footer>
 
-            <!--NAV BAR (HEADER) THAT STAYS FIXED AT THE BOTTOM OF THE PAGE -->
+            <!--NAV BAR (HEADER) FIXED AT THE BOTTOM OF THE PAGE -->
             <nav class="bottom-mobile-navbar">
-                <div class="menu-item-mobile drop-label">
-                    <img src="svg/trade-menu-icon-mobile-active.svg" />
-                    <span>Trade</span>
+                <div class="menu-item-mobile">
+                    <div id="mobile-trade-label">
+                        <img src="svg/trade-menu-icon-mobile-active.svg" />
+                        <span>Trade</span>
+                    </div>
                 </div>
 
                 <div class="menu-item-mobile">
+                    <div class="bottom-drop-label">
                     <img src="svg/earn-menu-icon-mobile.svg" />
                     <span>Earn</span>
-                    <div id="drop-content" class="drop-down-content">
+                    </div>
+                    <div id="drop-content" class="bottom-drop-down-content">
                         <div><a href="/farms">Farms</a></div>
                         <div><a href="/pools">Pools</a></div>
                     </div>
                 </div>
 
                 <div class="menu-item-mobile">
+                    <div class="bottom-drop-label">
                     <img src="svg/win-menu-icon-mobile.svg" />
                     <span>Win</span>
-                    <div class="drop-down-content">
+                    </div>
+                    <div class="bottom-drop-down-content">
                         <div><a href="/competition">Trading Competition</a></div>
                         <div><a href="/prediction">Prediction (BETA)</a></div>
                         <div><a href="/lottery">Lottery</a></div>
                     </div>
                 </div>
                 <div class="menu-item-mobile">
+                    <div class="bottom-drop-label">
                     <img src="svg/nft-menu-icon-mobile.svg" />
                     <span>NFT</span>
-                    <div class="drop-down-content">
+                    </div>
+                    <div class="bottom-drop-down-content">
                         <div><a href="/overview">Overview</a></div>
                         <div><a href="/collections">Collections</a></div>
                         <div><a href="/activity">Activity</a></div>
                     </div>
                 </div>
+
                 <div class="menu-item-mobile">
+                    <div class="bottom-drop-label">
                     <img src="svg/menu-more.svg" />
-                    <div class="drop-down-content">
+                    </div>
+                    <div class="bottom-drop-down-content">
                         <div><a href="/info">Info</a></div>
                         <div><a href="/ifo">IFO</a></div>
                         <div><a href="/voting">Voting</a></div>
@@ -366,28 +383,15 @@
                             <img src="svg/external-docs-arrow.svg" alt="arrow icon" />
                         </div>
                     </div>
+<<<<<<< HEAD
+                </div>
 
 
+=======
+>>>>>>> develop
             </nav>
 
-            <script>
-                function dropMenu(a) {
-                    a.parentNode.getElementsByClassName("drop-down-content")[0].classList.toggle("show");
-
-                }
-                // Close the dropdown menu if the user clicks outside of it
-                window.onclick = function (event) {
-                    if (!event.target.matches(".drop-label")) {
-                        let dropdowns = document.getElementsByClassName("drop-down-content");
-                        let i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                            let openDropdown = dropdowns[i];
-                            if (openDropdown.classList.contains('show')) {
-                                openDropdown.classList.remove('show');
-                            }
-                        }
-                    }
-                }
+            <script src="logic/header.js">
             </script>
 </body>
 

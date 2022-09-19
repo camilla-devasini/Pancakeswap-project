@@ -1,0 +1,277 @@
+@import "../common-submenu/submenu.scss";
+@import "../card/cards-swap-limit.scss";
+
+
+.complete-trade-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .limit-card-plus-orders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+   
+
+    #trade-card-container-limit {
+        @extend %style-trade-card;
+        display: none;
+        margin-left: 24px;
+        margin-right: 24px;
+        height: fit-content;
+
+        & .connect-wallet {
+            margin-bottom: 40px;
+        }
+
+        
+
+    }
+
+    %clicked-btn {
+        color: rgb(40, 13, 95);
+        background-color: #fff;
+    }
+
+    #trade-orders-card {
+        @extend %style-trade-card;
+        display: none;
+        margin-top: 0px;
+        align-self: flex-start;
+        border-top-left-radius: 16px;
+        min-width: 376px;
+        height: fit-content;
+       
+        
+      
+
+        & header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(238, 234, 244);
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        
+            & button {
+                padding: 0 25px;
+                flex: 1 1 auto;
+                font-weight: 600;
+                color: rgb(122, 110, 170);
+                padding: 10px 0px;
+                text-align: center;
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+
+            }
+
+            & button:first-child {
+                @extend %clicked-btn;
+        
+            }  
+        }
+
+        & .orders-content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgb(189, 194, 196);
+
+            & > img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        & .orders-scroll {
+            padding: 32px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+    
+            & span {
+                margin: 0px 20px;
+            }
+        }
+
+    }
+}
+
+.show-card {
+    display: none;
+}
+
+.trade-page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+
+    .version-conversion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+
+        .version-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            font-weight: 600;
+            background-color: rgb(238, 234, 244);
+            border-radius: 16px;
+            border: 1px solid rgb(215, 202, 236);
+            width: auto;
+        
+
+            & .v2-link {
+                background-color: rgb(122, 110, 170);
+                color:rgb(255, 255, 255);
+                font-weight: 600;
+                padding: 0px 16px;
+                border-radius: 16px;
+                height: 32px;
+                cursor: pointer;
+              
+            }
+
+            & .v1-link {
+                text-decoration: none;
+                padding: 0 16px;
+                color: rgb(122, 110, 170);
+                font-weight: 600;
+            }
+        }
+
+        .conversion-link {
+            width: fit-content;
+            display: flex;
+            margin: 20px 0px 8px;
+
+            & > a {
+            color: rgb(31, 199, 212);
+            font-weight: 600;
+            line-height: 1.5;
+            }
+
+            & > img {
+                width: 20px;
+                height: 20px;
+            }
+       
+        }
+    }
+
+    .trade-help-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        & .trade-bubble-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+
+            & > a {
+                height: 48px;
+                padding: 0px 24px;
+                background-color: rgb(122, 110, 170);
+                color: rgb(255, 255, 255);
+                box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                white-space: nowrap;
+                border-radius: 16px;
+                border: 0px;
+                outline: 0px;
+                line-height: 48px;
+                font-weight: 600;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            & > img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        & .trade-help-bunny > img {
+            max-width: 160px;
+            max-height: 108px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .complete-trade-card-wrapper .trade-cards-only-container {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        position: relative;
+        
+        & .limit-card-plus-orders {
+            display: flex;
+            flex-direction: row-reverse;
+            
+            
+
+            & > #trade-card-container-limit {
+                width: 326px;
+        
+            }
+        }
+
+        & > #trade-orders-card {
+
+            margin-top: 0px;
+            min-width: 40vw;
+           
+        }  
+    }
+
+
+    .trade-page-footer .version-conversion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 20px;
+    }
+
+    // .violet-layer {
+    //     z-index: 1;
+    //     position: relative;
+    //     background-color:blue;
+  
+    
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0px;
+    //         opacity: 0.3;
+    //         height: 100vh;
+    //         width: 100vw;
+    //         background-color:blue;
+        
+    //     }
+    // }
+    
+}
+
+@media screen and (min-width: 852px) {
+    .trade-page-footer {
+        min-width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

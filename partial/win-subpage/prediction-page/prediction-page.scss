@@ -1,0 +1,433 @@
+@import "../../common-submenu/submenu.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+
+}
+
+@mixin live-button($btn-bg-color) {
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 0px 24px;
+    background-color: $btn-bg-color;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 16px;
+    
+}
+
+body, html {
+    height: 100vh;
+}
+
+.hover-active-class {
+
+    &:hover {
+        opacity: 0.65;
+        cursor: pointer;
+    }
+    &:active {
+        transform: translateY(1px);
+    
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.trade-navbar {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    min-width: 100%;
+
+    & .trade-item .trade-link > a {
+        color: rgb(122, 110, 170);
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 10px 10px;
+
+        &.link-highlighted {
+                font-weight: 600;
+                color: rgb(118, 69, 217);
+                position: relative;
+        
+        
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 4px;
+                    width: 100%;
+                    background-color: rgb(31, 199, 212);
+                    border-radius: 2px 2px 0px 0px;
+        
+                }
+        
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        
+}
+
+
+//CARDS CAROUSEL
+.prediction-cards-ext-wrapper {
+    height: calc(100vh - 36px);
+    position: relative;
+    z-index: 0;
+}
+.prediction-cards-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
+    height: calc(100vh - 100px);
+
+    .counters-container {
+        display: flex;
+        padding: 16px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        
+     
+
+
+        & .coins-counter  {
+            display: flex;
+
+            & > .coins-img {
+            width: 57px;
+            height: 47px;
+            }
+
+            & > .clock-img {
+                width: 48px;
+                height: 48px;
+            }
+
+            & .prediction-counter {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: rgb(40, 13, 95);
+                line-height: 21px;
+                width: 122px;
+                height: 39px;
+                background-color: #ffff;
+                border-radius: 8px 8px 24px;
+                padding: 0px 8px 0px 24px;
+                box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
+
+                & span:first-of-type {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+    
+
+    .prediction-pre-btn, .prediction-next-btn {
+        display: flex;
+        position: absolute;
+        bottom: 2.5%;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+    }
+
+    .prediction-pre-btn {
+        left: 1%;
+    }
+
+    .prediction-next-btn {
+        right: 1%;
+    }
+
+    .prediction-cards-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        align-items: center;
+        gap: 15px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .prediction-card {
+            width: 320px;
+            height: 360px;
+            border: 1px solid rgb(231, 227, 235);
+            background-color: #fff;
+            border-radius: 16px;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+
+            //le expired cards hanno opacity 0.65 che diventa 1 con hover
+            &.expired-card {
+                opacity: 0.65;
+                transition: opacity 0.5s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            & .live-progress {
+                display: block;
+                width: 100%;
+                height: 8px;
+                background-color: rgb(238, 234, 244);
+                box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+                border-radius: 0px;
+
+            }
+
+            .prediction-icons {
+                width: 24px;
+                height: 24px;
+            }
+            //CARD HEADER
+            .prediction-header {
+                display: flex;
+                padding: 8px;
+                align-items: center;
+                background-color: rgb(231, 227, 235);
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                color: rgb(189, 194, 196);
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: center;
+
+                &.header-live {
+                    color: rgb(118, 69, 217);
+
+                    & > div > span {
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 21px;
+                       
+                    }
+                }
+
+                &.header-next {
+                    color: rgb(255, 255, 255);
+                    background-color:rgb(118, 69, 217);
+
+                    & > div > span {
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 21px;
+ 
+                    }
+                }
+
+                & > span {
+                    margin-left: auto;
+                    font-size: 12px;
+                }
+            }
+
+            //CARD CONTENT
+            .prediction-content {
+                padding: 16px;
+                width: 318px;
+                height: 319px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &.live-content {
+                    padding-top: (16px - 8px);
+                }
+
+                .prediction-label {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+            
+                    .prediction-shape {
+                        z-index: 0;
+                        display: block;
+                    }
+
+                    
+
+                    .prediction-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 65px;
+                        z-index: 1;
+                        position: absolute;
+                        top: 12px;
+                        left: 88px;
+
+                        &.pred-reverse {
+                            flex-direction: column-reverse;
+                            top: -12px;
+
+                            & > span:first-child {
+                            color: rgb(237, 75, 158);
+                            }
+
+    
+                        }
+
+                        & > span:first-child {
+                            color: rgb(49, 208, 170);
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 20px;
+                            line-height: 21px;
+                        }
+
+                        & div > span:first-child, & div > span:nth-child(2) {
+                            color: rgb(122, 110, 170);
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+
+                        & div > span:nth-child(2) {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+
+                .prediction-info-box {
+                    background: linear-gradient(rgb(83, 222, 233) 0%, rgb(118, 69, 217) 100%);
+                    padding: 2px;
+                    border-radius: 16px;
+
+                    & .prediction-info {
+                        border: none;
+                    }
+                }
+
+                
+                .prediction-info {
+                    border-radius: 14px;
+                    padding: 16px;
+                    border: 2px solid rgb(189, 194, 196);
+                    width: 286px;
+                    height: 150px;
+                    z-index: 1;
+                    background-color:rgb(255, 255, 255);
+
+                    & > span {
+                        color: rgb(122, 110, 170);
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-transform: uppercase;
+                        margin-bottom: 8px;
+                        font-size: 12px;
+                    }
+
+                    .prediction-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 2fr 0.1fr 0.1fr;
+                        margin-bottom: -20px;
+                    
+
+                        & .info-grid1 {
+                            color: rgb(237, 75, 158);
+                            font-weight: 600;
+                            line-height: 1.5;
+                            font-size: 24px;
+                            text-decoration: underline dotted rgb(122, 110, 170);
+
+
+                        }
+
+                        & .info-grid2 {
+                            width: 90px;
+                            height: 32px;
+                            background-color: rgb(237, 75, 158);
+                            color: rgb(255, 255, 255);
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 1.5; 
+                            border-radius: 4px;
+                            text-align: right;
+                            padding-right: 4px;
+                            padding-top: 4px;
+                            display: flex;
+                            justify-content: center;
+
+                            & > img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+
+                        & .info-grid3, & .info-grid4 {
+                            color: rgb(40, 13, 95);
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
+                        & > div:nth-child(2n) {  //grid items pari
+                            justify-self: end;
+                        }
+
+                        & > div:nth-child(n+5) {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: rgb(40, 13, 95);
+                            
+                        }
+                    }
+
+                    .prize-pool-next {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: rgb(40, 13, 95);
+                    }
+
+                    & > button:first-of-type {
+                        @include live-button(rgb(49, 208, 170));
+                    }    
+
+                    & > button:last-of-type {
+                        @include live-button(rgb(237, 75, 158));
+                    } 
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
