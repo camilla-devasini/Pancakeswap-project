@@ -152,4 +152,4 @@ dots[1].addEventListener('click',() => {datas[1].style.display = 'none'; datas[0
 // }
 
 
-graphCard.style.animation = "350ms ease 0s 1 normal forwards running graph-up"
+// graphCard.style.animation = "350ms ease 0s 1 normal forwards running graph-up"
