@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    .top-menu {
+        display: flex;
+        // width: 100%;
+        height: 42px;
+        gap: 20px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        
+        a {
+            text-decoration: none;
+            color: rgb(122, 110, 170);
+        }
+
+        a:active {
+            color: rgb(118, 69, 217);
+        }
+    }
+
+    .nft-marketplace {
+        // width: 100%;
+        height: 266px;
+        background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+        // margin-bottom: -40px;
+        // padding-bottom: 40px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
+        border-radius: 0 0 60% 60% / 10%;
+        
+        .titoli {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            bottom: 16px;
+
+            h1 {
+                font-size: 48px;
+                color: rgb(118, 69, 217)
+            }
+
+            h2 {
+                font-size: 24px;
+                color: rgb(40, 13, 95);
+            }
+
+        }
+
+        .search-bar {
+            margin-left: auto;
+        }
+        
+        input {
+            height: 40px;
+            width: 240px;
+            border-radius: 16px;
+            border: 1px solid rgb(215, 202, 236);
+            font-size: 16px;
+            background-color: rgb(238, 234, 244);
+            box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+            color: rgb(40, 13, 95);
+            // padding-right: 60px;
+            position: relative;
+            // z-index: 16;  
+                     
+        }
+
+        ::placeholder {
+            position: relative;
+            left: 20px;
+            color: rgb(122, 110, 170);
+            font-weight: 0px;
+        }
+    }
+
+    .newest-collection {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+        .top-collection {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-size: 24px;
+                color: rgb(40, 13, 95);
+            }
+
+            a {
+                text-decoration: none;
+                border: 2px solid rgb(31, 199, 212);
+                border-radius: 16px;
+                font-size: 16px;
+                color: rgb(31, 199, 212);
+                letter-spacing: 0.03em;
+                width: 131.8px;
+                padding: 0px 16px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                height: 32px;
+
+                svg {
+                    fill: rgb(31, 199, 212);
+                }
+            }
+        }
+    }
+}
