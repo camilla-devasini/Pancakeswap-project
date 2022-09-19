@@ -9,6 +9,52 @@ body {
   max-width: 100%;
 }
 
+.head-nft-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.head-nft-title .mercato-title {
+  color: rgb(118, 69, 217);
+  font-size: 64px;
+  font-weight: bolder;
+}
+.head-nft-title .acquista-title {
+  color: rgb(40, 13, 95);
+  font-size: 24px;
+  font-weight: bold;
+}
+.head-nft-title .search-box {
+  width: 260px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: rgb(238, 234, 244);
+}
+
+.card-recent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-recent .direction {
+  color: aqua;
+}
+.card-recent .h3-raccolte {
+  color: rgb(40, 13, 95);
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-recent .btn-mostra {
+  background-color: white;
+  border: 1px solid rgb(31, 199, 212);
+  border-radius: 15px;
+  width: 150px;
+  color: rgb(31, 199, 212);
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .nft-card-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -86,6 +132,46 @@ body {
   line-height: 1.5;
   font-weight: 600;
   font-size: 16px;
+}
+
+.container-last-card {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.container-last-card .card-last {
+  width: 330px;
+  height: 480px;
+  border: 1px solid lightgray;
+}
+.container-last-card .card-last .avatar-img {
+  padding: 20px;
+}
+.container-last-card .card-last .avatar-img .avatar {
+  border-radius: 8px;
+}
+.container-last-card .card-last .body-card {
+  height: 130px;
+}
+.container-last-card .card-last .body-card h4 {
+  color: rgb(40, 13, 95);
+}
+.container-last-card .card-last .footer-card {
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+}
+.container-last-card .card-last .footer-card p {
+  color: rgb(122, 110, 170);
+}
+.container-last-card .card-last .footer-card .after-cash {
+  color: rgb(40, 13, 95);
 }
 
 @media screen and (min-width: 576px) {
