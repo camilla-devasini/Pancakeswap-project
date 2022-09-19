@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="svg/light-blue-logo.svg" type="image/x-icon">
     </head>
 
 <body>
@@ -35,7 +36,7 @@
             </div>
             <div class="navbarmenu">
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Trade</div>
+                    <div class="drop-label">Trade</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/swap">Swap</a></div>
                         <div><a href="/limit">Limit</a></div>
@@ -47,14 +48,14 @@
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Earn</div>
+                    <div class="drop-label">Earn</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/farms">Farms</a></div>
                         <div><a href="/pools">Pools</a></div>
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Win</div>
+                    <div class="drop-label">Win</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/competition">Trading Competition</a></div>
                         <div><a href="/prediction">Prediction (BETA)</a></div>
@@ -62,7 +63,7 @@
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <img class="drop-label" onclick="dropMenu(this)" src="svg/menu-more.svg" />
+                    <img class="drop-label" src="svg/menu-more.svg" />
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/info">Info</a></div>
                         <div><a href="/ifo">IFO</a></div>
@@ -88,7 +89,7 @@
                     </a>
                 </div>
                 <div class="icons-mobile">
-                    <button class="languages-btn"><img src="svg/language-button.svg" onmouseover="dropLang()"></button>
+                    <button class="hover-active-class"><img class="languages-btn" src="svg/language-button.svg"></button>
                     <div id="myDropDown" class="languages-container">
                         <button class="lang">বাংলা</button>
                         <button class="lang">العربية</button>
@@ -120,11 +121,11 @@
                         <button class="lang">繁體中文</button>
                     </div>
                     <div class="settings-container">
-                        <button><img src="svg/settings-button.svg"></button>
+                        <button class="hover-active-class"><img src="svg/settings-button.svg"></button>
                     </div>
                     <div class="connect-buttons">
-                        <button type="button" class="connect-wallet">Connect Wallet</button>
-                        <button type="button" class="connect">Connect</button>
+                        <button type="button" class="connect-wallet hover-active-class">Connect Wallet</button>
+                        <button type="button" class="connect hover-active-class">Connect</button>
                     </div>
                 </div>
             </div>
@@ -324,14 +325,14 @@
             <!--NAV BAR (HEADER) FIXED AT THE BOTTOM OF THE PAGE -->
             <nav class="bottom-mobile-navbar">
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label">
+                    <div id="mobile-trade-label">
                         <img src="svg/trade-menu-icon-mobile-active.svg" />
                         <span>Trade</span>
                     </div>
                 </div>
 
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/earn-menu-icon-mobile.svg" />
                     <span>Earn</span>
                     </div>
@@ -342,7 +343,7 @@
                 </div>
 
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/win-menu-icon-mobile.svg" />
                     <span>Win</span>
                     </div>
@@ -353,7 +354,7 @@
                     </div>
                 </div>
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/nft-menu-icon-mobile.svg" />
                     <span>NFT</span>
                     </div>
@@ -363,8 +364,9 @@
                         <div><a href="/activity">Activity</a></div>
                     </div>
                 </div>
+
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/menu-more.svg" />
                     </div>
                     <div class="bottom-drop-down-content">
@@ -381,6 +383,12 @@
                             <img src="svg/external-docs-arrow.svg" alt="arrow icon" />
                         </div>
                     </div>
+<<<<<<< HEAD
+                </div>
+
+
+=======
+>>>>>>> develop
             </nav>
 
             <script src="logic/header.js">
