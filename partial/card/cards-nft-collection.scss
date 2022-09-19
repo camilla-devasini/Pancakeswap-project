@@ -7,7 +7,7 @@
 }
 
 body {
-    max-width: 100%;
+    width: 100%
     
 }
 .head-nft-title{
@@ -209,9 +209,16 @@ body {
  }
 }
 }
-.question-container{
-    height: 500px;
+.total-cont{
     background-color: rgb(237,240,245);
+    
+}
+.question-container{
+    height: 100%;
+    width: 100vh;
+    
+    margin: 0 auto;
+    align-items: center;
     .question-title{
         h2{
             font-size: 24px;
@@ -222,20 +229,34 @@ body {
     .question-box{
         border: 1px solid;
         height: 350px;
-        width: 90%;
-        align-items: center;
-        justify-content: center;
+        width: 900px;
+        background-color: white;
+  
+      
+        
         .drop-nft{
             height: 116px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            color: rgb(47,13,95);
+            font-size: 16px ;
+            font-weight: bolder;
+            
+
             .dropdown-onclick{
                 height: 40px;
                 border: none;
                 padding-right: 30px;
-                
-            }
+                color: rgb(31,199,212);
+                font-size: 16px;
+                background-color: white;
+                font-weight: bold;        
+                }
+              
         }
+
+
     }
 }
 
