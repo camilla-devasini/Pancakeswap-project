@@ -93,8 +93,9 @@ footer {
   text-decoration: none;
 }
 .cont_footer .last .shop_cake .cake-btn {
-  width: 150px;
   background-color: cyan;
+  text-decoration: none;
+  border: none;
 }
 .cont_footer .icon_bunny {
   width: 25px;

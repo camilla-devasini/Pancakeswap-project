@@ -177,15 +177,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 35px;
+  height: 40px;
   align-items: center;
 }
 .container-last-card .card-last .footer-card p {
   color: rgb(122, 110, 170);
+  margin-top: 3px;
 }
 .container-last-card .card-last .footer-card .after-cash {
   color: rgb(40, 13, 95);
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .total-cont {

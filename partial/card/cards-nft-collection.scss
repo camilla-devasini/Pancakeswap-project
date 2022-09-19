@@ -197,14 +197,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 35px;
+    height: 40px;
     align-items: center;
-    p{
+    
+    
+        p{
         color: rgb(122,110,170);
+        margin-top: 3px;
     }
     .after-cash{
         color: rgb(40,13,95);
-        font-weight: bolder;
+        font-weight: bold;
+
     }
  }
 }
@@ -251,11 +255,9 @@ body {
                 color: rgb(31,199,212);
                 font-size: 16px;
                 background-color: white;
-                font-weight: bold;        
+                font-weight: bold;       
                 }
-              
         }
-
 
     }
 }
