@@ -1573,6 +1573,60 @@ section.container-6 .box-data .current-emissions {
     width: 95vw;
     height: 580px;
   }
+  body .main-content section.container-6 {
+    height: 700px;
+    padding: 0 24px;
+    align-items: center;
+  }
+  body .main-content section.container-6 .wrapper-6 {
+    padding: 48px 24px;
+    width: 95vw;
+    height: 750px;
+    justify-content: center;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 picture.bunny {
+    position: relative;
+    width: 410px;
+    height: 400px;
+    bottom: 55px;
+    right: 40px;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 picture.bunny img {
+    width: 410px;
+    height: 400px;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 .box-cake {
+    align-self: center;
+    flex: 1 1 0%;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 .box-cake h2 {
+    font-size: 40px;
+  }
+  body .main-content section.container-6 .wrapper-6 .top-6 .box-cake h2 span {
+    font-size: 40px;
+  }
+  body .main-content section.container-6 .box-data {
+    display: grid;
+    grid-template-areas: " a b c" "d e f" !important;
+    grid-template-columns: repeat(3, auto) !important;
+    gap: 32px !important;
+  }
+  body .main-content section.container-6 .box-data .max-supply {
+    border-left: 1px solid rgb(215, 202, 236);
+    padding: 0px 8px;
+  }
+  body .main-content section.container-6 .box-data .total-supply {
+    border-left: 1px solid rgb(215, 202, 236);
+    padding: 0px 8px;
+  }
+  body .main-content section.container-6 .box-data .market-cap {
+    border-left: 0px !important;
+    padding: 0 !important;
+  }
 }
 @media screen and (max-width: 858px) and (min-width: 426px) {
   body .hero-content {
@@ -2870,7 +2924,7 @@ section.container-6 .box-data .current-emissions {
   }
   section.container-6 .wrapper-6 {
     padding: 48px 24px;
-    width: 1020px;
+    width: 95vw;
     height: 750px;
     justify-content: center;
   }
