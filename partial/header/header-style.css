@@ -274,8 +274,8 @@ body, html {
     height: 154px;
   }
   .nav .navbarmenu .drop-down-menu:nth-child(4) > .drop-down-content {
-    height: 316px;
-    top: 100%;
+    height: 148px;
+    top: 108%;
   }
   .nav .navbarmenu .drop-down-menu:nth-child(4) > .drop-down-content > div:nth-child(4) {
     border-top: 1px solid rgb(231, 227, 235);
