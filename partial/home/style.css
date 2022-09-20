@@ -551,7 +551,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   z-index: 1;
 }
@@ -586,7 +585,7 @@ button:hover {
   border: none;
   border-radius: 16px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 600 !important;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
 }
 .hero-content .main-banner-container .main-banner-sub-container .main-banner-content-container .link-aquagreen .main-banner-button-a .mbb-svg-a {
@@ -708,7 +707,7 @@ button:hover {
   border: none;
   border-radius: 16px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 600 !important;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
 }
 .hero-content .main-banner-container-2 .main-banner-sub-container .main-banner-content-container .link-aquagreen .main-banner-button-a .mbb-svg-a {
@@ -773,6 +772,7 @@ button:hover {
   font-size: 64px;
   color: rgb(118, 69, 217);
   margin-bottom: 20px;
+  font-weight: 600 !important;
 }
 .hero-content .hero-container .container-1 .h3-hero {
   margin-bottom: 20px;
@@ -955,7 +955,7 @@ button:hover {
   line-height: 1.5;
   color: rgb(122, 110, 170);
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: lighter !important;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -2103,6 +2103,7 @@ section.container-6 .box-data .current-emissions {
     font-size: 50px;
     color: rgb(118, 69, 217);
     margin-bottom: 20px;
+    font-weight: 600;
   }
   body .hero-content .hero-container .container-1 .h3-hero {
     margin-bottom: 20px;
@@ -2363,6 +2364,7 @@ section.container-6 .box-data .current-emissions {
     font-size: 50px;
     color: rgb(118, 69, 217);
     margin-bottom: 20px;
+    font-weight: 600;
   }
   body .hero-content .hero-container .container-1 .h3-hero {
     margin-bottom: 20px;
@@ -2678,6 +2680,7 @@ section.container-6 .box-data .current-emissions {
     font-size: 40px;
     color: rgb(118, 69, 217);
     margin-bottom: 20px;
+    font-weight: 600;
   }
   body .hero-content .hero-container .container-1 .h3-hero {
     margin-bottom: 15px;
@@ -3016,6 +3019,7 @@ section.container-6 .box-data .current-emissions {
     font-size: 35px;
     color: rgb(118, 69, 217);
     margin-bottom: 30px;
+    font-weight: 600;
   }
   body .hero-content .hero-container .container-1 .h3-hero {
     margin-bottom: 20px;
@@ -3338,6 +3342,7 @@ section.container-6 .box-data .current-emissions {
     font-size: 35px;
     color: rgb(118, 69, 217);
     margin-bottom: 30px;
+    font-weight: 600;
   }
   body .hero-content .hero-container .container-1 .h3-hero {
     margin-bottom: 20px;
