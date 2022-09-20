@@ -204,31 +204,21 @@ body {
   color: rgb(118, 69, 217);
   font-weight: bold;
 }
-.question-container .question-box {
-  border: 1px solid;
-  height: 350px;
-  width: 900px;
-  background-color: white;
-}
-.question-container .question-box .drop-nft {
-  height: 116px;
+.question-container .accordion {
   display: flex;
+  flex-direction: column;
+}
+.question-container .accordion .accordion-item .accordion-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
-  color: rgb(47, 13, 95);
-  font-size: 16px;
-  font-weight: bolder;
 }
-.question-container .question-box .drop-nft .dropdown-onclick {
-  height: 40px;
+.question-container .accordion .accordion-item .accordion-title .accordion-button {
+  width: 0%;
+  text-decoration: none;
   border: none;
-  padding-right: 30px;
-  color: rgb(31, 199, 212);
-  font-size: 16px;
-  background-color: white;
-  font-weight: bold;
 }
-
 @media screen and (min-width: 576px) {
   .nft-card-container {
     display: grid;
