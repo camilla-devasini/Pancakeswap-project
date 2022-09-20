@@ -1,3 +1,6 @@
+@import "../header/header-style.scss";
+@import "../footer/footer.scss";
+
 * {
     
     padding: 0;
@@ -236,7 +239,8 @@ button:hover {
 
     .main-banner-container-2 {
 
-            display:  flex;
+            
+            display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -1027,6 +1031,78 @@ button:hover {
             font-size: 18px;
             color: rgb(122, 110, 170);
             font-weight: lighter;
+                }              
+            }
+        }
+
+        .container-data-2  {
+            
+            
+            margin: 55px;
+            width: 80%;
+            height: 170px;
+            
+
+            .title {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            button {  
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            margin-top: 15px;
+            margin-left: 20px;
+            }
+ 
+            }
+
+            span {
+
+            font-size: 23px;
+            color:rgb(118, 69, 217);
+            }
+
+            h2 {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 23px;
+            color:rgb(40, 13, 95);
+            }
+
+            .group {
+    
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+              
+                .group-border {
+
+                border-left: 1px solid rgb(118, 69, 217, 35%);
+                padding-left: 20px;
+                }
+        
+
+                h2 {
+                font-size: 13px;
+                color: rgb(118, 69, 217);
+                }
+
+                h3 {
+                font-size: 13px;
+                color:rgb(40, 13, 95);
+                }
+
+                h4 {
+                font-size: 18px;
+                color: rgb(122, 110, 170);
+                font-weight: lighter;
                 }              
             }
         }
@@ -1880,6 +1956,71 @@ section.container-6 {
 
 
             }
+
+            section.container-6 {
+                height: 700px;
+                padding: 0 24px;
+                align-items: center;
+        
+                .wrapper-6 {
+                    padding: 48px 24px;
+                    width: 95vw;
+                    height: 750px;
+                    justify-content: center;
+                    .top-6 {
+                        // padding-top: 150px;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        picture.bunny {
+                            position: relative;
+                            width: 410px;
+                            height: 400px;
+                            bottom: 55px;
+                            right: 40px;
+            
+                            img {
+                                width: 410px;
+                                height: 400px;
+                            }
+                        }
+            
+                        .box-cake {
+                            align-self: center;
+                            flex: 1 1 0%;
+        
+                            h2{
+                                font-size: 40px;
+                
+                                span {
+                                    font-size: 40px;
+                                }
+                            }
+                        } 
+                    }
+                }
+                .box-data {
+                    display: grid;
+                    grid-template-areas: 
+                " a b c"
+                "d e f" !important;
+                grid-template-columns: repeat(3, auto) !important;
+                gap: 32px !important;
+                // padding: 100px;
+        
+                .max-supply {
+                    border-left: 1px solid rgb(215, 202, 236);
+                    padding: 0px 8px;
+                }
+                .total-supply {
+                    border-left: 1px solid rgb(215, 202, 236);
+                    padding: 0px 8px;
+                }
+                .market-cap {
+                    border-left: 0px !important;
+                    padding: 0 !important;
+                }
+                }
+            }
         
         }
 }
@@ -2269,7 +2410,38 @@ section.container-6 {
                                         }
                                     }
 
-                                }  
+                                } 
+                                
+                                .container-data-2 {
+                                    
+                                    margin-top: 50px;
+                                
+                                .group  {
+
+                                    .group-border {
+                                        border: none;
+                                        padding-left: 0;
+                                    }
+                                    display: grid;
+                                    grid-template-rows: repeat(3, 1fr);
+                                    grid-template-columns: repeat(2,1fr);
+                                    gap: 10px;
+
+                                    .fourth {
+                                
+                                        grid-column: 1 ;
+                                        grid-row: 3 ;
+
+                                    }
+
+                                    .fifth {
+                                        grid-column: 2;
+                                        grid-row: 3;
+                                    }
+                                }
+
+                                } 
+                                
 
             }
             
@@ -2711,6 +2883,36 @@ section.container-6 {
 
                 }  
 
+                .container-data-2 {
+                                    
+                    margin-top: 50px;
+                
+                .group  {
+
+                    .group-border {
+                        border: none;
+                        padding-left: 0;
+                    }
+                    display: grid;
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
+
+                    .fourth {
+                
+                        grid-column: 1 ;
+                        grid-row: 3 ;
+
+                    }
+
+                    .fifth {
+                        grid-column: 2;
+                        grid-row: 3;
+                    }
+                }
+
+                } 
+
             }
         }    
 
@@ -3140,6 +3342,35 @@ section.container-6 {
 
                 }  
 
+                .container-data-2 {
+                                    
+                    margin-top: 50px;
+                
+                .group  {
+
+                    .group-border {
+                        border: none;
+                        padding-left: 0;
+                    }
+                    display: grid;
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
+
+                    .fourth {
+                
+                        grid-column: 1 ;
+                        grid-row: 3 ;
+
+                    }
+
+                    .fifth {
+                        grid-column: 2;
+                        grid-row: 3;
+                    }
+                }
+
+                } 
             }
 
         }  
@@ -3566,6 +3797,36 @@ section.container-6 {
 
                 }  
 
+                .container-data-2 {
+                                    
+                    margin-top: 50px;
+                
+                .group  {
+
+                    .group-border {
+                        border: none;
+                        padding-left: 0;
+                    }
+                    display: grid;
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
+
+                    .fourth {
+                
+                        grid-column: 1 ;
+                        grid-row: 3 ;
+
+                    }
+
+                    .fifth {
+                        grid-column: 2;
+                        grid-row: 3;
+                    }
+                }
+
+                } 
+
             }
         }  
 
@@ -3649,7 +3910,7 @@ section.container-6 {
 
         .wrapper-6 {
             padding: 48px 24px;
-            width: 1020px;
+            width: 95vw;
             height: 750px;
             justify-content: center;
             .top-6 {

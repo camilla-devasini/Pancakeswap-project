@@ -219,6 +219,7 @@ body {
   text-decoration: none;
   border: none;
 }
+
 @media screen and (min-width: 576px) {
   .nft-card-container {
     display: grid;

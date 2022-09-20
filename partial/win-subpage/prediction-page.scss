@@ -1,4 +1,9 @@
-@import "../../common-submenu/submenu.scss";
+@import "../common-submenu/submenu.scss";
+@import "../header/header-style.scss";
+@import "../footer/footer.scss";
+
+
+
 
 * {
     padding: 0;
@@ -97,7 +102,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
     background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
     height: calc(100vh - 100px);
 
@@ -170,6 +175,7 @@ body, html {
         scroll-behavior: smooth;
         align-items: center;
         gap: 15px;
+        max-width: 100vw;
 
         &::-webkit-scrollbar {
             display: none;

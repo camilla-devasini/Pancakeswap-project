@@ -8,7 +8,7 @@ function currentSlide(n) {
 }
 function showSlides(slide, dot) {
     let i;
-    let slides = document.getElementsByClassName("java-slide");
+    let slides = document.getElementsByClassName("js-slide");
     let dots = document.getElementsByClassName("swiper");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -27,12 +27,81 @@ function showSlides(slide, dot) {
         window.clearTimeout(timeout);
         timeout = setTimeout(showSlides, 4000);
     }
-
-
-
-
-    
+  
 }
+
+//DOTS LOTTERY
+
+
+let lotteryButtons = document.querySelectorAll('.swiper-slide');
+let lotteryDivs = document.querySelectorAll('.js-slide');
+
+
+lotteryButtons[0].addEventListener('click', () => {
+    
+    lotteryDivs[0].style.display = 'none'; 
+    lotteryDivs[1].style.display = 'block';
+   
+})
+
+lotteryButtons[1].addEventListener('click', () => {
+    
+    lotteryDivs[1].style.display = 'none';
+    lotteryDivs[0].style.display = 'block';
+    
+})
+
+
+//TOP FARMS
+
+
+let slideData = 0;
+showSlidesData();
+
+function currentSlideData(n) {
+    showSlidesData(slideData = n - 1, dot = 1);
+}
+function showSlidesData(dot) {
+    let i;
+    let slides = document.getElementsByClassName("slides-data");
+    let dots = document.getElementsByClassName("button-data");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideData++;
+    if (slideData > slides.length) { slideData = 1 }
+    for (i = 0; i < dots.length; i++) {
+      
+    }
+    slides[slideData - 1].style.display = "block";
+    
+    if (dot != 1) {
+        timeout = setTimeout(showSlidesData, 3000); 
+    }
+    else {
+        window.clearTimeout(timeout);
+        timeout = setTimeout(showSlidesData, 3000);
+    }
+  
+}
+
+
+  
+
+
+
+
+
+let dots = document.querySelectorAll('.button-data');
+let datas = document.querySelectorAll('.slides-data');
+
+dots[0].addEventListener('click',() => {
+    
+        datas[0].style.display = 'none'; datas[1].style.display = 'block';
+        })
+        
+dots[1].addEventListener('click',() => {datas[1].style.display = 'none'; datas[0].style.display = 'block';})
+
 
 
  
@@ -81,3 +150,6 @@ function showSlides(slide, dot) {
 // else {
 //     clearInterval(fadeIn);
 // }
+
+
+// graphCard.style.animation = "350ms ease 0s 1 normal forwards running graph-up"

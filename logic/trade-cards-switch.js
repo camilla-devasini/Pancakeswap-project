@@ -23,14 +23,9 @@ function toggleTradeCards() {
 
 
 //add .link-highlighted class to labels when clicked.
-let menuLabels = document.querySelectorAll('.trade-link');
-menuLabels.forEach(function(item) {
+let menuLabelsHighlight = document.querySelectorAll('.trade-link');
+menuLabelsHighlight.forEach(function(item) {
     item.addEventListener('click', function() {
-<<<<<<< HEAD
-        item.classList.add('link-highlighted');
-
-        
-=======
         if (!item.classList.contains('link-highlighted')) {
             toggleTradeCards();
             item.classList.add('link-highlighted');
@@ -41,7 +36,6 @@ menuLabels.forEach(function(item) {
                 }
             });
         } 
->>>>>>> develop
     });    
 });
 
