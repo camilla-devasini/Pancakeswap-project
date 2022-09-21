@@ -152,4 +152,28 @@ dots[1].addEventListener('click',() => {datas[1].style.display = 'none'; datas[0
 // }
 
 
-// graphCard.style.animation = "350ms ease 0s 1 normal forwards running graph-up"
+const counters = document.querySelectorAll('.value');
+const speed = 200;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('val');
+      const data = +counter.innerText;
+
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        }else{
+          counter.innerText = convertComma(value);
+        }
+
+   }
+
+   animate();
+});
+
+function convertComma (value) {
+
+    return value.toString().replace(".", ",")
+}
