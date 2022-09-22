@@ -1,4 +1,9 @@
-@import "../../common-submenu/submenu.scss";
+@import "../common-submenu/submenu.scss";
+@import "../header/header-style.scss";
+@import "../footer/footer.scss";
+
+
+
 
 * {
     padding: 0;
@@ -50,6 +55,39 @@ body, html {
     overflow-y: hidden;
     white-space: nowrap;
     min-width: 100%;
+
+    & .trade-item .trade-link > a {
+        color: rgb(122, 110, 170);
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 10px 10px;
+
+        &.link-highlighted {
+                font-weight: 600;
+                color: rgb(118, 69, 217);
+                position: relative;
+        
+        
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 4px;
+                    width: 100%;
+                    background-color: rgb(31, 199, 212);
+                    border-radius: 2px 2px 0px 0px;
+        
+                }
+        
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        
 }
 
 
@@ -62,10 +100,57 @@ body, html {
 .prediction-cards-container {
     
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
     background: linear-gradient(rgb(203, 215, 239) 0%, rgb(154, 159, 208) 100%);
     height: calc(100vh - 100px);
 
+    .counters-container {
+        display: flex;
+        padding: 16px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        
+     
+
+
+        & .coins-counter  {
+            display: flex;
+
+            & > .coins-img {
+            width: 57px;
+            height: 47px;
+            }
+
+            & > .clock-img {
+                width: 48px;
+                height: 48px;
+            }
+
+            & .prediction-counter {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: rgb(40, 13, 95);
+                line-height: 21px;
+                width: 122px;
+                height: 39px;
+                background-color: #ffff;
+                border-radius: 8px 8px 24px;
+                padding: 0px 8px 0px 24px;
+                box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
+
+                & span:first-of-type {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+    
 
     .prediction-pre-btn, .prediction-next-btn {
         display: flex;
@@ -85,13 +170,12 @@ body, html {
     }
 
     .prediction-cards-carousel {
-        width: 1000px;
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
         align-items: center;
-        // margin: 0 auto;
         gap: 15px;
+        max-width: 100vw;
 
         &::-webkit-scrollbar {
             display: none;
@@ -346,6 +430,7 @@ body, html {
             }
         }
     }
+
 }
 
 

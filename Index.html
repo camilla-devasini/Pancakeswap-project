@@ -8,14 +8,17 @@
     <meta name="description"
         content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE.">
     <title>Home | PancakeSwap - $3.523</title>
-    <link rel="stylesheet" href="style/main.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="footer.css">
+   
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="svg/light-blue-logo.svg" type="image/x-icon">
     </head>
 
 <body>
@@ -35,7 +38,7 @@
             </div>
             <div class="navbarmenu">
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Trade</div>
+                    <div class="drop-label">Trade</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/swap">Swap</a></div>
                         <div><a href="/limit">Limit</a></div>
@@ -47,14 +50,14 @@
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Earn</div>
+                    <div class="drop-label">Earn</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/farms">Farms</a></div>
                         <div><a href="/pools">Pools</a></div>
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <div class="drop-label" onclick="dropMenu(this)">Win</div>
+                    <div class="drop-label">Win</div>
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/competition">Trading Competition</a></div>
                         <div><a href="/prediction">Prediction (BETA)</a></div>
@@ -62,7 +65,7 @@
                     </div>
                 </div>
                 <div class="drop-down-menu">
-                    <img class="drop-label" onclick="dropMenu(this)" src="svg/menu-more.svg" />
+                    <img class="drop-label" src="svg/menu-more.svg" />
                     <div id="drop-content" class="drop-down-content">
                         <div><a href="/info">Info</a></div>
                         <div><a href="/ifo">IFO</a></div>
@@ -88,7 +91,7 @@
                     </a>
                 </div>
                 <div class="icons-mobile">
-                    <button class="languages-btn"><img src="svg/language-button.svg" onmouseover="dropLang()"></button>
+                    <button class="hover-active-class"><img class="languages-btn" src="svg/language-button.svg"></button>
                     <div id="myDropDown" class="languages-container">
                         <button class="lang">বাংলা</button>
                         <button class="lang">العربية</button>
@@ -120,11 +123,11 @@
                         <button class="lang">繁體中文</button>
                     </div>
                     <div class="settings-container">
-                        <button><img src="svg/settings-button.svg"></button>
+                        <button class="hover-active-class"><img src="svg/settings-button.svg"></button>
                     </div>
                     <div class="connect-buttons">
-                        <button type="button" class="connect-wallet">Connect Wallet</button>
-                        <button type="button" class="connect">Connect</button>
+                        <button type="button" class="connect-wallet hover-active-class">Connect Wallet</button>
+                        <button type="button" class="connect hover-active-class">Connect</button>
                     </div>
                 </div>
             </div>
@@ -306,13 +309,13 @@
                                 </linearGradient>
                             </defs>
                         </svg> $3.434</a>
-                    <div class="link_cake_footer"> <a class="shop_cake" href="#">Acquista CAKE <svg viewBox="0 0 24 24"
+                    <div class="link_cake_footer"> <a class="shop_cake" href="#"> <button class="cake-btn"> Acquista CAKE <svg viewBox="0 0 24 24"
                                 color="#FFFFFF" width="20px" xmlns="http://www.w3.org/2000/svg"
                                 class="sc-6457768a-0 hOUZbG">
                                 <path
                                     d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z">
                                 </path>
-                            </svg></a>
+                            </svg></button></a>
                     </div>
                 </div>
 
@@ -324,14 +327,14 @@
             <!--NAV BAR (HEADER) FIXED AT THE BOTTOM OF THE PAGE -->
             <nav class="bottom-mobile-navbar">
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label">
+                    <div id="mobile-trade-label">
                         <img src="svg/trade-menu-icon-mobile-active.svg" />
                         <span>Trade</span>
                     </div>
                 </div>
 
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/earn-menu-icon-mobile.svg" />
                     <span>Earn</span>
                     </div>
@@ -342,7 +345,7 @@
                 </div>
 
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/win-menu-icon-mobile.svg" />
                     <span>Win</span>
                     </div>
@@ -353,7 +356,7 @@
                     </div>
                 </div>
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/nft-menu-icon-mobile.svg" />
                     <span>NFT</span>
                     </div>
@@ -363,8 +366,9 @@
                         <div><a href="/activity">Activity</a></div>
                     </div>
                 </div>
+
                 <div class="menu-item-mobile">
-                    <div class="bottom-drop-label" onclick = "BottomdropMenu(a)">
+                    <div class="bottom-drop-label">
                     <img src="svg/menu-more.svg" />
                     </div>
                     <div class="bottom-drop-down-content">
@@ -381,8 +385,6 @@
                             <img src="svg/external-docs-arrow.svg" alt="arrow icon" />
                         </div>
                     </div>
-
-
             </nav>
 
             <script src="logic/header.js">

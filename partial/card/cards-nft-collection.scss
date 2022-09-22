@@ -1,3 +1,6 @@
+@import "../header/header-style.scss";
+@import "../footer/footer.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -7,14 +10,67 @@
 }
 
 body {
-    max-width: 100%;
+    width: 100%
+    
 }
-
+.head-nft-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234,248,255);
+    height: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .mercato-title{
+        color: rgb(118,69,217);
+        font-size: 64px;
+        font-weight: bolder; 
+    }
+    .acquista-title{
+        color: rgb(40,13,95);
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .search-box{
+        width: 260px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: rgb(238,234,244);
+    }
+}
+.card-recent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    height: 80px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+       .direction{
+        color:aqua;
+    }
+    .h3-raccolte{
+        color: rgb(40,13,95);
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .btn-mostra{
+        background-color: white;
+        border: 1px solid rgb(31,199,212);
+        border-radius: 15px;
+        width: 150px;
+        color: rgb(31,199,212);
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
 .nft-card-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 16px;
+   
 
 
     a:hover {
@@ -106,7 +162,103 @@ body {
             }
         }
     }
+    
 }
+.container-last-card{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+.card-last{ 
+    width: 340px;
+    height: 480px;
+    border: 1px solid lightgray;
+
+ .avatar-img{
+    padding: 15px;
+    .avatar{
+        border-radius: 8px;
+    }
+    
+
+ }
+ .body-card{
+    height: 130px;
+    h4{
+        color: rgb(122,110,189);
+    }
+    h2{
+        color: rgb(40,13,95);
+        font-weight: bold;
+    }
+ }
+ .footer-card{
+    border-top: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    
+    
+        p{
+        color: rgb(122,110,170);
+        margin-top: 3px;
+    }
+    .after-cash{
+        color: rgb(40,13,95);
+        font-weight: bold;
+
+    }
+ }
+}
+}
+.total-cont{
+    background-color: rgb(237,240,245);
+    
+}
+.question-container{
+    height: 100%;
+    width: 100vh;
+    
+    margin: 0 auto;
+    align-items: center;
+    .question-title{
+        h2{
+            font-size: 24px;
+            color: rgb(118,69,217);
+            font-weight: bold;
+        }
+    }
+    .accordion{
+
+        display: flex;
+        flex-direction: column;
+        
+        .accordion-item{
+            .accordion-title{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                
+                
+                .accordion-button{
+                    width: 0%;
+                    text-decoration: none;
+                    border: none;
+
+                    ;
+                }
+            }
+
+        }
+    }
+}
+
 
       
  

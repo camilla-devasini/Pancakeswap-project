@@ -1,3 +1,5 @@
+@use "../variables/variables";
+
 footer {
     background-color: #27262c;    
     font-size: var(--normal);
@@ -84,14 +86,26 @@ footer {
     .icon{
         border-bottom: 1px var(--white-pure) solid;
     }
-
+    .last{
+        display: flex;
+        width: 220px;
+        gap: 10px;
+ 
     .shop_cake {
         text-decoration: none;
         border: 1px solid var(--color-cyan);
         border-radius: 20px;
         background-color: var(--color-cyan);
         color: white;
+        text-decoration: none;
+        .cake-btn{
+            background-color: cyan;
+            text-decoration: none;
+            border: none;
+            
+        }
     }
+}
     .icon_bunny{
         width: 25px;
     }
@@ -100,11 +114,7 @@ footer {
         transition: 0.7s;
 
     }
-    .last{
-        display: flex;
-        width: 220px;
-        gap: 10px;
-    }
+
     .lang{
         display: flex;
     }

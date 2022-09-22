@@ -1,10 +1,18 @@
+
+@import "../header/header-style.scss";
+@import "../footer/footer.scss";
+
+
 * {
     
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
+
 }
+
+
 
 
 @mixin container ($partenza, $distanza ) {
@@ -66,7 +74,7 @@ button:hover {
 
 
 .hero-content{
-    
+
     
     .background-hero {
         background-color:rgb(230, 254, 255);
@@ -75,6 +83,7 @@ button:hover {
         top: 0;
         height: 700px;
         z-index: -1;
+     
     }
 
     position: relative;
@@ -118,7 +127,7 @@ button:hover {
                             display:  flex;
                             justify-content: center;
                             align-items: center;
-                            flex-direction: column;                            justify-content: center;
+                            flex-direction: column;                      
                             align-items: flex-start;
                             z-index: 1;
 
@@ -159,7 +168,7 @@ button:hover {
                                         border: none;
                                         border-radius: 16px;
                                         font-size: 16px;
-                                        font-weight: 600;
+                                        font-weight: 600 !important;
                                         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
                                     
 
@@ -323,7 +332,7 @@ button:hover {
                                         border: none;
                                         border-radius: 16px;
                                         font-size: 16px;
-                                        font-weight: 600;
+                                        font-weight: 600 !important;
                                         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
                                         
                                         
@@ -423,6 +432,7 @@ button:hover {
                         font-size: 64px;
                         color: rgb(118, 69, 217);
                         margin-bottom: 20px;
+                        font-weight: 600 !important;
                     }
 
                     .h3-hero {
@@ -451,7 +461,7 @@ button:hover {
                         width: 130px;
                         height: 48px;
                         font-size: 16px;
-                        font-weight: 600;
+                        font-weight: 600; 
                         color: rgb(31, 199, 212);
                         background-color: transparent;
                         border: 2px solid rgb(31, 199, 212);
@@ -590,7 +600,7 @@ button:hover {
             line-height: 1.5;
             color: rgb(122, 110, 170);
             font-size: 18px;
-            font-weight: lighter;
+            font-weight: lighter !important;
             margin-bottom: 25px;
             text-align: center;
                    
@@ -1820,6 +1830,7 @@ section.container-6 {
                                     font-size: 50px;
                                     color: rgb(118, 69, 217);
                                     margin-bottom: 20px;
+                                    font-weight: 600;
                                 }
             
                                 .h3-hero {
@@ -1955,7 +1966,6 @@ section.container-6 {
             }
 
             section.container-6 {
-                
                 height: 700px;
                 padding: 0 24px;
                 align-items: center;
@@ -1997,8 +2007,6 @@ section.container-6 {
                     }
                 }
                 .box-data {
-                    
-                    
                     display: grid;
                     grid-template-areas: 
                 " a b c"
@@ -2188,6 +2196,7 @@ section.container-6 {
                                     font-size: 50px;
                                     color: rgb(118, 69, 217);
                                     margin-bottom: 20px;
+                                    font-weight: 600;
                                 }
             
                                 .h3-hero {
@@ -2635,6 +2644,7 @@ section.container-6 {
                                         font-size: 40px;
                                         color: rgb(118, 69, 217);
                                         margin-bottom: 20px;
+                                        font-weight: 600;
                                     }
             
                                     .h3-hero {
@@ -2926,7 +2936,6 @@ section.container-6 {
 
 
     body {
-        
 
         .hero-content{
             
@@ -3103,6 +3112,8 @@ section.container-6 {
                                     font-size: 35px;
                                     color: rgb(118, 69, 217);
                                     margin-bottom: 30px;
+                                    font-weight: 600;
+
                                 }
 
             
@@ -3566,6 +3577,7 @@ section.container-6 {
                                     font-size: 35px;
                                     color: rgb(118, 69, 217);
                                     margin-bottom: 30px;
+                                    font-weight: 600;
                                 }
             
                                 .h3-hero {
