@@ -1,3 +1,15 @@
+//to check for possible overflow elements on x axis
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
 //Switch card swap and limit
 function toggleTradeCards() {
     let limitCard = document.getElementById('trade-card-container-limit');
@@ -78,7 +90,7 @@ function resizeFunc() {
         graphCard.style.cssText = "display: flex; z-index: 2;";
         graphCard.style.animation = "350ms ease 0s 1 normal forwards running graph-up";
         document.body.append(violetDiv);
-        violetDiv.style.cssText = "display: block; width: 100vw; height: 100vh; background-color: rgb(69, 42, 122); transition: opacity 0.4s ease 0s; opacity: 0.6; z-index: 1; position: fixed; top: 0%;";
+        violetDiv.style.cssText = "display: block; width: 100%; height: 100vh; background-color: rgb(69, 42, 122); transition: opacity 0.4s ease 0s; opacity: 0.6; z-index: 1; position: fixed; top: 0%;";
       
     } else {
         graphCard.style.removeProperty("animation");

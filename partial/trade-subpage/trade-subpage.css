@@ -165,7 +165,7 @@ body, html {
   height: 50px;
   position: fixed;
   bottom: 0px;
-  width: 100vw;
+  width: 100%;
 }
 .bottom-mobile-navbar .bottom-drop-label, .bottom-mobile-navbar #mobile-trade-label {
   display: flex;
@@ -435,7 +435,7 @@ body, html {
 }
 
 .complete-trade-card-wrapper {
-  padding: 24px 24px 0px;
+  padding-top: 24px;
   display: flex;
   position: relative;
 }
@@ -486,7 +486,7 @@ button {
 }
 
 .complete-trade-card-wrapper #trade-orders-card, .complete-trade-card-wrapper #trade-card-container-limit, #trade-card-container-swap {
-  width: 326px;
+  max-width: 326px;
   height: 516px;
   border: 1px solid rgb(231, 227, 235);
   background-color: #fff;
@@ -1042,6 +1042,7 @@ footer {
   align-self: flex-start;
   border-top-left-radius: 16px;
   min-width: 376px;
+  max-width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

@@ -225,7 +225,7 @@ body, html {
   height: 50px;
   position: fixed;
   bottom: 0px;
-  width: 100vw;
+  width: 100%;
 }
 .bottom-mobile-navbar .bottom-drop-label, .bottom-mobile-navbar #mobile-trade-label {
   display: flex;

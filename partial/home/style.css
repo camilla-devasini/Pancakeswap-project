@@ -165,7 +165,7 @@ body, html {
   height: 50px;
   position: fixed;
   bottom: 0px;
-  width: 100vw;
+  width: 100%;
 }
 .bottom-mobile-navbar .bottom-drop-label, .bottom-mobile-navbar #mobile-trade-label {
   display: flex;
@@ -519,7 +519,7 @@ button:hover {
 .hero-content .background-hero {
   background-color: rgb(230, 254, 255);
   position: absolute;
-  width: 100vw;
+  width: 100%;
   top: 0;
   height: 700px;
   z-index: -1;
@@ -910,7 +910,7 @@ button:hover {
 .hero-content .hero-container .svg-border {
   margin-top: 150px;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(230, 254, 255);
   z-index: -1;
 }
@@ -926,7 +926,7 @@ button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 980px;
   background: linear-gradient(white, rgba(118, 69, 217, 0.3));
   z-index: -1;
@@ -1022,14 +1022,14 @@ button:hover {
 }
 .main-content .svg-border {
   fill: rgba(118, 69, 217, 0.3);
-  width: 100vw;
+  width: 100%;
 }
 .main-content .background-content-2 {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 650px;
 }
 .main-content .background-content-2 .container-2 {
@@ -1159,13 +1159,13 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 550px;
   background-color: rgba(122, 110, 170, 0.1);
 }
 .main-content .background-content-3 .svg-border-grey {
   fill: rgb(255, 255, 255);
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
 }
@@ -2139,7 +2139,7 @@ section.container-6 .box-data .current-emissions {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 980px;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2400,7 +2400,7 @@ section.container-6 .box-data .current-emissions {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 1300px;
     background: linear-gradient(white, rgba(118, 69, 217, 0.3));
     z-index: -1;
@@ -2739,7 +2739,7 @@ section.container-6 .box-data .current-emissions {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3059,7 +3059,7 @@ section.container-6 .box-data .current-emissions {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3382,7 +3382,7 @@ section.container-6 .box-data .current-emissions {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

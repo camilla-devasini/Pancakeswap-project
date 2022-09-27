@@ -20,7 +20,7 @@
 }
 
 .complete-trade-card-wrapper {
-  padding: 24px 24px 0px;
+  padding-top: 24px;
   display: flex;
   position: relative;
 }
@@ -56,7 +56,7 @@ button {
 }
 
 #trade-card-container-swap {
-  width: 326px;
+  max-width: 326px;
   height: 516px;
   border: 1px solid rgb(231, 227, 235);
   background-color: #fff;
