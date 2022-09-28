@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 335px;
+  height: 170px;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+  border-radius: 24px;
+  gap: 10px;
+}
+.card-2 .box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.card-2 .box-1 svg {
+  fill: #ffb237;
+}
+.card-2 .box-1 h2 {
+  font-family: "Kanit";
+  font-size: 40px;
+  box-shadow: inset;
+  color: white;
+}
+.card-2 button {
+  width: 180px;
+  height: 48px;
+  color: white;
+  background-color: rgb(31, 199, 212);
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  margin-right: 5px;
+}
+.card-2 button:hover {
+  opacity: 75%;
+}
+
+/*# sourceMappingURL=style2.css.map */

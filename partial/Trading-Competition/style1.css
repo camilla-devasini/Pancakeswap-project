@@ -2,6 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+body {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-1 {
@@ -9,27 +17,33 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 7px;
   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
-  width: 240px;
-  height: 240px;
-  padding: 30px;
+  width: 260px;
+  height: 233px;
+  padding: 23px;
   border-radius: 0px 0px 24px 24px;
 }
 .card-1 .sveglia {
   width: 65px;
   height: 65px;
   position: relative;
-  bottom: 30px;
+  bottom: 10px;
 }
 .card-1 h2 {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  background: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .card-1 .small-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 150px;
+  width: 180px;
   height: auto;
 }
 .card-1 .box-text {
@@ -41,16 +55,19 @@
   height: auto;
 }
 .card-1 .box-text .entry {
+  color: #7a6eaa;
   position: relative;
-  right: 33px;
+  right: 53px;
 }
 .card-1 .box-text .live {
+  color: #7a6eaa;
   position: relative;
-  right: 9px;
+  right: 7px;
 }
 .card-1 .box-text .end {
+  color: #53dee9;
   position: relative;
-  left: 33px;
+  left: 47px;
 }
 
 /*# sourceMappingURL=style1.css.map */
