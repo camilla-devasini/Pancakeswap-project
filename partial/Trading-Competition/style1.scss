@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-1 {
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+    width: 240px;
+    height: 240px;
+    padding: 30px;
+    border-radius: 0px 0px 24px 24px;
+
+    .sveglia {
+
+        width: 65px;
+        height: 65px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+
+
+    .small-box {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 150px;
+        height: auto;
+    }
+
+
+        .box-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 150px;
+            height: auto;
+
+            .entry {
+
+                position: relative;
+                right: 33px;
+            }
+
+            .live {
+
+                position: relative;
+                right: 9px;
+            }
+
+
+            .end {
+
+                position: relative;
+                left: 33px;
+            }
+        }
+
+
+
+}
