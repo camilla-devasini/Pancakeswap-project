@@ -15,21 +15,30 @@ function toggleTradeCards() {
     let limitCard = document.getElementById('trade-card-container-limit');
     let orderCard = document.getElementById('trade-orders-card');
     let swapCard = document.getElementById('trade-card-container-swap');
+    let graphCard = document.getElementById("graph-card");
 
-  
     if (limitCard.style.display == 'flex') {
         limitCard.style.display = 'none';
         orderCard.style.display = 'none';
         swapCard.style.display = 'flex';
+       
     
         
     } else {
-        limitCard.style.display = 'flex'; 
+        limitCard.style.display = 'flex';
         orderCard.style.display = 'flex';
-        limitCard.after(orderCard);
         swapCard.style.display = 'none';
-        
+       
 
+    }
+
+    if (graphCard.style.display == 'flex') {
+        swapCard.style.gridColumnStart = 3;
+        swapCard.style.gridColumnEnd = 4;
+    } else {
+        
+        swapCard.style.gridColumnStart = 2;
+        swapCard.style.gridColumnEnd = 3;
     }
 }
 
@@ -55,22 +64,47 @@ menuLabelsHighlight.forEach(function(item) {
 let graphIcons = document.querySelectorAll(".graph-icon");
 graphIcons.forEach(function(icon) {
     icon.addEventListener('click', () =>  {
+       
         graphFunc(icon);
         resizeFunc(); 
-        moveOrdercard();   
+
+       
+    
+        
+        // moveOrdercard();   
     })
 })
+
+let limitCardGraphIcon = document.querySelector("#limit-graph-icon");
+limitCardGraphIcon.addEventListener("click", () => {
+    document.querySelector(".complete-trade-card-wrapper").classList.remove("specific-style-graph-limit")
+    changeGridTemplateLimit();
+
+    
+})
+
+let swapCardGraphIcon = document.querySelector("#swap-graph-icon");
+swapCardGraphIcon.addEventListener("click", () => {
+    changeGridTemplateSwap();
+})
+
+
+
 
 
 function graphFunc(icon) {
     let graphCard = document.getElementById("graph-card");
+    
 
     if (graphCard.style.display == 'flex') {        
         graphCard.style.display = 'none';
         icon.src = "../../svg/show-graph-icon.svg";
+        ;
         
     } else { 
         graphCard.style.display = 'flex';
+        
+       
         icon.src = "../../svg/hide-graph-icon.svg";  
         }
     }    
@@ -97,32 +131,32 @@ function resizeFunc() {
     }
 }
 
-function moveOrdercard() {
-    let bunnyFooter = document.getElementById("trade-page-footer");
-    let conversionButtons = document.getElementById("version-conversion");
-    let orderCard = document.getElementById('trade-orders-card');
-    let graphCard = document.getElementById("graph-card");
-    let limitCard = document.getElementById('trade-card-container-limit');
-    let cardsOnlyContainer = document.getElementById("trade-cards-only-container");
+// function moveOrdercard() {
+//     let bunnyFooter = document.getElementById("trade-page-footer");
+//     let conversionButtons = document.getElementById("version-conversion");
+//     let orderCard = document.getElementById('trade-orders-card');
+//     let graphCard = document.getElementById("graph-card");
+//     let limitCard = document.getElementById('trade-card-container-limit');
+//     let cardsOnlyContainer = document.getElementById("trade-cards-only-container");
     
-    if (limitCard.style.display == 'flex' && graphCard.style.display == 'flex' && document.documentElement.clientWidth > 576) {
-        graphCard.appendChild(orderCard);
-        orderCard.style.marginTop = 30 + "px";
+//     if (limitCard.style.display == 'flex' && graphCard.style.display == 'flex' && document.documentElement.clientWidth > 576) {
+//         graphCard.appendChild(orderCard);
+//         orderCard.style.marginTop = 30 + "px";
        
-    }
+//     }
 
-    if (limitCard.style.display == 'flex' && graphCard.style.display == 'flex' && document.documentElement.clientWidth > 576 && orderCard.style.display == "flex") {
-        bunnyFooter.style.cssText = "flex-direction: column; align-items: flex-end; margin-right: 20%;"
-        conversionButtons.style.flexDirection = "column"; 
+//     if (limitCard.style.display == 'flex' && graphCard.style.display == 'flex' && document.documentElement.clientWidth > 576 && orderCard.style.display == "flex") {
+//         bunnyFooter.style.cssText = "flex-direction: column; align-items: flex-end; margin-right: 20%;"
+//         conversionButtons.style.flexDirection = "column"; 
 
-    }
+//     }
 
-    else {
-        limitCard.after(orderCard);  
-    }  
+//     else {
+//         limitCard.after(orderCard);  
+//     }  
 
          
-}   
+// }   
 
 let graphCloseIcon = document.getElementById("graph-close-icon");
 graphCloseIcon.addEventListener('click', () => {
@@ -150,3 +184,21 @@ function closeVioletDiv()  {
     
 window.addEventListener("resize", closeVioletDiv); 
 
+
+function changeGridTemplateLimit() {
+    document.querySelector(".complete-trade-card-wrapper").classList.toggle("specific-style-graph-limit");
+
+
+}
+
+
+function changeGridTemplateSwap() {
+    document.querySelector(".complete-trade-card-wrapper").classList.toggle("specific-style-graph-swap");
+}
+
+    
+        
+   
+    
+   
+  

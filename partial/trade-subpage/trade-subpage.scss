@@ -3,11 +3,42 @@
 @import "../card/cards-swap-limit.scss";
 @import "../footer/footer.scss";
 
+.specific-style-graph-limit {
+    #graph-card {
+        grid-column: 1 / 3;
+        width: 100%;
+    }
+
+    .trade-page-footer {
+        flex-direction: column;
+        grid-column: 3;
+    }
+
+    #trade-orders-card {
+        grid-row: 2 / 3;
+    }
+}
+
+.specific-style-graph-swap {
+    #trade-card-container-swap {
+        grid-column: 3 / 4; 
+    }
+
+    #graph-card {
+        grid-column: 1 / 3;
+    }
+
+    .trade-page-footer {
+        flex-direction: row;
+    }
+}
 
 .complete-trade-card-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+    width: 100%;
 
     & .limit-card-plus-orders {
         display: flex;
@@ -23,6 +54,8 @@
         margin-left: 24px;
         margin-right: 24px;
         height: fit-content;
+        grid-row: 1;
+        grid-column: 3 / 4;
 
         & .connect-wallet {
             margin-bottom: 40px;
@@ -44,8 +77,9 @@
         align-self: flex-start;
         border-top-left-radius: 16px;
         min-width: 376px;
-        max-width: 100%;
+        width: 100%;
         height: fit-content;
+        grid-column: 1 / 3;
        
         
       
@@ -108,10 +142,13 @@
 }
 
 .trade-page-footer {
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 16px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
 
     .version-conversion {
         display: flex;
@@ -174,7 +211,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        // height: 100%;
         
         & .trade-bubble-container {
             display: flex;
@@ -219,12 +256,14 @@
     .complete-trade-card-wrapper .trade-cards-only-container {
         display: flex;
         width: fit-content;
+        width: 100%;
         justify-content: center;
         position: relative;
         
         & .limit-card-plus-orders {
             display: flex;
             flex-direction: row-reverse;
+         
             
             
 

@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+#lottery-card-get-tickets {
+  width: 326px;
+  height: 516px;
+  border: 1px solid rgb(231, 227, 235);
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+}
+
+.hover-active-class:hover {
+  opacity: 0.65;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.hover-active-class:active {
+  transform: translateY(1.2px);
+}
+.hover-active-class:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+#lottery-card-get-tickets {
+  width: 100%;
+  min-width: 200px;
+  height: 100%;
+}
+#lottery-card-get-tickets .get-tickets-header {
+  color: #280d5f;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+#lottery-card-get-tickets .get-tickets-header > h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#lottery-card-get-tickets .get-tickets-header > h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+#lottery-card-get-tickets .get-tickets-content {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+#lottery-card-get-tickets .get-tickets-content > .prize-pot > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #280d5f;
+}
+#lottery-card-get-tickets .get-tickets-content > .prize-updating {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+#lottery-card-get-tickets .get-tickets-content > .prize-updating > span {
+  color: #7a6eaa;
+  font-weight: 400;
+  text-align: center;
+}
+#lottery-card-get-tickets .get-tickets-content > .prize-updating > span:first-child {
+  font-size: 40px;
+  font-weight: 600;
+  color: #7645d9;
+}
+#lottery-card-get-tickets .get-tickets-content .buy-tickets-btn {
+  width: 96.26px;
+  height: 32px;
+  padding: 0 16px;
+  background-color: rgb(31, 199, 212);
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  font-weight: 600;
+  font-size: var(--normal);
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+  line-height: 32px;
+  width: 138px;
+  height: 48px;
+  padding: 0px 24px;
+  margin-left: 0px;
+}
+#lottery-card-get-tickets .accordion-item {
+  background-color: transparent;
+}
+#lottery-card-get-tickets .accordion-button {
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  background-color: transparent;
+  border-top: 1px solid rgb(231, 227, 235);
+  border-bottom: none;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+}
+#lottery-card-get-tickets .accordion-button div > span {
+  color: rgb(31, 199, 212);
+  font-size: 16px;
+  font-weight: 600;
+}
+#lottery-card-get-tickets .accordion-button:not(.collapsed),
+#lottery-card-get-tickets .accordion-button:not(.collapsed):focus {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+}
+#lottery-card-get-tickets .accordion-button:focus {
+  border-color: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  background-color: transparent;
+}
+#lottery-card-get-tickets .accordion-button::after {
+  display: none;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body {
+  background-color: #FAF9FA;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data-description {
+  color: #280d5f;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 16px;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data .accordion-data-details {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data .accordion-data-details h2 {
+  color: #7645d9;
+  font-size: 16px;
+  font-weight: 600;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data .accordion-data-details h3 {
+  color: #280d5f;
+  font-size: 20px;
+  font-weight: 600;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data .accordion-data-details h4 {
+  color: #7a6eaa;
+  font-size: 12px;
+  font-weight: 400;
+}
+#lottery-card-get-tickets .accordion-collapse .accordion-body .accordion-body-data .accordion-data-details:last-child > h2 {
+  color: #ed4b9e;
+}/*# sourceMappingURL=card-lottery-get-yr-tickets.css.map */

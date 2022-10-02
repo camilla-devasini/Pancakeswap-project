@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+
+}
+
+%style-trade-card {
+    width: 326px;
+    height: 516px;
+    border: 1px solid rgb(231, 227, 235);
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+}
+
+@mixin blue-button {
+    width: 96.26px;
+    height: 32px;
+    padding: 0 16px;
+    background-color: rgb(31, 199, 212);
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    font-weight: 600;
+    font-size: var(--normal);
+    ;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    line-height: 32px;
+}
+
+%button-active {
+    background-color: rgb(31, 199, 212);
+    color: white;
+    outline: none;
+}
+
+%blue-button {
+    @include blue-button;
+}
+
+@mixin dark-violet-span {
+    color: rgb(40, 13, 95);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+%dark-violet-span {
+    @include dark-violet-span;
+}
+
+.hover-active-class {
+
+    &:hover {
+        opacity: 0.65;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: translateY(1.2px);
+
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+#lottery-card-get-tickets {
+    @extend %style-trade-card;
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+
+    .get-tickets-header {
+        color: #280d5f;
+        background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 24px;
+
+        &>h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &>h3 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .get-tickets-content {
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        &>.prize-pot>h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #280d5f;
+        }
+
+        &>.prize-updating {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 18px;
+
+
+            &>span {
+                color: #7a6eaa;
+                font-weight: 400;
+                text-align: center;
+
+                &:first-child {
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #7645d9;
+                }
+            }
+        }
+
+        .buy-tickets-btn {
+            @include blue-button;
+            width: 138px;
+            height: 48px;
+            padding: 0px 24px;
+            margin-left: 0px;
+        }
+
+
+    }
+
+    .accordion-item {
+        background-color: transparent;
+    }
+
+    .accordion-button {
+        display: flex;
+        padding: 24px;
+        justify-content: center;
+        background-color: transparent;
+        border-top: 1px solid rgb(231, 227, 235);
+        border-bottom: none;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        box-shadow: rgb(0 0 0 / 10%) 0px -2px 0px inset;
+    }
+
+
+
+    .accordion-button div>span {
+        color: rgb(31, 199, 212);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .accordion-button:not(.collapsed),
+    .accordion-button:not(.collapsed):focus {
+        box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+
+    }
+
+    .accordion-button:focus {
+        border-color: none;
+        box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+        background-color: transparent;
+
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+
+    .accordion-collapse .accordion-body {
+        background-color: #FAF9FA;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        display: flex;
+        flex-direction: column;
+
+        & .accordion-body-data-description {
+            color: #280d5f;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        & .accordion-body-data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 16px;
+
+
+            & .accordion-data-details {
+                width: max-content;
+
+                & h2 {
+                    color: #7645d9;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+
+
+                & h3 {
+                    color: #280d5f;
+                    font-size: 20px;
+                    font-weight: 600;
+
+                }
+
+                & h4 {
+                    color: #7a6eaa;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                &:last-child>h2 {
+                    color: #ed4b9e;
+                }
+            }
+        }
+    }
+}
