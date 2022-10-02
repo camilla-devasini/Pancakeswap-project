@@ -23,7 +23,27 @@ productContainers.forEach((item, i) => {
     })
 })
 
+const countdownElement = document.getElementById("time-counter");
+const startingMinutes = document.getElementById("time-counter").innerHTML;
+let timeInSeconds = startingMinutes * 60; //300 seconds
 
 
+setInterval(countDown,1000);
 
+function countDown() {
+    let minutes = Math.floor(timeInSeconds / 60); // 5 minutes
+    let seconds = timeInSeconds % 60; // 300 seconds / 60 = 5
 
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countdownElement.innerHTML = `${minutes}:${seconds}`;
+    timeInSeconds--;
+    timeInSeconds = timeInSeconds < 0 ? 0 : timeInSeconds;
+    
+    if (timeInSeconds == 0) {
+        timeInSeconds = startingMinutes * 60; // reset counter
+    }
+   
+}
+
+setInterval(countDown,1000);
