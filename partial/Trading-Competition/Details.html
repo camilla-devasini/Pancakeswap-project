@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-8</title>
+    <link rel="stylesheet" href="style8.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="top">
+            <h2>Details</h2>
+        </div>
+        <div class="eligible" onclick="showHide()">
+            <div class="wrapper">
+                <p>Eligible trading pairs</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                Only trades on DAR/BNB, CAKE/BNB, and CAKE/BUSD pairs will be included in volume calculations. Please
+                note that the volume from limit orders will not be included.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide2()">
+            <div class="wrapper">
+                <p>Calculating team ranks and winners</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                - Team ranks are calculated by the total combined volume of the top 500 members of each respective team.
+                <br>
+                - The final winning team will be the team with the highest total volume score at the end of the
+                competition period.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide3()">
+            <div class="wrapper">
+                <p>Prize distribution</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                - Prizes to be distributed in CAKE and DAR in a distribution of 1:5 and shared by all members of each
+                respective tier. <br>
+                - The price of token prizes ($CAKE and $DAR) in USD will be determined as per their BUSD pair price
+                during the tally period. <br>
+                - Every participant will win at least one prize at the end of the competition.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide4()">
+            <div class="wrapper">
+                <p>Fine print</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                - In the event of a disagreement concerning the final winning team or rank, PancakeSwap will have the
+                final say. <br>
+                - PancakeSwap can and will disqualify any team or specific members that are proven to have taken
+                malicious action or attempt to “cheat” in any way.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide5()">
+            <div class="wrapper">
+                <p>Can I join the battle after it starts?</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                Sorry, no. You need to register during the registration period, before the start of the event.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide6()">
+            <div class="wrapper">
+                <p>How do I know if I successfully registered?</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                At the top of the page, the text in the button “I Want to Battle” will change to “Registered”.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide7()">
+            <div class="wrapper">
+                <p>How can I see my current rank?</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                Check Your Score section on the event page. You’ll need to connect your wallet, of course.
+            </div>
+        </div>
+        <div class="eligible" onclick="showHide8()">
+            <div class="wrapper">
+                <p>How do I claim my prize(s)?</p>
+                <div class="btn">
+                    <button class="detailsBtn">Details</button>
+                    <svg viewBox="0 0 24 24" fill="#1fc7d4" color="primary" width="20px"
+                        xmlns="http://www.w3.org/2000/svg" class="sc-8a800401-0 hUJQGG">
+                        <path
+                            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="text">
+                After the battle ends, visit the event page and click the “Claim Prizes” button in the top section or in
+                “Your Score” section. Once you claim your prizes successfully, the button text will change to “Prizes
+                Claimed”.
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Details.js"></script>
+
+</html>

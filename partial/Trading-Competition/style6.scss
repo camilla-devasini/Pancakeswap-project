@@ -150,6 +150,13 @@ body {
     color: rgb(76, 210, 221);
 }
 
+.second-team {
+    display: none;
+}
+
+.third-team {
+    display: none;
+}
 @media screen and (min-width: 768px) {
     
     body {
@@ -166,5 +173,11 @@ body {
 }
 
 @media screen and (min-width: 852px) {
-    
+    body {
+
+        .prizes-by-team {
+            min-width: 381px;
+            max-width: 467px;
+        }
+    }
 }
