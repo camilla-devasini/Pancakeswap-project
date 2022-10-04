@@ -53,6 +53,11 @@ body {
                 color: #7a6eaa;
                 background-color: #eeeaf4;
                 cursor: pointer;
+
+                &.team1 {
+                    background-color: #7a6eaa;
+                    color: white;
+                }
             }
         }
     }

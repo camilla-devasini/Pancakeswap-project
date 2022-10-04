@@ -50,6 +50,10 @@ body .prizes-by-team .team-btns button {
   background-color: #eeeaf4;
   cursor: pointer;
 }
+body .prizes-by-team .team-btns button.team1 {
+  background-color: #7a6eaa;
+  color: white;
+}
 body .body table {
   font-size: 16px;
   padding: 5px;

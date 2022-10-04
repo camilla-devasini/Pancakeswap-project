@@ -11,6 +11,12 @@ firstBtn.forEach(button => {
         cards[0].style.display = 'table';
         cards[1].style.display = 'none'; 
         cards[2].style.display = 'none';
+        firstBtn[0].style.backgroundColor = '#7a6eaa';
+        firstBtn[0].style.color = '#eeeaf4';
+        secondBtn[0].style.backgroundColor = '#eeeaf4';
+        secondBtn[0].style.color = '#7a6eaa';
+        thirdBtn[0].style.backgroundColor = '#eeeaf4';
+        thirdBtn[0].style.color = '#7a6eaa';
     })
 
  }); 
@@ -23,6 +29,12 @@ firstBtn.forEach(button => {
         cards[0].style.display = 'none';
         cards[1].style.display = 'table'; 
         cards[2].style.display = 'none';
+        firstBtn[0].style.backgroundColor = '#eeeaf4';
+        firstBtn[0].style.color = '#7a6eaa';
+        secondBtn[0].style.backgroundColor = '#7a6eaa';
+        secondBtn[0].style.color = '#eeeaf4';
+        thirdBtn[0].style.backgroundColor = '#eeeaf4';
+        thirdBtn[0].style.color = '#7a6eaa';
     })
  })
 
@@ -34,18 +46,11 @@ thirdBtn.forEach(button => {
         cards[0].style.display = 'none';
         cards[1].style.display = 'none'; 
         cards[2].style.display = 'table';
+        firstBtn[0].style.backgroundColor = '#eeeaf4';
+        firstBtn[0].style.color = '#7a6eaa';
+        secondBtn[0].style.backgroundColor = '#eeeaf4';
+        secondBtn[0].style.color = '#7a6eaa';
+        thirdBtn[0].style.backgroundColor = '#7a6eaa';
+        thirdBtn[0].style.color = '#eeeaf4';
     })
  })
-
- // CHANGE BUTTONS COLOR
-
-//  const groupA = document.querySelector(".team-btns");
-//  // get our div with buttons
- 
-//  const groupABtns = groupA.querySelectorAll("button");
-//  // select all of our buttons within this div
- 
-//  // Loop through our array of buttons, and add a click event for each
-//  groupABtns.addEventListener("click", function onClick () {
-//     groupABtns.style.backgroundColor = 'green';
-//     });
