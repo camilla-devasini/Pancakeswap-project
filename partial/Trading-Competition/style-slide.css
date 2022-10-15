@@ -1,0 +1,1423 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+body {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.total-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 640px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 1px 1px 1px 2px rgb(187, 187, 187);
+}
+.total-card .top-traders {
+  width: 640px;
+  height: 100px;
+  padding: 25px;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.total-card .top-traders h2 {
+  font-family: "Kanit";
+  color: #7645d9;
+}
+.total-card .top-traders h5 {
+  color: #7a6eaa;
+  font-family: "Kanit";
+  font-weight: lighter;
+}
+.total-card .buttons-box {
+  width: 640px;
+  height: 100px;
+}
+.total-card .buttons-box .main-buttons {
+  padding: 25px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+.total-card .buttons-box .main-buttons .total {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #6c5ba6;
+  color: white;
+}
+.total-card .buttons-box .main-buttons .total h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+}
+.total-card .buttons-box .main-buttons .total:hover {
+  cursor: pointer;
+}
+.total-card .buttons-box .main-buttons .storm {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.total-card .buttons-box .main-buttons .storm h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.total-card .buttons-box .main-buttons .storm:hover {
+  cursor: pointer;
+}
+.total-card .buttons-box .main-buttons .flippers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.total-card .buttons-box .main-buttons .flippers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.total-card .buttons-box .main-buttons .flippers:hover {
+  cursor: pointer;
+}
+.total-card .buttons-box .main-buttons .cakers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.total-card .buttons-box .main-buttons .cakers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.total-card .buttons-box .main-buttons .cakers:hover {
+  cursor: pointer;
+}
+.total-card .data-box .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.total-card .data-box .box1 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.total-card .data-box .box1 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.total-card .data-box .box1 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.total-card .data-box .box1 .skull {
+  width: 145px;
+}
+.total-card .data-box .box1 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.total-card .data-box .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.total-card .data-box .box2 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.total-card .data-box .box2 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.total-card .data-box .box2 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.total-card .data-box .box2 .bull {
+  width: 145px;
+}
+.total-card .data-box .box2 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.total-card .data-box .box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.total-card .data-box .box3 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.total-card .data-box .box3 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.total-card .data-box .box3 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.total-card .data-box .box3 .skull2 {
+  width: 145px;
+}
+.total-card .data-box .box3 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.total-card .data-box .box4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.total-card .data-box .box4 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.total-card .data-box .box4 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.total-card .data-box .box4 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.total-card .data-box .box4 .skull3 {
+  width: 145px;
+}
+.total-card .data-box .box4 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.total-card .data-box .box5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.total-card .data-box .box5 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.total-card .data-box .box5 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.total-card .data-box .box5 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.total-card .data-box .box5 .fireball {
+  width: 145px;
+}
+.total-card .data-box .box5 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.total-card .hidden-section {
+  width: 640px;
+  height: 250px;
+  column-count: 3;
+  column-gap: 0;
+}
+.total-card .hidden-section .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  background-color: white;
+  position: relative;
+  padding: 5px;
+}
+.total-card .hidden-section .box .number {
+  padding-left: 7px;
+  font-size: 18px;
+  color: #7645d9;
+}
+.total-card .hidden-section .box .texts-column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-left: 7px;
+  padding-right: 30px;
+  z-index: 1;
+}
+.total-card .hidden-section .box .texts-column .dollars {
+  color: #280d5f;
+}
+.total-card .hidden-section .box .texts-column .blue-data {
+  color: rgb(31, 199, 212);
+  font-weight: lighter;
+}
+.total-card .hidden-section .box .avatars {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.total-card .hidden-section .box .skull {
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+.total-card .show-more-section {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+.total-card .show-more-section .show-more {
+  font-family: "Kanit";
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(31, 199, 212);
+  margin-top: 10px;
+}
+.total-card .show-more-section .show-more:hover {
+  cursor: pointer;
+}
+.total-card .show-more-section .arrow {
+  margin-top: 13px;
+  fill: rgb(31, 199, 212);
+}
+.total-card .show-more-section .arrow:hover {
+  cursor: pointer;
+}
+
+.storm-card {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 640px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 1px 1px 1px 2px rgb(187, 187, 187);
+}
+.storm-card .top-traders {
+  width: 640px;
+  height: 100px;
+  padding: 25px;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.storm-card .top-traders h2 {
+  font-family: "Kanit";
+  color: #7645d9;
+}
+.storm-card .top-traders h5 {
+  color: #7a6eaa;
+  font-family: "Kanit";
+  font-weight: lighter;
+}
+.storm-card .buttons-box {
+  width: 640px;
+  height: 100px;
+}
+.storm-card .buttons-box .main-buttons {
+  padding: 25px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+.storm-card .buttons-box .main-buttons .total {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #e9e5f6;
+}
+.storm-card .buttons-box .main-buttons .total h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.storm-card .buttons-box .main-buttons .total:hover {
+  cursor: pointer;
+}
+.storm-card .buttons-box .main-buttons .storm {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #6c5ba6;
+}
+.storm-card .buttons-box .main-buttons .storm h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: white;
+}
+.storm-card .buttons-box .main-buttons .storm:hover {
+  cursor: pointer;
+}
+.storm-card .buttons-box .main-buttons .flippers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.storm-card .buttons-box .main-buttons .flippers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.storm-card .buttons-box .main-buttons .flippers:hover {
+  cursor: pointer;
+}
+.storm-card .buttons-box .main-buttons .cakers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.storm-card .buttons-box .main-buttons .cakers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.storm-card .buttons-box .main-buttons .cakers:hover {
+  cursor: pointer;
+}
+.storm-card .data-box .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.storm-card .data-box .box1 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.storm-card .data-box .box1 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.storm-card .data-box .box1 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.storm-card .data-box .box1 .bull {
+  width: 145px;
+}
+.storm-card .data-box .box1 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.storm-card .data-box .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.storm-card .data-box .box2 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.storm-card .data-box .box2 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.storm-card .data-box .box2 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.storm-card .data-box .box2 .bull2 {
+  width: 145px;
+}
+.storm-card .data-box .box2 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.storm-card .data-box .box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.storm-card .data-box .box3 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.storm-card .data-box .box3 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.storm-card .data-box .box3 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.storm-card .data-box .box3 .bull3 {
+  width: 145px;
+}
+.storm-card .data-box .box3 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.storm-card .data-box .box4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.storm-card .data-box .box4 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.storm-card .data-box .box4 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.storm-card .data-box .box4 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.storm-card .data-box .box4 .bull4 {
+  width: 145px;
+}
+.storm-card .data-box .box4 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.storm-card .data-box .box5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.storm-card .data-box .box5 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.storm-card .data-box .box5 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.storm-card .data-box .box5 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.storm-card .data-box .box5 .bull5 {
+  width: 145px;
+}
+.storm-card .data-box .box5 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.storm-card .hidden-section {
+  width: 640px;
+  height: 250px;
+  column-count: 3;
+  column-gap: 0;
+}
+.storm-card .hidden-section .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  background-color: white;
+  position: relative;
+  padding: 5px;
+}
+.storm-card .hidden-section .box .number {
+  padding-left: 7px;
+  font-size: 18px;
+  color: #7645d9;
+}
+.storm-card .hidden-section .box .texts-column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-left: 7px;
+  padding-right: 30px;
+  z-index: 1;
+}
+.storm-card .hidden-section .box .texts-column .dollars {
+  color: #280d5f;
+}
+.storm-card .hidden-section .box .texts-column .blue-data {
+  color: rgb(31, 199, 212);
+  font-weight: lighter;
+}
+.storm-card .hidden-section .box .avatars {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.storm-card .hidden-section .box .skull {
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+.storm-card .show-more-section {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+.storm-card .show-more-section .show-more {
+  font-family: "Kanit";
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(31, 199, 212);
+  margin-top: 10px;
+}
+.storm-card .show-more-section .show-more:hover {
+  cursor: pointer;
+}
+.storm-card .show-more-section .arrow {
+  margin-top: 13px;
+  fill: rgb(31, 199, 212);
+}
+.storm-card .show-more-section .arrow:hover {
+  cursor: pointer;
+}
+
+.flippers-card {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 640px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 1px 1px 1px 2px rgb(187, 187, 187);
+}
+.flippers-card .top-traders {
+  width: 640px;
+  height: 100px;
+  padding: 25px;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.flippers-card .top-traders h2 {
+  font-family: "Kanit";
+  color: #7645d9;
+}
+.flippers-card .top-traders h5 {
+  color: #7a6eaa;
+  font-family: "Kanit";
+  font-weight: lighter;
+}
+.flippers-card .buttons-box {
+  width: 640px;
+  height: 100px;
+}
+.flippers-card .buttons-box .main-buttons {
+  padding: 25px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+.flippers-card .buttons-box .main-buttons .total {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #e9e5f6;
+}
+.flippers-card .buttons-box .main-buttons .total h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.flippers-card .buttons-box .main-buttons .total:hover {
+  cursor: pointer;
+}
+.flippers-card .buttons-box .main-buttons .storm {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.flippers-card .buttons-box .main-buttons .storm h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.flippers-card .buttons-box .main-buttons .storm:hover {
+  cursor: pointer;
+}
+.flippers-card .buttons-box .main-buttons .flippers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #6c5ba6;
+}
+.flippers-card .buttons-box .main-buttons .flippers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: white;
+}
+.flippers-card .buttons-box .main-buttons .flippers:hover {
+  cursor: pointer;
+}
+.flippers-card .buttons-box .main-buttons .cakers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.flippers-card .buttons-box .main-buttons .cakers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.flippers-card .buttons-box .main-buttons .cakers:hover {
+  cursor: pointer;
+}
+.flippers-card .data-box .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.flippers-card .data-box .box1 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.flippers-card .data-box .box1 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.flippers-card .data-box .box1 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.flippers-card .data-box .box1 .skull {
+  width: 145px;
+}
+.flippers-card .data-box .box1 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.flippers-card .data-box .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.flippers-card .data-box .box2 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.flippers-card .data-box .box2 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.flippers-card .data-box .box2 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.flippers-card .data-box .box2 .skull2 {
+  width: 145px;
+}
+.flippers-card .data-box .box2 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.flippers-card .data-box .box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.flippers-card .data-box .box3 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.flippers-card .data-box .box3 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.flippers-card .data-box .box3 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.flippers-card .data-box .box3 .skull3 {
+  width: 145px;
+}
+.flippers-card .data-box .box3 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.flippers-card .data-box .box4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.flippers-card .data-box .box4 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.flippers-card .data-box .box4 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.flippers-card .data-box .box4 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.flippers-card .data-box .box4 .skull4 {
+  width: 145px;
+}
+.flippers-card .data-box .box4 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.flippers-card .data-box .box5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.flippers-card .data-box .box5 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.flippers-card .data-box .box5 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.flippers-card .data-box .box5 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.flippers-card .data-box .box5 .skull5 {
+  width: 145px;
+}
+.flippers-card .data-box .box5 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.flippers-card .hidden-section {
+  width: 640px;
+  height: 250px;
+  column-count: 3;
+  column-gap: 0;
+}
+.flippers-card .hidden-section .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  background-color: white;
+  position: relative;
+  padding: 5px;
+}
+.flippers-card .hidden-section .box .dollars {
+  color: #280d5f;
+}
+.flippers-card .hidden-section .box .number {
+  padding-left: 7px;
+  font-size: 18px;
+  color: #7645d9;
+}
+.flippers-card .hidden-section .box .texts-column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-left: 7px;
+  padding-right: 30px;
+  z-index: 1;
+}
+.flippers-card .hidden-section .box .texts-column .dollars {
+  color: #280d5f;
+}
+.flippers-card .hidden-section .box .texts-column .blue-data {
+  color: rgb(31, 199, 212);
+  font-weight: lighter;
+}
+.flippers-card .hidden-section .box .avatars {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.flippers-card .hidden-section .box .skull {
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+.flippers-card .show-more-section {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+.flippers-card .show-more-section .show-more {
+  font-family: "Kanit";
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(31, 199, 212);
+  margin-top: 10px;
+}
+.flippers-card .show-more-section .show-more:hover {
+  cursor: pointer;
+}
+.flippers-card .show-more-section .arrow {
+  margin-top: 13px;
+  fill: rgb(31, 199, 212);
+}
+.flippers-card .show-more-section .arrow:hover {
+  cursor: pointer;
+}
+
+.cakers-card {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 640px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 1px 1px 1px 2px rgb(187, 187, 187);
+}
+.cakers-card .top-traders {
+  width: 640px;
+  height: 100px;
+  padding: 25px;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.cakers-card .top-traders h2 {
+  font-family: "Kanit";
+  color: #7645d9;
+}
+.cakers-card .top-traders h5 {
+  color: #7a6eaa;
+  font-family: "Kanit";
+  font-weight: lighter;
+}
+.cakers-card .buttons-box {
+  width: 640px;
+  height: 100px;
+}
+.cakers-card .buttons-box .main-buttons {
+  padding: 25px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+.cakers-card .buttons-box .main-buttons .total {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #e9e5f6;
+}
+.cakers-card .buttons-box .main-buttons .total h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.cakers-card .buttons-box .main-buttons .total:hover {
+  cursor: pointer;
+}
+.cakers-card .buttons-box .main-buttons .storm {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.cakers-card .buttons-box .main-buttons .storm h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.cakers-card .buttons-box .main-buttons .storm:hover {
+  cursor: pointer;
+}
+.cakers-card .buttons-box .main-buttons .flippers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: #e9e5f6;
+}
+.cakers-card .buttons-box .main-buttons .flippers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: #6c5ba6;
+}
+.cakers-card .buttons-box .main-buttons .flippers:hover {
+  cursor: pointer;
+}
+.cakers-card .buttons-box .main-buttons .cakers {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background-color: #6c5ba6;
+}
+.cakers-card .buttons-box .main-buttons .cakers h2 {
+  font-family: "Kanit";
+  font-size: 17px;
+  padding: 9px;
+  color: white;
+}
+.cakers-card .buttons-box .main-buttons .cakers:hover {
+  cursor: pointer;
+}
+.cakers-card .data-box .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.cakers-card .data-box .box1 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.cakers-card .data-box .box1 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.cakers-card .data-box .box1 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.cakers-card .data-box .box1 .fireball {
+  width: 145px;
+}
+.cakers-card .data-box .box1 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.cakers-card .data-box .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.cakers-card .data-box .box2 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.cakers-card .data-box .box2 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.cakers-card .data-box .box2 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.cakers-card .data-box .box2 .fireball2 {
+  width: 145px;
+}
+.cakers-card .data-box .box2 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.cakers-card .data-box .box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.cakers-card .data-box .box3 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.cakers-card .data-box .box3 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.cakers-card .data-box .box3 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.cakers-card .data-box .box3 .fireball3 {
+  width: 145px;
+}
+.cakers-card .data-box .box3 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.cakers-card .data-box .box4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.cakers-card .data-box .box4 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.cakers-card .data-box .box4 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.cakers-card .data-box .box4 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.cakers-card .data-box .box4 .fireball4 {
+  width: 145px;
+}
+.cakers-card .data-box .box4 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.cakers-card .data-box .box5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 80px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-left: 25px;
+  overflow: hidden;
+}
+.cakers-card .data-box .box5 h2 {
+  font-family: "Kanit";
+  font-size: 24px;
+  color: #7645d9;
+}
+.cakers-card .data-box .box5 h3 {
+  font-family: "Kanit";
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #280d5f;
+}
+.cakers-card .data-box .box5 h4 {
+  font-family: "Kanit";
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(31, 199, 212);
+}
+.cakers-card .data-box .box5 .fireball5 {
+  width: 145px;
+}
+.cakers-card .data-box .box5 .avatar-bunny {
+  width: 40px;
+  border-radius: 50%;
+}
+.cakers-card .hidden-section {
+  width: 640px;
+  height: 250px;
+  column-count: 3;
+  column-gap: 0;
+}
+.cakers-card .hidden-section .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  background-color: white;
+  position: relative;
+  padding: 5px;
+}
+.cakers-card .hidden-section .box .number {
+  padding-left: 7px;
+  font-size: 18px;
+  color: #7645d9;
+}
+.cakers-card .hidden-section .box .texts-column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-left: 7px;
+  padding-right: 30px;
+  z-index: 1;
+}
+.cakers-card .hidden-section .box .texts-column .dollars {
+  color: #280d5f;
+}
+.cakers-card .hidden-section .box .texts-column .blue-data {
+  color: rgb(31, 199, 212);
+  font-weight: lighter;
+}
+.cakers-card .hidden-section .box .avatars {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.cakers-card .hidden-section .box .skull {
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+.cakers-card .show-more-section {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+.cakers-card .show-more-section .show-more {
+  font-family: "Kanit";
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(31, 199, 212);
+  margin-top: 10px;
+}
+.cakers-card .show-more-section .show-more:hover {
+  cursor: pointer;
+}
+.cakers-card .show-more-section .arrow {
+  margin-top: 13px;
+  fill: rgb(31, 199, 212);
+}
+.cakers-card .show-more-section .arrow:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=style-slide.css.map */

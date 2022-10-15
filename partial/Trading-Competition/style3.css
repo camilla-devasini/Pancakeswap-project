@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 570px;
+  width: 470px;
+  padding: 20px;
+}
+.main-3 .card-3 {
+  width: 300px;
+  height: 150px;
+}
+.main-3 .card-3 .honor-bunny {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.main-3 .card-3 .honor-bunny .bunny {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 100px;
+}
+.main-3 .card-3 .honor-bunny .left {
+  width: 45px;
+  transform: rotate(30deg);
+  fill: #545555;
+}
+.main-3 .card-3 .honor-bunny .right {
+  width: 45px;
+  transform: rotate(-30deg);
+  fill: #545555;
+}
+.main-3 .card-3 .pergamena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main-3 .card-3 .pergamena .left {
+  width: 35px;
+  z-index: 1;
+}
+.main-3 .card-3 .pergamena .right {
+  width: 35px;
+  transform: scaleX(-1);
+}
+.main-3 .card-3 .pergamena .purple-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 55px;
+  background-color: rgb(118, 69, 217);
+  z-index: 1;
+  box-shadow: 2px 2px 2px black;
+  gap: 15px;
+}
+.main-3 .card-3 .pergamena .purple-div h2 {
+  font-family: "Kanit";
+  color: white;
+  font-size: 31px;
+  text-shadow: 4px 4px 4px black;
+}
+.main-3 .card-3 .pergamena .purple-div .leaveLeft {
+  fill: #280d5f;
+}
+.main-3 .card-3 .pergamena .purple-div .leaveRight {
+  transform: scaleX(-1);
+  fill: #280d5f;
+}
+.main-3 .white-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 205px;
+  background-color: white;
+  border-radius: 24px;
+  gap: 10px;
+  box-shadow: 1px 1px 1px 2px rgb(187, 187, 187);
+}
+.main-3 .white-div h2 {
+  font-family: "Kanit";
+  line-height: 1;
+  font-size: 27px;
+  color: #280d5f;
+  font-weight: 600;
+}
+.main-3 .white-div h5 {
+  font-family: "Kanit";
+  font-weight: lighter;
+  font-size: 15px;
+  color: #7a6eaa;
+}
+.main-3 .white-div button {
+  width: 180px;
+  height: 48px;
+  color: white;
+  background-color: rgb(31, 199, 212);
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
+  margin-top: 20px;
+}
+.main-3 .white-div button:hover {
+  opacity: 75%;
+}
+
+/*# sourceMappingURL=style3.css.map */

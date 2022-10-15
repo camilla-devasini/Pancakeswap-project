@@ -10,7 +10,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    
   }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 190px;
+    position: relative;
+    
+
+  img {
+    width: 90px;
+    position: absolute;
+    margin-right: 350px;
+    
+
+  }
+
 
   .card-2 {
 
@@ -26,6 +46,9 @@
 
   .box-1 {
 
+    
+ 
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,14 +62,15 @@
 
 
     h2 {
+      
         font-family: 'Kanit';
         font-size: 40px;
-        box-shadow: inset;
         color: white;
+        text-shadow: 4px 4px 4px black;
+        
     }
 
     }
-
 
 
     button {
@@ -60,15 +84,16 @@
         font-size: 16px;
         font-weight: 600;
         box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
-        margin-right: 5px;
+        
     
         &:hover {
 
             opacity: 75%; 
         }
 }
+}
 
-  }
+}
 
 
 

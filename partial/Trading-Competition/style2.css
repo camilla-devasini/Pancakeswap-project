@@ -11,7 +11,20 @@ body {
   align-items: center;
 }
 
-.card-2 {
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 190px;
+  position: relative;
+}
+.main img {
+  width: 90px;
+  position: absolute;
+  margin-right: 350px;
+}
+.main .card-2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,22 +35,23 @@ body {
   border-radius: 24px;
   gap: 10px;
 }
-.card-2 .box-1 {
+.main .card-2 .box-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.card-2 .box-1 svg {
+.main .card-2 .box-1 svg {
   fill: #ffb237;
 }
-.card-2 .box-1 h2 {
+.main .card-2 .box-1 h2 {
   font-family: "Kanit";
   font-size: 40px;
   box-shadow: inset;
   color: white;
+  text-shadow: 4px 4px 4px black;
 }
-.card-2 button {
+.main .card-2 button {
   width: 180px;
   height: 48px;
   color: white;
@@ -47,9 +61,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px;
-  margin-right: 5px;
 }
-.card-2 button:hover {
+.main .card-2 button:hover {
   opacity: 75%;
 }
 

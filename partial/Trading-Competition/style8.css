@@ -5,32 +5,25 @@
   font-family: "Kanit";
 }
 
-body {
-  padding: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-1 {
+.card-mobile {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-direction: column;
-  gap: 7px;
+  flex-direction: row;
+  gap: 35px;
   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
-  width: 260px;
-  height: 233px;
+  width: 350px;
+  height: 150px;
   padding: 23px;
   border-radius: 0px 0px 24px 24px;
 }
-.card-1 .sveglia {
+.card-mobile .sveglia {
   width: 65px;
   height: 65px;
   position: relative;
   bottom: 10px;
 }
-.card-1 h2 {
+.card-mobile h2 {
   font-size: 24px;
   margin-bottom: 15px;
   color: linear-gradient(rgb(255, 216, 0), rgb(235, 140, 0));
@@ -39,14 +32,19 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
-.card-1 .small-box {
+.card-mobile .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-mobile .box .small-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 190px;
   height: auto;
 }
-.card-1 .small-line {
+.card-mobile .box .small-line {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -55,7 +53,7 @@ body {
   background-color: #7a6eaa;
   margin-top: 10px;
 }
-.card-1 .small-line2 {
+.card-mobile .box .small-line2 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -64,7 +62,7 @@ body {
   background-color: #7a6eaa;
   margin-top: 10px;
 }
-.card-1 .box-text {
+.card-mobile .box .box-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,20 +70,20 @@ body {
   width: 200px;
   height: auto;
 }
-.card-1 .box-text .entry {
+.card-mobile .box .box-text .entry {
   color: #7a6eaa;
   position: relative;
   right: 3px;
 }
-.card-1 .box-text .live {
+.card-mobile .box .box-text .live {
   color: #7a6eaa;
   position: relative;
   right: 7px;
 }
-.card-1 .box-text .end {
+.card-mobile .box .box-text .end {
   color: #53dee9;
   position: relative;
   right: 3px;
 }
 
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style8.css.map */

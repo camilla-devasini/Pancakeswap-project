@@ -3,3 +3,190 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .main-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 570px;
+    width: 470px;
+    padding: 20px;
+    
+   
+ 
+    .card-3 {
+
+
+        width: 300px;  
+        height: 150px;
+        
+    
+
+
+      .honor-bunny {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+        
+        
+        & .bunny {
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 100px;
+            
+  
+        }
+
+        & .left {
+
+            width: 45px;
+            transform: rotate(30deg);
+            fill: #545555;
+        }
+
+        & .right {
+
+            width: 45px;
+            transform: rotate(-30deg);
+            fill: #545555;
+        }
+        
+      }
+
+      .pergamena {
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        & .left {
+
+          width: 35px;
+          z-index: 1;
+          
+        }
+
+
+        & .right {
+
+            width: 35px;
+            transform: scaleX(-1);
+            
+        }
+
+        .purple-div {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 55px;
+        background-color: rgb(118, 69, 217);
+        z-index: 1;
+        box-shadow: 2px 2px 2px black;
+        gap: 15px;
+
+
+        h2 {
+
+          font-family: 'Kanit';
+          color: white;
+          font-size: 31px;
+          text-shadow: 4px 4px 4px black;
+
+        }
+        
+        .leaveLeft {
+
+          fill: #280d5f;
+        }
+
+
+        .leaveRight {
+
+          transform: scaleX(-1);
+          fill: #280d5f;
+        }
+     
+
+      }
+
+    }
+    
+    
+  }
+
+  .white-div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 205px;
+    background-color: white;
+    border-radius: 24px;
+    gap: 10px;
+    box-shadow: 1px 1px 1px 2px rgb(187, 187, 187); 
+
+    h2 {
+
+        font-family: 'Kanit';
+        line-height: 1;
+        font-size: 27px;
+        color: #280d5f;
+        font-weight: 600;
+
+    }
+
+    h5 {
+
+        font-family: 'Kanit';
+        font-weight: lighter;
+        font-size: 15px;
+        color: #7a6eaa;
+        
+
+    }
+
+
+    button {
+        
+        width: 180px;
+        height: 48px;
+        color: white;
+        background-color: rgb(31, 199, 212);
+        border: none;
+        border-radius: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px;
+        margin-top: 20px;
+        
+    
+        &:hover {
+
+            opacity: 75%; 
+        }
+}
+
+  }
+
+
+
+}
