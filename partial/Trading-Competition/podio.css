@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+body .wrapper {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 30px 30px 30px;
+}
+body .wrapper .podio {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body .wrapper .podio .img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+}
+body .wrapper .podio .img img {
+  border-radius: 50%;
+  height: 90.4px;
+  width: 90.4px;
+}
+body .wrapper .podio .img .syrup {
+  position: relative;
+  top: 25px;
+  border: 2px solid rgb(31, 199, 212);
+  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
+}
+body .wrapper .podio .img .cakers {
+  position: relative;
+  top: 45px;
+  border: 2px solid rgb(255, 178, 55);
+  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
+}
+body .wrapper .podio .img .flipper {
+  width: 102.4px;
+  height: 102.4px;
+  border: 2px solid rgb(69, 42, 122);
+  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
+}
+body .wrapper .podio svg {
+  height: auto;
+  width: 320px;
+  position: relative;
+  top: 90px;
+}
+body .wrapper .text {
+  width: 387px;
+  display: flex;
+  padding: 100px 20px 5px 20px;
+  justify-content: space-around;
+  color: #280d5f;
+}
+body .wrapper .text .column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .wrapper .text .column h3 {
+  font-size: 14px;
+}
+body .wrapper .text .column p {
+  font-size: 12px;
+}
+body .wrapper .text .column .flex {
+  display: flex;
+}
+body .wrapper .text .column .top-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .wrapper .total-participants {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 24px;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.5;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  padding: 24px;
+  border-radius: 24px;
+  margin-top: 20px;
+  min-width: 330px;
+  max-width: 450px;
+}
+body .wrapper .total-participants h1 {
+  font-size: 24px;
+  color: #7645d9;
+}
+body .wrapper .total-participants .flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}/*# sourceMappingURL=podio.css.map */
