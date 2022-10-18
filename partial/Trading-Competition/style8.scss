@@ -33,50 +33,60 @@ body {
             }
         }
 
-        .eligible {
-            display: flex;
-            flex-direction: column;
-            padding: 24px;
-            justify-content: space-between;
-            gap: 10px;
-            border-bottom: 1px solid #d7caec;
+        .content {
 
-            .text {
-                display: none;
-                font-size: 14px;
-                color: #7a6eaa;
-            }
+            padding: 0px 30px 0px 30px;
 
-            .wrapper {
+            .eligible {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                padding: 24px 24px 24px 0px;
                 justify-content: space-between;
-
-                p {
-                    font-size: 16px;
-                    line-height: 1.5;
-                    font-weight: bold;
-                    color: #280d5f;
+                gap: 10px;
+                border-bottom: 1px solid #d7caec;
+    
+                .text {
+                    display: none;
+                    font-size: 14px;
+                    color: #7a6eaa;
                 }
     
-                .btn {
+                .wrapper {
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-between;
     
-                    button {
-                        border: 0;
-                        background-color: white;
-                        color: #1fc7d4;
+                    p {
                         font-size: 16px;
-                        font-weight: 600;
-                        letter-spacing: 0.03em;
-                        padding: 0px 24px;
-                        cursor: pointer;
+                        line-height: 1.5;
+                        font-weight: bold;
+                        color: #280d5f;
                     }
+        
+                    .btn {
+                        display: flex;
+                        flex-direction: row;
+        
+                        button {
+                            border: 0;
+                            background-color: white;
+                            color: #1fc7d4;
+                            font-size: 16px;
+                            font-weight: 600;
+                            letter-spacing: 0.03em;
+                            padding: 0px 24px;
+                            cursor: pointer;
+                        }
+                    }
+    
                 }
 
+                &.border {
+                    border-bottom: none;
+                }
+    
             }
-
         }
+
     }
 }

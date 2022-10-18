@@ -29,35 +29,38 @@ body .body .top h2 {
   line-height: 1.1;
   color: #280d5f;
 }
-body .body .eligible {
+body .body .content {
+  padding: 0px 30px 0px 30px;
+}
+body .body .content .eligible {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 24px 24px 24px 0px;
   justify-content: space-between;
   gap: 10px;
   border-bottom: 1px solid #d7caec;
 }
-body .body .eligible .text {
+body .body .content .eligible .text {
   display: none;
   font-size: 14px;
   color: #7a6eaa;
 }
-body .body .eligible .wrapper {
+body .body .content .eligible .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body .body .eligible .wrapper p {
+body .body .content .eligible .wrapper p {
   font-size: 16px;
   line-height: 1.5;
   font-weight: bold;
   color: #280d5f;
 }
-body .body .eligible .wrapper .btn {
+body .body .content .eligible .wrapper .btn {
   display: flex;
   flex-direction: row;
 }
-body .body .eligible .wrapper .btn button {
+body .body .content .eligible .wrapper .btn button {
   border: 0;
   background-color: white;
   color: #1fc7d4;
@@ -66,4 +69,7 @@ body .body .eligible .wrapper .btn button {
   letter-spacing: 0.03em;
   padding: 0px 24px;
   cursor: pointer;
+}
+body .body .content .eligible.border {
+  border-bottom: none;
 }/*# sourceMappingURL=style8.css.map */
