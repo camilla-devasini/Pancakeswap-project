@@ -5,6 +5,13 @@
   font-family: "Kanit";
 }
 
+body {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-mobile {
   display: flex;
   justify-content: flex-end;

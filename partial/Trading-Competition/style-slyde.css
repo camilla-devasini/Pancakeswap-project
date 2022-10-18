@@ -418,7 +418,7 @@ body {
 .storm-card .buttons-box .main-buttons .storm {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  background-color: #7b6cab;
+  background-color: #6c5ba6;
 }
 .storm-card .buttons-box .main-buttons .storm h2 {
   font-family: "Kanit";
@@ -782,7 +782,7 @@ body {
 .flippers-card .buttons-box .main-buttons .flippers {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  background-color: #7b6cab;
+  background-color: #6c5ba6;
 }
 .flippers-card .buttons-box .main-buttons .flippers h2 {
   font-family: "Kanit";
@@ -1149,7 +1149,7 @@ body {
 .cakers-card .buttons-box .main-buttons .cakers {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  background-color: #7b6cab;
+  background-color: #6c5ba6;
 }
 .cakers-card .buttons-box .main-buttons .cakers h2 {
   font-family: "Kanit";
@@ -1420,4 +1420,4 @@ body {
   display: none;
 }
 
-/*# sourceMappingURL=style-slide.css.map */
+/*# sourceMappingURL=style-slyde.css.map */

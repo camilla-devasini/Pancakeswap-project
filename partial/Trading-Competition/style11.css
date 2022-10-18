@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.honors-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.honors-card .pergamena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.honors-card .pergamena .left {
+  width: 35px;
+  z-index: 1;
+  transform: scaleX(-1);
+  transform: scaleY(-1);
+}
+.honors-card .pergamena .right {
+  width: 35px;
+  transform: rotate(180deg);
+}
+.honors-card .pergamena .purple-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 55px;
+  background-color: rgb(118, 69, 217);
+  z-index: 1;
+  box-shadow: 2px 2px 2px black;
+  gap: 15px;
+}
+.honors-card .pergamena .purple-div h2 {
+  font-family: "Kanit";
+  color: white;
+  font-size: 37px;
+  text-shadow: 4px 4px 4px black;
+}
+.honors-card .pergamena .purple-div .leaveLeft {
+  fill: #280d5f;
+}
+.honors-card .pergamena .purple-div .leaveRight {
+  transform: scaleX(-1);
+  fill: #280d5f;
+}
+
+/*# sourceMappingURL=style11.css.map */

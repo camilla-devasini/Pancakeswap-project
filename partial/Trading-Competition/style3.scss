@@ -19,7 +19,7 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 570px;
-    width: 470px;
+    width: auto;
     padding: 20px;
     
    
@@ -27,7 +27,7 @@ body {
     .card-3 {
 
 
-        width: 300px;  
+        width: auto;  
         height: 150px;
         
     
@@ -94,7 +94,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 230px;
+        width: 285px;
         height: 55px;
         background-color: rgb(118, 69, 217);
         z-index: 1;
@@ -106,7 +106,7 @@ body {
 
           font-family: 'Kanit';
           color: white;
-          font-size: 31px;
+          font-size: 37px;
           text-shadow: 4px 4px 4px black;
 
         }
@@ -137,7 +137,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 400px;
+    width: 410px;
     height: 205px;
     background-color: white;
     border-radius: 24px;
@@ -186,7 +186,6 @@ body {
 }
 
   }
-
 
 
 }
